@@ -139,7 +139,7 @@
       padding: 0 4rem 3rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: start;
+      align-items: stretch;
       gap: 1.5rem;
     }
 
@@ -172,6 +172,13 @@
 
     .card-body {
       padding: 1.2rem 1.4rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-body .project-links {
+      margin-top: auto;
     }
 
     .card-body h3 {
