@@ -34,6 +34,54 @@
     .bio {
       color: #555;
       font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+      display: flex;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+
+    .avatar {
+      flex-shrink: 0;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #e8e8e8;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .about-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    .highlights {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .highlights li {
+      font-size: 0.8rem;
+      color: #666;
+      padding: 0.25rem 0.65rem;
+      background: #f0f0f0;
+      border-radius: 4px;
     }
 
     .section-title {
@@ -185,6 +233,16 @@
     }
 
     @media (max-width: 640px) {
+      .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .highlights {
+        justify-content: center;
+      }
+
       .project {
         flex-direction: column;
       }
@@ -203,8 +261,27 @@
 <body>
   <header>
     <h1>Juan Cañete</h1>
-    <p class="bio">Software engineer in Madrid. I build tools and like to tinker with Go, Python, TypeScript, and Lua.</p>
+    <p class="bio">Senior Software Engineer. Curious, persistent, pragmatic. I love learning and building things.</p>
   </header>
+
+  <div class="about">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/2930882?v=4" alt="Juan Cañete">
+    <div class="about-text">
+      <p>I'm a software engineer based in Madrid with 20 years of experience in software development and systems architecture. Currently at <strong>Netdata</strong>, where I work on backend systems for infrastructure monitoring and build multi-agent AI systems for data analysis.</p>
+      <p>Previously I worked on observability at <strong>BBVA</strong>, billing and payments at <strong>OVHcloud</strong>, and spent a few years trying to build my own company, <strong>Komlog</strong> &mdash; a SaaS platform for system monitoring that extracted metrics from unstructured data.</p>
+      <p>Telecom engineer by training, with a Master in AI and Deep Learning. Full CV on <a href="https://linkedin.com/in/juacker" style="color: #1a1a1a;">LinkedIn</a>.</p>
+      <ul class="highlights">
+        <li>Go</li>
+        <li>Python</li>
+        <li>TypeScript</li>
+        <li>Distributed Systems</li>
+        <li>Observability</li>
+        <li>Kubernetes</li>
+        <li>AI / ML</li>
+        <li>PostgreSQL</li>
+      </ul>
+    </div>
+  </div>
 
   <p class="section-title">Featured Projects</p>
 
