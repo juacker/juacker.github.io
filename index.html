@@ -22,7 +22,7 @@
     .hero {
       position: relative;
       width: 100%;
-      background: #0f1923;
+      background: #fafafa;
       overflow: hidden;
     }
 
@@ -55,12 +55,12 @@
     .hero-text h1 {
       font-size: 2rem;
       font-weight: 700;
-      color: #fff;
+      color: #1a1a1a;
       margin-bottom: 0.2rem;
     }
 
     .hero-text .tagline {
-      color: rgba(255, 255, 255, 0.7);
+      color: #555;
       font-size: 1rem;
     }
 
@@ -71,14 +71,14 @@
     }
 
     .hero-links a {
-      color: rgba(255, 255, 255, 0.5);
+      color: #888;
       text-decoration: none;
       font-size: 0.85rem;
       transition: color 0.15s;
     }
 
     .hero-links a:hover {
-      color: #fff;
+      color: #1a1a1a;
     }
 
     .about {
@@ -445,16 +445,13 @@
       }
 
       function draw() {
-        ctx.fillStyle = '#0f1923';
-        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'rgba(56, 180, 220, 0.7)';
         for (let y = 0; y < rows; y++) {
           for (let x = 0; x < cols; x++) {
             if (grid[y * cols + x]) {
-              ctx.fillStyle = 'rgba(56, 180, 220, 0.8)';
-            } else {
-              ctx.fillStyle = 'rgba(56, 180, 220, 0.06)';
+              ctx.fillRect(x * step, y * step, cellSize, cellSize);
             }
-            ctx.fillRect(x * step, y * step, cellSize, cellSize);
           }
         }
       }
