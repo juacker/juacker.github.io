@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Juan Cañete</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <style>
     * {
       margin: 0;
@@ -16,103 +17,252 @@
       line-height: 1.6;
       color: #1a1a1a;
       background: #fafafa;
-      padding: 2rem 1rem;
     }
 
-    main {
-      max-width: 600px;
-      margin: 4rem auto;
+    header {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
     }
 
     h1 {
-      font-size: 1.8rem;
-      font-weight: 600;
+      font-size: 2rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
     }
 
     .bio {
       color: #555;
-      margin-bottom: 2.5rem;
+      font-size: 1.1rem;
     }
 
-    h2 {
-      font-size: 1rem;
+    .section-title {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1.5rem 1.5rem;
+      font-size: 0.85rem;
       font-weight: 600;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: #888;
-      margin-bottom: 1rem;
+      letter-spacing: 0.08em;
+      color: #999;
     }
 
-    .projects {
-      list-style: none;
-      margin-bottom: 2.5rem;
-    }
-
-    .projects li {
-      margin-bottom: 1rem;
-    }
-
-    .projects a {
-      color: #1a1a1a;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .projects a:hover {
-      text-decoration: underline;
-    }
-
-    .projects .desc {
-      color: #777;
-      font-size: 0.9rem;
-    }
-
-    .links {
-      list-style: none;
+    .project {
+      max-width: 800px;
+      margin: 0 auto 2.5rem;
+      padding: 0 1.5rem;
       display: flex;
-      gap: 1.5rem;
+      gap: 2rem;
+      align-items: center;
     }
 
-    .links a {
+    .project.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .project-img {
+      flex: 0 0 55%;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+      border: 1px solid #e8e8e8;
+    }
+
+    .project-img img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .project-info {
+      flex: 1;
+    }
+
+    .project-info h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-info .desc {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-info .tech {
+      color: #999;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-info .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .project-info .project-links a {
+      font-size: 0.85rem;
       color: #555;
       text-decoration: none;
+      padding: 0.35rem 0.8rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .project-info .project-links a:hover {
+      color: #1a1a1a;
+      border-color: #1a1a1a;
+    }
+
+    .other-projects {
+      max-width: 800px;
+      margin: 1rem auto 0;
+      padding: 2rem 1.5rem 0;
+      border-top: 1px solid #eee;
+    }
+
+    .other-projects h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 1.2rem;
+    }
+
+    .other-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .other-list li a {
+      display: block;
+      padding: 0.6rem 1rem;
+      border: 1px solid #e8e8e8;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #1a1a1a;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .other-list li a:hover {
+      border-color: #ccc;
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .other-list li a span {
+      display: block;
+      color: #888;
+      font-weight: 400;
+      font-size: 0.8rem;
+      margin-top: 0.15rem;
+    }
+
+    footer {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    footer a {
+      color: #888;
+      text-decoration: none;
       font-size: 0.9rem;
     }
 
-    .links a:hover {
+    footer a:hover {
       color: #1a1a1a;
+    }
+
+    @media (max-width: 640px) {
+      .project {
+        flex-direction: column;
+      }
+
+      .project.reverse {
+        flex-direction: column;
+      }
+
+      .project-img {
+        flex: none;
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
+  <header>
     <h1>Juan Cañete</h1>
     <p class="bio">Software engineer in Madrid. I build tools and like to tinker with Go, Python, TypeScript, and Lua.</p>
+  </header>
 
-    <h2>Projects</h2>
-    <ul class="projects">
-      <li>
-        <a href="https://juacker.github.io/rubio/">Rubio</a>
-        <span class="desc"> &mdash; Math practice worksheets for primary school kids</span>
-      </li>
-      <li>
-        <a href="https://juacker.github.io/nqueens/">N-Queens</a>
-        <span class="desc"> &mdash; Interactive N-Queens puzzle solver</span>
-      </li>
-      <li>
-        <a href="https://github.com/juacker/git-link.nvim">git-link.nvim</a>
-        <span class="desc"> &mdash; Neovim plugin to jump from code to GitHub</span>
-      </li>
-      <li>
-        <a href="https://github.com/komlog-io/komlog">Komlog</a>
-        <span class="desc"> &mdash; Observability platform that extracts metrics from unstructured data</span>
-      </li>
-    </ul>
+  <p class="section-title">Featured Projects</p>
 
-    <ul class="links">
-      <li><a href="https://github.com/juacker">GitHub</a></li>
+  <div class="project">
+    <div class="project-img">
+      <a href="https://juacker.github.io/rubio/">
+        <img src="img/rubio.png" alt="Rubio screenshot" loading="lazy">
+      </a>
+    </div>
+    <div class="project-info">
+      <h3>Rubio</h3>
+      <p class="desc">Math practice worksheets for primary school kids. Generate, solve, and print exercises.</p>
+      <p class="tech">React &middot; Vite</p>
+      <div class="project-links">
+        <a href="https://juacker.github.io/rubio/">Try it live</a>
+        <a href="https://github.com/juacker/rubio">Source</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project reverse">
+    <div class="project-img">
+      <a href="https://juacker.github.io/nqueens/">
+        <img src="img/nqueens.png" alt="N-Queens screenshot" loading="lazy">
+      </a>
+    </div>
+    <div class="project-info">
+      <h3>N-Queens</h3>
+      <p class="desc">Interactive puzzle solver for the classic N-Queens problem. Place queens on the board or let it solve for you.</p>
+      <p class="tech">Vue &middot; Buefy</p>
+      <div class="project-links">
+        <a href="https://juacker.github.io/nqueens/">Try it live</a>
+        <a href="https://github.com/juacker/nqueens">Source</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <div class="project-img">
+      <img src="img/loghound.png" alt="Loghound screenshot" loading="lazy">
+    </div>
+    <div class="project-info">
+      <h3>Loghound</h3>
+      <p class="desc">Terminal application to monitor logs in real time with traffic charts, stats, and alerts.</p>
+      <p class="tech">Go</p>
+      <div class="project-links">
+        <a href="https://github.com/juacker/loghound">Source</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="other-projects">
+    <h2>Other Projects</h2>
+    <ul class="other-list">
+      <li><a href="https://github.com/juacker/git-link.nvim">git-link.nvim<span>Neovim plugin to jump from code to GitHub</span></a></li>
+      <li><a href="https://github.com/komlog-io/komlog">Komlog<span>Observability platform for unstructured data</span></a></li>
+      <li><a href="https://github.com/juacker/go-shutdown">go-shutdown<span>Graceful shutdown hook for Go</span></a></li>
     </ul>
-  </main>
+  </div>
+
+  <footer>
+    <a href="https://github.com/juacker">GitHub</a>
+  </footer>
 </body>
 </html>
