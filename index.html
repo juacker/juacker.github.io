@@ -1,1 +1,118 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/favicon.ico><title>nqueens</title><link href=/css/app.52533c8e.css rel=preload as=style><link href=/css/chunk-vendors.31fa173f.css rel=preload as=style><link href=/js/app.a971d2da.js rel=preload as=script><link href=/js/chunk-vendors.f20c066c.js rel=preload as=script><link href=/css/chunk-vendors.31fa173f.css rel=stylesheet><link href=/css/app.52533c8e.css rel=stylesheet></head><body><noscript><strong>We're sorry but nqueens doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script src=/js/chunk-vendors.f20c066c.js></script><script src=/js/app.a971d2da.js></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Cañete</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fafafa;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 4rem auto;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .bio {
+      color: #555;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+
+    .projects {
+      list-style: none;
+      margin-bottom: 2.5rem;
+    }
+
+    .projects li {
+      margin-bottom: 1rem;
+    }
+
+    .projects a {
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    .projects .desc {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .links a {
+      color: #555;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    .links a:hover {
+      color: #1a1a1a;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Juan Cañete</h1>
+    <p class="bio">Software engineer in Madrid. I build tools and like to tinker with Go, Python, TypeScript, and Lua.</p>
+
+    <h2>Projects</h2>
+    <ul class="projects">
+      <li>
+        <a href="https://juacker.github.io/rubio/">Rubio</a>
+        <span class="desc"> &mdash; Math practice worksheets for primary school kids</span>
+      </li>
+      <li>
+        <a href="https://juacker.github.io/nqueens/">N-Queens</a>
+        <span class="desc"> &mdash; Interactive N-Queens puzzle solver</span>
+      </li>
+      <li>
+        <a href="https://github.com/juacker/git-link.nvim">git-link.nvim</a>
+        <span class="desc"> &mdash; Neovim plugin to jump from code to GitHub</span>
+      </li>
+      <li>
+        <a href="https://github.com/komlog-io/komlog">Komlog</a>
+        <span class="desc"> &mdash; Observability platform that extracts metrics from unstructured data</span>
+      </li>
+    </ul>
+
+    <ul class="links">
+      <li><a href="https://github.com/juacker">GitHub</a></li>
+    </ul>
+  </main>
+</body>
+</html>
