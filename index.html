@@ -19,10 +19,24 @@
       background: #fafafa;
     }
 
+    .banner {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      background: #0f1923;
+      overflow: hidden;
+    }
+
+    .banner canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
     header {
       max-width: 800px;
       margin: 0 auto;
-      padding: 4rem 1.5rem 3rem;
+      padding: 2.5rem 1.5rem 3rem;
     }
 
     h1 {
@@ -51,7 +65,9 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 3px solid #e8e8e8;
+      border: 3px solid #fff;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+      margin-top: -60px;
     }
 
     .about-text {
@@ -259,6 +275,10 @@
   </style>
 </head>
 <body>
+  <div class="banner">
+    <canvas id="life"></canvas>
+  </div>
+
   <header>
     <h1>Juan Cañete</h1>
     <p class="bio">Senior Software Engineer. Curious, persistent, pragmatic. I love learning and building things.</p>
@@ -347,5 +367,82 @@
     <span>&middot;</span>
     <a href="https://linkedin.com/in/juacker">LinkedIn</a>
   </footer>
+  <script>
+    (function () {
+      const canvas = document.getElementById('life');
+      const ctx = canvas.getContext('2d');
+      const cellSize = 6;
+      const gap = 1;
+      const step = cellSize + gap;
+      let cols, rows, grid, next;
+
+      function init() {
+        canvas.width = canvas.offsetWidth;
+        canvas.height = canvas.offsetHeight;
+        cols = Math.ceil(canvas.width / step);
+        rows = Math.ceil(canvas.height / step);
+        grid = new Uint8Array(cols * rows);
+        next = new Uint8Array(cols * rows);
+        // Random seed ~18% density
+        for (let i = 0; i < grid.length; i++) {
+          grid[i] = Math.random() < 0.18 ? 1 : 0;
+        }
+      }
+
+      function neighbors(x, y) {
+        let count = 0;
+        for (let dy = -1; dy <= 1; dy++) {
+          for (let dx = -1; dx <= 1; dx++) {
+            if (dx === 0 && dy === 0) continue;
+            const nx = (x + dx + cols) % cols;
+            const ny = (y + dy + rows) % rows;
+            count += grid[ny * cols + nx];
+          }
+        }
+        return count;
+      }
+
+      function tick() {
+        for (let y = 0; y < rows; y++) {
+          for (let x = 0; x < cols; x++) {
+            const i = y * cols + x;
+            const n = neighbors(x, y);
+            next[i] = grid[i] ? (n === 2 || n === 3 ? 1 : 0) : (n === 3 ? 1 : 0);
+          }
+        }
+        [grid, next] = [next, grid];
+      }
+
+      function draw() {
+        ctx.fillStyle = '#0f1923';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        for (let y = 0; y < rows; y++) {
+          for (let x = 0; x < cols; x++) {
+            if (grid[y * cols + x]) {
+              ctx.fillStyle = 'rgba(56, 180, 220, 0.8)';
+            } else {
+              ctx.fillStyle = 'rgba(56, 180, 220, 0.06)';
+            }
+            ctx.fillRect(x * step, y * step, cellSize, cellSize);
+          }
+        }
+      }
+
+      function loop() {
+        tick();
+        draw();
+        setTimeout(() => requestAnimationFrame(loop), 150);
+      }
+
+      init();
+      draw();
+      requestAnimationFrame(loop);
+
+      window.addEventListener('resize', function () {
+        init();
+        draw();
+      });
+    })();
+  </script>
 </body>
 </html>
