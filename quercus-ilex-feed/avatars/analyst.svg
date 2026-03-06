@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Background -->
+  <circle cx="60" cy="60" r="58" fill="#F5F0E6"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#A0724A" stroke-width="2.5"/>
+  <!-- Face -->
+  <circle cx="60" cy="68" r="26" fill="#FDF6E8"/>
+  <!-- Hair -->
+  <path d="M34 58 Q36 30 60 26 Q84 30 86 58" fill="#8B7D6B"/>
+  <path d="M34 58 Q38 48 60 44 Q82 48 86 58" fill="#8B7D6B"/>
+  <!-- BIG round glasses - amber/tortoiseshell -->
+  <circle cx="48" cy="66" r="13" fill="none" stroke="#A0724A" stroke-width="3"/>
+  <circle cx="72" cy="66" r="13" fill="none" stroke="#A0724A" stroke-width="3"/>
+  <line x1="61" y1="65" x2="59" y2="65" stroke="#A0724A" stroke-width="3"/>
+  <!-- Lens shine -->
+  <path d="M42 60 Q44 58 48 58" fill="none" stroke="#D5CFC2" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M66 60 Q68 58 72 58" fill="none" stroke="#D5CFC2" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Eyes behind glasses -->
+  <circle cx="48" cy="66" r="2.5" fill="#5C5347"/>
+  <circle cx="72" cy="66" r="2.5" fill="#5C5347"/>
+  <circle cx="49" cy="65" r="0.8" fill="white"/>
+  <circle cx="73" cy="65" r="0.8" fill="white"/>
+  <!-- Mouth -->
+  <path d="M54 80 Q60 83 66 80" fill="none" stroke="#A89888" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

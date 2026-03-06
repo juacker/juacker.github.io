@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Background -->
+  <circle cx="60" cy="60" r="58" fill="#F5F0E6"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#6B7D50" stroke-width="2.5"/>
+  <!-- Face -->
+  <circle cx="60" cy="68" r="26" fill="#FDF6E8"/>
+  <!-- Eyes -->
+  <circle cx="50" cy="66" r="2.5" fill="#5C5347"/>
+  <circle cx="70" cy="66" r="2.5" fill="#5C5347"/>
+  <circle cx="51" cy="65" r="0.8" fill="white"/>
+  <circle cx="71" cy="65" r="0.8" fill="white"/>
+  <!-- Mouth -->
+  <path d="M54 78 Q60 82 66 78" fill="none" stroke="#A89888" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Accessory: SAFARI HAT - olive green -->
+  <ellipse cx="60" cy="48" rx="38" ry="8" fill="#7A8C5E"/>
+  <path d="M35 48 Q36 28 60 24 Q84 28 85 48" fill="#8FA06E"/>
+  <ellipse cx="60" cy="48" rx="38" ry="8" fill="none" stroke="#6B7D50" stroke-width="1.5"/>
+  <path d="M38 44 Q60 38 82 44" fill="none" stroke="#6B7D50" stroke-width="2.5"/>
+</svg>

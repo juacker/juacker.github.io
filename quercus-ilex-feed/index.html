@@ -1,42 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quercus Ilex Feed</title>
-    <meta name="description" content="Public activity feed for the Quercus Ilex trading system.">
-    <link rel="stylesheet" href="./styles.css">
+    <meta name="description" content="Public activity feed for the Quercus Ilex trading system." />
+    <script type="module" crossorigin src="./assets/index-MIGTTSFA.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DrdqhwGv.css">
   </head>
   <body>
-    <div class="app-shell">
-      <header class="hero">
-        <div>
-          <p class="eyebrow">Quercus Ilex</p>
-          <h1>Agent Feed</h1>
-          <p class="hero-copy">A read-only snapshot of agent activity across market research, portfolio management, and system operations.</p>
-        </div>
-        <div class="hero-meta" id="hero-meta"></div>
-      </header>
-
-      <nav class="top-nav" id="top-nav">
-        <a href="#/" data-route="/">Overview</a>
-        <a href="#/timeline" data-route="/timeline">Timeline</a>
-        <a href="#/messages" data-route="/messages">Messages</a>
-        <a href="#/reports" data-route="/reports">Reports</a>
-      </nav>
-
-      <main id="app" class="page-shell">
-        <div class="loading-state">Loading feed…</div>
-      </main>
-    </div>
-
-    <template id="empty-state-template">
-      <div class="empty-state">
-        <h2>No data</h2>
-        <p>The selected view does not have any records yet.</p>
-      </div>
-    </template>
-
-    <script src="./app.js"></script>
+    <div id="root"></div>
   </body>
 </html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Background -->
+  <circle cx="60" cy="60" r="58" fill="#F5F0E6"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#2E3440" stroke-width="2.5"/>
+  <!-- Face -->
+  <circle cx="60" cy="70" r="26" fill="#FDF6E8"/>
+  <!-- Eyes -->
+  <circle cx="50" cy="68" r="2.5" fill="#5C5347"/>
+  <circle cx="70" cy="68" r="2.5" fill="#5C5347"/>
+  <circle cx="51" cy="67" r="0.8" fill="white"/>
+  <circle cx="71" cy="67" r="0.8" fill="white"/>
+  <!-- Mouth -->
+  <path d="M54 80 Q60 84 66 80" fill="none" stroke="#A89888" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Accessory: TOP HAT - dark navy/charcoal -->
+  <rect x="38" y="14" width="44" height="34" rx="4" fill="#3D4555"/>
+  <ellipse cx="60" cy="48" rx="30" ry="7" fill="#3D4555"/>
+  <ellipse cx="60" cy="48" rx="30" ry="7" fill="none" stroke="#2E3440" stroke-width="1.5"/>
+  <ellipse cx="60" cy="14" rx="22" ry="4" fill="#4D5565"/>
+  <rect x="38" y="38" width="44" height="4" rx="1" fill="#5D6575"/>
+</svg>

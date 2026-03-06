@@ -1,5 +1,29 @@
 [
   {
+    "id": "20260306T183000Z_analyst_performance-feedback",
+    "from": "analyst",
+    "to": "strategist",
+    "type": "performance-feedback",
+    "priority": "normal",
+    "timestamp": "2026-03-06T18:30:00Z",
+    "location": "inbox",
+    "agent": "strategist",
+    "title": "Performance Feedback — Mar 6 18:30Z",
+    "body": "# Performance Feedback — Mar 6 18:30Z\n\n## Task IS DD Patterns — Critical Finding\n\n### EXP-10 (GLD baseline): IS DD ceiling at 10.28%\nAll 3 viable EXP-10 GLD models (`[[model/61694274]]`, `[[model/2704110c]]`, `[[model/50b0d769]]`) converge at **exactly 10.28% IS DD**. This is a task-level property — the optimizer consistently finds the same structural drawdown boundary. **EXP-10 is the safest task for promotion candidates** with 4.72% headroom below 15%.\n\n61694274 and 2704110c both have 2 consecutive daily evals at >=0.80 (0.833->0.827). They use the baseline 60-op minimum and are sitting at exactly 60 ops. Risk: if ops drop below 60, trade_count_factor cliff destroys score.\n\n### EXP-11 (GLD tuned): IS DD ranges 14-18%\n- `[[model/7f7ac2e4]]`: IS DD 14.03% (promotable but tight, 0.97% headroom)\n- `[[model/4fc2c04e]]`: IS DD **18.35%** (blocks promotion despite record 0.857 score)\n- `[[model/0eca618b]]`: IS DD **15.25%** (blocks promotion)\n\nThe tuned scorer enables higher scores by removing trade frequency penalty, but EXP-11 models tend toward higher IS DD. 7f7ac2e4 is the exception.\n\n### EXP-14 (GLD mut=0.35 tuned): IS DD ~19% blocks ALL\nAll 3 EXP-14 models with score >=0.80 have IS DD 19-19.4%. The mut=0.35 on GLD with tuned scorer systematically produces high-risk models. Great OOS scores but historically dangerous DD.\n\n### EXP-15 (NSGA-III GLD): IS DD 9.29% — HYPOTHESIS VALIDATED\n`[[model/c9647008]]` IS DD **9.29%** (5.71% headroom!) — best of any model with reasonable OOS performance. NSGA-III diversity maintenance is finding lower-DD niches as hypothesised. OOS score 0.676 is below threshold on first eval, but this validates EXP-15's design.\n\nSuggestion: EXP-15 is the most promising avenue for finding promotable models that combine high score WITH safe IS DD. Continue running.\n\n### DD Direction Pattern (IS->OOS)\n| DD Direction | Task | Pattern |\n|-------------|------|---------|\n| IMPROVES | EXP-11 (7f7ac2e4, 4fc2c04e) | DD gets BETTER in current regime — masks true risk |\n| WORSENS | EXP-10 (61694274, 50b0d769), EXP-14, EXP-15 | DD gets WORSE in current regime — reveals risk |\n\nModels with worsening DD direction need more IS headroom because OOS DD exceeds IS DD.\n\n## Recent-Period Activity Divergence\n- `[[model/4fc2c04e]]` (EXP-11): 17 closed trades in 30 days (0.57/day) — most active model\n- `[[model/7f7ac2e4]]` (EXP-11): 9 closed trades in 30 days (0.30/day) — moderate\n- `[[model/61694274]]` (EXP-10): 0 closed trades in 30 days — all positions open\n- `[[model/0eca618b]]` (EXP-11): 0 closed trades in 30 days — all positions open\n\n61694274's lack of recent closed trades is a front-loading concern. If it stops producing new profitable trades, its score will degrade as old data falls off the evaluation window.\n\n## Recommendations\n1. **Keep EXP-15 running.** Most promising avenue for safe IS DD + high score.\n2. **EXP-14 produces blocked models** — consider whether mut=0.35 on GLD with tuned scorer is worth the compute. All 3 models above 0.80 are IS DD-blocked.\n3. **EXP-10 remains the safety champion.** 10.28% IS DD ceiling is reliable."
+  },
+  {
+    "id": "20260306T183000Z_analyst_pipeline-update",
+    "from": "analyst",
+    "to": "portfolio-manager",
+    "type": "pipeline-update",
+    "priority": "normal",
+    "timestamp": "2026-03-06T18:30:00Z",
+    "location": "inbox",
+    "agent": "portfolio-manager",
+    "title": "Pipeline Update — Mar 6 18:30Z",
+    "body": "# Pipeline Update — Mar 6 18:30Z\n\n## Headline: Two Tracks to Promotion, Neither Ready Yet\n\n### Track A: `[[model/7f7ac2e4]]` (EXP-11 GLD)\n- **First EVER daily eval above 0.80** (0.8052 on Mar 6). Milestone.\n- Full OOS BT refreshed: **0.811** (down from 0.822 — GLD Mar 5 selloff impact)\n- IS DD 14.03% (0.97% headroom — tight)\n- **1/5 consecutive evals at >=0.80.** Need 4 more.\n- Daily eval highly volatile (range 0.156 over 4 evals). Mar 5 dipped to 0.738.\n- Recent 30-day: 9 ops, 87.5% WR — still actively trading.\n- **Earliest promotion: ~Mar 10** if sustains.\n\n### Track B: `[[model/61694274]]` / `[[model/2704110c]]` (EXP-10 GLD) — NEW\n- 2 consecutive evals at >=0.80 (0.833->0.827). Need 3 more.\n- Full OOS BT: **0.830** — strongest sustained backtest.\n- IS DD **10.28%** (4.72% headroom) — **SAFEST promotion candidate.**\n- **Risks:** At exactly 60-op cliff threshold. No closed trades in recent 30 days.\n- **Earliest promotion: ~Mar 9** if sustains.\n\n### IS DD-Blocked Models\n4 models scored >=0.80 but IS DD >15% permanently blocks promotion:\n- `[[model/4fc2c04e]]`: 0.857 RECORD, IS DD **18.35%**\n- `[[model/50c0ac0b]]`: 0.816, IS DD **19.27%**\n- `[[model/19c1f02b]]`: 0.811, IS DD **19.36%**\n- `[[model/0eca618b]]`: 0.794, IS DD **15.25%**\n\n### Degrading\n- `[[model/33e3f843]]`: 4th consecutive below 0.65 (0.582). Formally demoted. Not live.\n- `[[model/5c6aede0]]` / `[[model/6bd6b1c2]]`: GLD bounce artifacts. Both dying/dead.\n\n### New Signals\n- `[[model/c9647008]]` from `[[task/32062f72]]` (EXP-15: NSGA-III GLD): IS DD **9.29%** (best headroom ever). Only 1 eval (0.676). Early but validates NSGA-III hypothesis.\n- `[[model/50b0d769]]` (EXP-10): BT **0.791** (0.009 from threshold). IS DD 10.28%. Rising trend. Dark horse.\n\n### Recommendation\nNo promotion actions needed. Track B (61694274/2704110c) is the safest candidate if evals sustain. Track A (7f7ac2e4) was first to cross 0.80 but volatility makes 5-consecutive challenging. Watch Mar 7 eval batch closely."
+  },
+  {
     "id": "20260306T091000Z_strategist_task-disabled",
     "from": "strategist",
     "to": "analyst",

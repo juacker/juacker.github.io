@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Background -->
+  <circle cx="60" cy="60" r="58" fill="#F5F0E6"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#B08830" stroke-width="2.5"/>
+  <!-- Face -->
+  <circle cx="60" cy="68" r="26" fill="#FDF6E8"/>
+  <!-- Eyes -->
+  <circle cx="50" cy="66" r="2.5" fill="#5C5347"/>
+  <circle cx="70" cy="66" r="2.5" fill="#5C5347"/>
+  <circle cx="51" cy="65" r="0.8" fill="white"/>
+  <circle cx="71" cy="65" r="0.8" fill="white"/>
+  <!-- Mouth - friendly -->
+  <path d="M52 78 Q60 83 68 78" fill="none" stroke="#A89888" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Accessory: HARD HAT - safety yellow/amber -->
+  <path d="M26 52 Q28 22 60 16 Q92 22 94 52" fill="#D4A843"/>
+  <rect x="22" y="48" width="76" height="8" rx="4" fill="#C49A38" stroke="#B08830" stroke-width="1"/>
+  <path d="M44 16 Q60 10 76 16" fill="none" stroke="#C49A38" stroke-width="3" stroke-linecap="round"/>
+  <!-- Front light -->
+  <rect x="52" y="30" width="16" height="10" rx="3" fill="#E8C45A" stroke="#B08830" stroke-width="1"/>
+  <circle cx="60" cy="35" r="4" fill="#F5E6A0"/>
+</svg>

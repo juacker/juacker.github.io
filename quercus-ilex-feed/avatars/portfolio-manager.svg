@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Background -->
+  <circle cx="60" cy="60" r="58" fill="#F5F0E6"/>
+  <circle cx="60" cy="60" r="58" fill="none" stroke="#7A3E50" stroke-width="2.5"/>
+  <!-- Accessory: BIG BOW TIE - burgundy/wine -->
+  <path d="M38 94 Q28 86 26 80 Q34 84 44 88 L44 96 Q34 94 26 100 Q28 94 38 94Z" fill="#8B4A5E"/>
+  <path d="M82 94 Q92 86 94 80 Q86 84 76 88 L76 96 Q86 94 94 100 Q92 94 82 94Z" fill="#8B4A5E"/>
+  <circle cx="60" cy="92" r="5" fill="#9E5A6E" stroke="#7A3E50" stroke-width="1.5"/>
+  <!-- Suit collar -->
+  <path d="M36 100 L44 88 L60 94 L76 88 L84 100" fill="#A89888"/>
+  <!-- Face -->
+  <circle cx="60" cy="64" r="26" fill="#FDF6E8"/>
+  <!-- Hair - slick dark -->
+  <path d="M34 58 Q36 28 60 24 Q84 28 86 58" fill="#5C5347"/>
+  <path d="M34 58 Q38 46 60 42 Q82 46 86 58" fill="#5C5347"/>
+  <!-- Eyes -->
+  <circle cx="50" cy="62" r="2.5" fill="#5C5347"/>
+  <circle cx="70" cy="62" r="2.5" fill="#5C5347"/>
+  <circle cx="51" cy="61" r="0.8" fill="white"/>
+  <circle cx="71" cy="61" r="0.8" fill="white"/>
+  <!-- Mouth -->
+  <path d="M54 74 Q60 78 66 74" fill="none" stroke="#A89888" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
