@@ -1,0 +1,97 @@
+[
+  {
+    "name": "scout",
+    "schedule": "Weekly",
+    "lastRun": "2026-03-06T09:03:00Z",
+    "currentFocus": [
+      "`[[model/7f7ac2e4]]` CROSSED 0.80 on daily eval (0.8052) — FIRST EVER. Needs 4 more consecutive for promotion.",
+      "NEW `[[model/4fc2c04e]]` from EXP-11 at 0.8568 first eval — highest ever but IS DD 18.35% blocks promotion.",
+      "SLV crash Mar 5 (-9%) confirms structural failure. EXP-12 disable vindicated.",
+      "XLE upgraded to HIGH priority experiment candidate — sector leader +21.6-25% YTD, Iran catalyst."
+    ],
+    "messageCount": 14,
+    "journalCount": 7,
+    "inboxCount": 0,
+    "processedCount": 14
+  },
+  {
+    "name": "strategist",
+    "schedule": "Daily",
+    "lastRun": "2026-03-06T09:15:00Z",
+    "currentFocus": [
+      "**Priority 1:** Monitor `[[model/7f7ac2e4]]` — crossed **0.805 daily eval** (1 of 5 ≥0.80 needed). Next eval ~Mar 7 02:15Z. **PROMOTION PATH.**",
+      "**Priority 2:** Monitor `[[model/61694274]]` + `[[model/2704110c]]` — at **0.827/0.833** with IS DD **10.28%** ✅. **SAFEST promotion candidates.** 2 of 5 evals ≥0.80. Next eval ~Mar 7 02:15Z.",
+      "**Priority 3:** Track `[[model/4fc2c04e]]` — **0.857** first eval (highest ever). IS DD 18.35% blocks but OOS performance extraordinary. Will it sustain?",
+      "**Priority 4:** Monitor EXP-14 models (`[[model/50c0ac0b]]`, `[[model/19c1f02b]]`) — 2 evals ≥0.80 each. IS DD 19%+ blocks but building eval streak."
+    ],
+    "messageCount": 35,
+    "journalCount": 11,
+    "inboxCount": 1,
+    "processedCount": 34
+  },
+  {
+    "name": "analyst",
+    "schedule": "Every 6 hours",
+    "lastRun": "2026-03-04T20:15:00Z",
+    "currentFocus": [
+      "**Priority 1:** CRITICAL — `[[model/7f7ac2e4]]` (EXP-11: GLD) — **Daily eval 0.782 ⭐⭐⭐ (gap -0.018 to 0.80). BT 0.822.** Eval 4 (Mar 5 02:15Z) is THE pivotal eval — will daily eval cross 0.80? At ~41-43 ops, it's plausible. If yes, this starts the 5-consecutive-eval clock for promotion.",
+      "**Priority 2:** Watch `[[model/48b5cd64]]` 🆕 (EXP-14: GLD+mut=0.35) — **First EXP-14 model!** BT **0.744**, IS DD **9.76%** (best headroom). BUT DD worsens IS→OOS (13.25%) and recent cecpp 0.447 ⚠️. First daily eval expected Mar 5 02:15Z. Predict ~0.47-0.52 (GLD 5-12% first-eval drop from 0.550 optimizer).",
+      "**Priority 3:** Watch `[[model/0eca618b]]` (EXP-11: GLD) — Stabilized at 0.752. BT stable at **0.805**. Recent cecpp improved slightly (0.587→0.601). IS DD 15.25% ❌ blocks promotion.",
+      "**Priority 4:** Watch `[[model/923a4e31]]` (EXP-10: GLD) — Stabilized at 0.630. BT 0.717 (unchanged). DD 8.40% ✅✅, cecpp 0.835 ✅. Best cross-regime safety. Cannot reach 0.80 under EXP-10 scorer."
+    ],
+    "messageCount": 18,
+    "journalCount": 11,
+    "inboxCount": 0,
+    "processedCount": 18
+  },
+  {
+    "name": "portfolio-manager",
+    "schedule": "Daily",
+    "lastRun": "2026-03-06T10:00:00Z",
+    "currentFocus": [
+      "**PRIMARY**: ⭐ `[[model/7f7ac2e4]]` CROSSED 0.80 on eval 5 (**0.8052**) — FIRST EVER daily eval above promotion threshold! **1 of 5 consecutive at ≥0.80 needed.** Score volatile: dipped to 0.7384 on Mar 5 (bad GLD day). Must sustain ≥0.80 on evals 6-9 for promotion (~Mar 11 earliest).",
+      "**#2 CANDIDATE**: `[[model/0eca618b]]` surged to **0.7940** — only 0.006 from 0.80! But IS DD 15.25% permanently blocks promotion.",
+      "**FAST RISER**: `[[model/48b5cd64]]` surged to **0.7700** on eval 3 (+41%). Only 2 proper daily evals. GLD-correlated surge — needs validation.",
+      "**BEST SAFETY**: `[[model/923a4e31]]` recovered to **0.7023** from 0.4912 crash. DD 8.40%, IS DD 9.64%. Most volatile in GLD selloff (-22%) but DD still pristine. Cannot reach 0.80 under EXP-10."
+    ],
+    "messageCount": 35,
+    "journalCount": 11,
+    "inboxCount": 0,
+    "processedCount": 35
+  },
+  {
+    "name": "risk-officer",
+    "schedule": "Hourly",
+    "lastRun": "2026-03-06T15:15Z",
+    "currentFocus": [
+      "**⭐⭐⭐ 7f7ac2e4 AT 0.8052** — Still 1/5 consecutive at ≥0.80. Next eval Mar 7 ~02:15Z is CRITICAL (eval 6). Stats ALL GREEN: cecpp 0.969, sharpe 7.90, maxDD 3.77%, exp $31.30, WR 97.5%. IS DD 14.03% (0.97% headroom). GLD fading to $467.67 — LESS BULLISH than run 105.",
+      "**0eca618b AT 0.7940** — 0.006 from 0.80! cecpp 0.942, sharpe 8.13, WR 100%. IS DD 15.25% blocks promotion.",
+      "**48b5cd64 AT 0.7700** — Eval 3 surge. Eval 4 (Mar 7) will validate. cecpp 0.923, maxDD 13.25%.",
+      "**PORTFOLIO EMPTY** — 0 enabled models. No capital at risk. No orders to monitor."
+    ],
+    "messageCount": 6,
+    "journalCount": 13,
+    "inboxCount": 0,
+    "processedCount": 6
+  },
+  {
+    "name": "operator",
+    "schedule": "Every 30 minutes",
+    "lastRun": "2026-03-06T15:31:38Z",
+    "currentFocus": [],
+    "messageCount": 5,
+    "journalCount": 13,
+    "inboxCount": 0,
+    "processedCount": 5
+  },
+  {
+    "name": "architect",
+    "schedule": "Every 4 hours",
+    "lastRun": "2026-03-06T14:15Z",
+    "currentFocus": [],
+    "messageCount": 3,
+    "journalCount": 12,
+    "inboxCount": 0,
+    "processedCount": 3
+  }
+]
