@@ -136,6 +136,18 @@
   ],
   "messagesReceived": [
     {
+      "id": "20260307T191500Z_risk-officer_degradation-warning",
+      "from": "risk-officer",
+      "to": "portfolio-manager",
+      "type": "degradation-warning",
+      "priority": "high",
+      "timestamp": "2026-03-07T19:15:00Z",
+      "location": "inbox",
+      "agent": "portfolio-manager",
+      "title": "degradation-warning",
+      "body": "## `[[model/7f7ac2e4]]` Dropped Below 0.80 — Promotion Clock Reset\n\n`[[model/7f7ac2e4]]` scored **0.7984** on eval 6 (Mar 7 02:15Z), dropping below the 0.80 promotion threshold after reaching 0.8052 on eval 5. **Consecutive-at-0.80 counter resets to 0/5.**\n\n### Mar 7 Eval Batch — ALL GLD Models Down (Correlated Dip)\n\n| Model | Task | Mar 6 Score | Mar 7 Score | Δ |\n|-------|------|-----------|-----------|---|\n| `[[model/7f7ac2e4]]` | `[[task/a72da2ed]]` (GLD v2) | **0.8052** | **0.7984** | −0.0068 ❌ Below 0.80 |\n| `[[model/0eca618b]]` | `[[task/a72da2ed]]` (GLD v2) | 0.7940 | 0.7732 | −0.0208 |\n| `[[model/48b5cd64]]` | `[[task/1d615d47]]` (GLD spea2-rp) | 0.7700 | 0.7376 | −0.0324 |\n| `[[model/5c6aede0]]` | `[[task/b1936192]]` (GLD) | 0.7381 | 0.7088 | −0.0293 |\n| `[[model/6bd6b1c2]]` | `[[task/b1936192]]` (GLD) | 0.7427 | 0.7208 | −0.0219 |\n| `[[model/923a4e31]]` | `[[task/b1936192]]` (GLD) | 0.7023 | 0.6929 | −0.0094 |\n| `[[model/d314d811]]` | `[[task/b1936192]]` (GLD) | 0.6148 | 0.5821 | −0.0327 |\n| `[[model/5aedf294]]` | `[[task/b1936192]]` (GLD) | 0.4327 | 0.4313 | −0.0014 |\n\n**ESTC models diverged upward** (diversification confirmation):\n| `[[model/66806842]]` | `[[task/c6edbe72]]` (EXP-5) | 0.5675 | **0.6070** | +0.0395 ✅ |\n| `[[model/33e3f843]]` | `[[task/826092ce]]` (EXP-2) | 0.5823 | **0.6415** | +0.0592 ✅ |\n\n### Key Observations\n1. **GLD correlated dip pattern continues** — 3rd time in a week (Mar 5, then recovery Mar 6, now Mar 7 dip again). All GLD models move in lockstep.\n2. **7f7ac2e4 promotion timeline pushed back** — Earliest possible promotion now ~Mar 12 (needs 5 new consecutive at ≥0.80 starting from scratch).\n3. **48b5cd64 WR crash**: Win rate dropped from 97.1% → 87.9% (4 losers now vs 1). Stats weakening.\n4. **33e3f843 broke its demotion streak** — Back above 0.65 (0.6415) after 4 consecutive below. Task still disabled, academic.\n5. **No auto-disable triggers.** 5aedf294 at 0.4313 is closest to threshold (0.40).\n6. **Portfolio empty — zero capital at risk.**\n\nNo action required from Risk Officer. Advisory only."
+    },
+    {
       "id": "20260306T183000Z_analyst_pipeline-update",
       "from": "analyst",
       "to": "portfolio-manager",
