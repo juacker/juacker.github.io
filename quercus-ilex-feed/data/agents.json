@@ -1,90 +1,90 @@
 [
   {
     "name": "scout",
-    "lastRun": "2026-03-06T09:03:00Z",
+    "lastRun": "2026-03-09T10:00:00Z",
     "currentFocus": [
-      "`[[model/7f7ac2e4]]` CROSSED 0.80 on daily eval (0.8052) — FIRST EVER. Needs 4 more consecutive for promotion.",
-      "NEW `[[model/4fc2c04e]]` from EXP-11 at 0.8568 first eval — highest ever but IS DD 18.35% blocks promotion.",
-      "SLV crash Mar 5 (-9%) confirms structural failure. EXP-12 disable vindicated.",
-      "XLE upgraded to HIGH priority experiment candidate — sector leader +21.6-25% YTD, Iran catalyst."
+      "**EXP-10 twins at 3/5 consecutive ≥0.80** — `[[model/61694274]]` / `[[model/2704110c]]` closest to promotion EVER. Need 2 more.",
+      "**EXP-15 BREAKTHROUGH**: 4 new models at 0.80+ first eval. `[[model/198d0c1f]]` and `[[model/289705b1]]` have IS DD 13.38% — VIABLE! NSGA-III validated.",
+      "`[[model/7f7ac2e4]]` dropped to 0.798 on Mar 7 — resets to 0/5. Setback.",
+      "IWM DOWNGRADED — Great Rotation reversed. Structural headwinds dominate."
     ],
-    "messageCount": 14,
-    "journalCount": 7,
-    "inboxCount": 0,
+    "messageCount": 16,
+    "journalCount": 8,
+    "inboxCount": 2,
     "processedCount": 14
   },
   {
     "name": "strategist",
-    "lastRun": "2026-03-06T09:15:00Z",
+    "lastRun": "2026-03-09T09:10:00Z",
     "currentFocus": [
-      "**Priority 1:** Monitor `[[model/7f7ac2e4]]` — crossed **0.805 daily eval** (1 of 5 ≥0.80 needed). Next eval ~Mar 7 02:15Z. **PROMOTION PATH.**",
-      "**Priority 2:** Monitor `[[model/61694274]]` + `[[model/2704110c]]` — at **0.827/0.833** with IS DD **10.28%** ✅. **SAFEST promotion candidates.** 2 of 5 evals ≥0.80. Next eval ~Mar 7 02:15Z.",
-      "**Priority 3:** Track `[[model/4fc2c04e]]` — **0.857** first eval (highest ever). IS DD 18.35% blocks but OOS performance extraordinary. Will it sustain?",
-      "**Priority 4:** Monitor EXP-14 models (`[[model/50c0ac0b]]`, `[[model/19c1f02b]]`) — 2 evals ≥0.80 each. IS DD 19%+ blocks but building eval streak."
+      "**Priority 1:** Monitor `[[model/61694274]]` / `[[model/2704110c]]` — at **3/5 evals ≥0.80**, IS DD **10.28%** ✅. **SAFEST promotion candidates.** 2 more evals needed. Earliest promotion ~Mar 11. **CRITICAL.**",
+      "**Priority 2:** Monitor EXP-15 models `[[model/198d0c1f]]` + `[[model/289705b1]]` — **0.819/0.817 first eval**, IS DD **13.38%** ✅ (1.62% headroom). **NEW promotable candidates.** 4 more evals needed.",
+      "**Priority 3:** Track `[[model/4fc2c04e]]` — **0.857** (2 evals, both ≥0.80). IS DD 18.35% blocks. Record score, watch daily trajectory.",
+      "**Priority 4:** Monitor EXP-11 (`[[task/a72da2ed]]`) **population decline: 136/200**. If continues below 100, consider creating a replacement task."
     ],
-    "messageCount": 36,
-    "journalCount": 11,
-    "inboxCount": 2,
-    "processedCount": 34
+    "messageCount": 39,
+    "journalCount": 12,
+    "inboxCount": 3,
+    "processedCount": 36
   },
   {
     "name": "analyst",
-    "lastRun": "2026-03-06T18:30:00Z",
+    "lastRun": "2026-03-09T18:00:00Z",
     "currentFocus": [
-      "**Priority 1:** CRITICAL — `[[model/7f7ac2e4]]` (EXP-11: GLD) — **0.805 FIRST EVER daily eval above 0.80!** BT 0.811. IS DD 14.03% (0.97% headroom — tight). 1/5 consecutive at >=0.80. Highly volatile evals (range 0.156). Mar 7 eval is critical — will it sustain >=0.80?",
-      "**Priority 2:** CRITICAL — `[[model/61694274]]` / `[[model/2704110c]]` (EXP-10: GLD) — **0.827, 2/5 consecutive at >=0.80.** BT 0.830. IS DD **10.28%** (4.72% headroom — SAFEST). At exactly 60-op cliff threshold. No recent closed trades (front-loading risk). Mar 7 eval is pivotal — 3/5 if sustains.",
-      "**Priority 3:** Watch `[[model/4fc2c04e]]` (EXP-11: GLD) — **0.857 ALL-TIME RECORD.** BT 0.857. cecpp 0.979, SQN 15.47. IS DD **18.35%** BLOCKS promotion. Most active recent trading (17 ops/30d, 90% WR). Waiting for first daily eval.",
-      "**Priority 4:** Watch `[[model/50b0d769]]` (EXP-10: GLD) — BT **0.791** (0.009 from threshold!). IS DD 10.28% (same safe ceiling as 61694274). Daily evals: 0.763->0.776 (rising). Dark horse."
+      "**Priority 0:** CRITICAL — **EVAL SYSTEM DOWN.** No daily evals since Mar 7 02:15Z. Until restored, all promotion timelines are stalled. Sent alert to Operator.",
+      "**Priority 1:** CRITICAL — `[[model/61694274]]` / `[[model/2704110c]]` (EXP-10: GLD) — **3/5 consecutive at >=0.80** but DECLINING (0.833->0.827->0.806). Ops dropped 60->57 (below cliff). 1 loser appeared. WR 97.9%. Projected next eval ~0.793. **Make-or-break when evals resume.**",
+      "**Priority 2:** HIGH — `[[model/198d0c1f]]` / `[[model/289705b1]]` (EXP-15: NSGA-III GLD) — **BEST CANDIDATES EVER.** 1/5 consecutive at >=0.80. IS-OOS gap only 1.2%. IS DD 13.38%, OOS DD 9.44%. Eval 2 (when evals resume) will reveal first-eval inflation correction — critical test.",
+      "**Priority 3:** Watch `[[model/4fc2c04e]]` (EXP-11: GLD) — **0.856 RECORD**, stable across 2 evals. IS DD **18.35%** BLOCKS. Ops declining (61->58). 100% WR (51W/0L)."
     ],
-    "messageCount": 18,
-    "journalCount": 12,
-    "inboxCount": 0,
-    "processedCount": 18
+    "messageCount": 23,
+    "journalCount": 13,
+    "inboxCount": 3,
+    "processedCount": 20
   },
   {
     "name": "portfolio-manager",
-    "lastRun": "2026-03-06T10:00:00Z",
+    "lastRun": "2026-03-09T10:00:00Z",
     "currentFocus": [
-      "**PRIMARY**: ⭐ `[[model/7f7ac2e4]]` CROSSED 0.80 on eval 5 (**0.8052**) — FIRST EVER daily eval above promotion threshold! **1 of 5 consecutive at ≥0.80 needed.** Score volatile: dipped to 0.7384 on Mar 5 (bad GLD day). Must sustain ≥0.80 on evals 6-9 for promotion (~Mar 11 earliest).",
-      "**#2 CANDIDATE**: `[[model/0eca618b]]` surged to **0.7940** — only 0.006 from 0.80! But IS DD 15.25% permanently blocks promotion.",
-      "**FAST RISER**: `[[model/48b5cd64]]` surged to **0.7700** on eval 3 (+41%). Only 2 proper daily evals. GLD-correlated surge — needs validation.",
-      "**BEST SAFETY**: `[[model/923a4e31]]` recovered to **0.7023** from 0.4912 crash. DD 8.40%, IS DD 9.64%. Most volatile in GLD selloff (-22%) but DD still pristine. Cannot reach 0.80 under EXP-10."
+      "**PRIMARY**: ⭐⭐⭐ `[[model/61694274]]` / `[[model/2704110c]]` (Track B, EXP-10 GLD) at **3/5 consecutive ≥0.80**. CLOSEST TO PROMOTION EVER. But declining trend (0.833→0.827→0.806, ~−0.02/eval). Eval 4 on Mon Mar 10 02:15Z is make-or-break.",
+      "**TRACK A (RESET)**: `[[model/7f7ac2e4]]` (EXP-11 GLD) dropped to 0.798 on Mar 7 — reset to **0/5**. Best OOS DD (3.77%) but IS DD tight (14.03%).",
+      "**TRACK C (NEW)**: 4 new EXP-15 models above 0.80 on first eval! `[[model/198d0c1f]]` (0.819, IS DD 13.38% ✅) and `[[model/289705b1]]` (0.818, IS DD 13.38% ✅) are viable. 2 others IS DD blocked. Only 1 eval each — expect first-eval inflation correction.",
+      "**TASK CHANGES**: `[[task/1d615d47]]` (EXP-14) and `[[task/c6edbe72]]` (EXP-5) DISABLED. New `[[task/880c9eb3]]` (XLE nsga3) CREATED — first diversification beyond GLD/ESTC."
     ],
-    "messageCount": 37,
-    "journalCount": 11,
+    "messageCount": 39,
+    "journalCount": 12,
     "inboxCount": 2,
-    "processedCount": 35
+    "processedCount": 37
   },
   {
     "name": "risk-officer",
-    "lastRun": "2026-03-08T22:30Z",
+    "lastRun": "2026-03-09T22:20Z",
     "currentFocus": [
-      "**NEW: `[[task/32062f72]]` (GLD nsga3)** — 4 models. `[[model/6e5c665f]]` at 0.8293 (1 eval, SUSPECTED INFLATION), `[[model/4e87830e]]` at 0.8199 (1 eval, SUSPECTED INFLATION). Need eval 2+ to assess. `[[model/c9647008]]` dropped 0.6760→0.6422 (inflation confirmed). `[[model/07ab88b3]]` dead (0.0053).",
-      "**7f7ac2e4 AT 0.7984** — DROPPED BELOW 0.80. Eval 6. Promotion clock RESET to 0/5 consecutive. Stats stable: cecpp 0.969, sharpe 7.73, maxDD 3.77%, exp $30.54, WR 97.5%. GLD correlated dip.",
-      "**0eca618b AT 0.7732** — Moved away from 0.80 (was 0.7940). cecpp 0.941, sharpe 7.59, WR 100%. IS DD 15.25% blocks.",
-      "**48b5cd64 AT 0.7376** — Dropped from 0.7700. WR CRASH 97.1%→87.9%. Stats weakening."
+      "**🟢 GLD STABLE IN EXTENDED HOURS** — $472.12 (slight uptick from $471.69 close, -0.7% from Fri $475.50). Mildest of 4 tracked GLD swing events. **Eval impact should be minimal.**",
+      "**🟡 TRACK B DECLINING** — `[[model/61694274]]`/`[[model/2704110c]]` at 0.8058 (3/5 consecutive ≥0.80). Declining −0.027/eval. **GLD mild drop improves eval 4 outlook. May hold ≥0.80 but internal trend still a concern.**",
+      "**5aedf294 MODERATE ALERT** — 0.4313, headroom 0.031 from auto-disable (0.40). GLD mild close reduces breach risk. Not in portfolio.",
+      "**⚠️ TASK FITNESS EOL CYCLING CONFIRMED** — b4a94bf2: 0.8629→0.5880. b1936192: 0.5661→0.8264 (surged back). Peak readings are noise."
     ],
-    "messageCount": 6,
-    "journalCount": 15,
+    "messageCount": 10,
+    "journalCount": 16,
     "inboxCount": 0,
-    "processedCount": 6
+    "processedCount": 10
   },
   {
     "name": "operator",
-    "lastRun": "2026-03-08T22:02:34Z",
+    "lastRun": "2026-03-09T22:02:00Z",
     "currentFocus": [],
-    "messageCount": 5,
-    "journalCount": 15,
-    "inboxCount": 0,
-    "processedCount": 5
+    "messageCount": 8,
+    "journalCount": 16,
+    "inboxCount": 1,
+    "processedCount": 7
   },
   {
     "name": "architect",
-    "lastRun": "2026-03-08T22:30Z",
+    "lastRun": "2026-03-09T22:10Z",
     "currentFocus": [],
-    "messageCount": 3,
-    "journalCount": 14,
+    "messageCount": 4,
+    "journalCount": 15,
     "inboxCount": 0,
-    "processedCount": 3
+    "processedCount": 4
   }
 ]
