@@ -15,76 +15,76 @@
   },
   {
     "name": "strategist",
-    "lastRun": "2026-03-11T09:15:00Z",
+    "lastRun": "2026-03-12T09:18:00Z",
     "currentFocus": [
-      "**Priority 1:** Monitor `[[model/54b33aea]]` — **3/5 evals ≥0.80** (0.811→0.832→0.833). RISING. IS DD 13.38% ✅. **LEAD CANDIDATE.** Earliest promotion ~Mar 13.",
-      "**Priority 2:** Track former Track B/C models (61694274, 198d0c1f, 289705b1) — ALL dropped below 0.80. OOS expanding stable (0.813). May recover if new trades close.",
-      "**Priority 3:** Monitor EXP-22 `[[model/d6e58262]]` — IS 0.821 (RECORD day-1). IS DD 19.33% ❌. Watch for lower-DD models from this task.",
-      "**Priority 4:** Monitor EXP-17 models (977e04dd, fd60312c) — **LOWEST IS DD EVER** (8.34-8.43%). Score needs to reach 0.80."
+      "**Priority 1:** 🔴 CRITICAL — `[[model/54b33aea]]` at **4/5 evals ≥0.80** (0.811→0.832→0.833→0.831). **ONE MORE EVAL FOR PROMOTION (~Mar 13 02:15Z).** Probability ~55%.",
+      "**Priority 2:** Track emerging safety models — `[[model/001b9ef2]]` (EXP-20) at 0.750 ↑ (+2.0pp/eval), `[[model/fd60312c]]` (EXP-17) at 0.743 ↑ (+2.5pp/eval). Both climbing fast toward 0.80.",
+      "**Priority 3:** Monitor EXP-25 `[[task/8ee183d8]]` — first models expected ~Mar 13-14. Baseline scorer + subgraph crossover.",
+      "**Priority 4:** Evaluate AAPL EXP-19 for disabling — grace period ends Mar 14. Only 1 model at 0.263."
     ],
-    "messageCount": 50,
-    "journalCount": 14,
-    "inboxCount": 4,
-    "processedCount": 46
+    "messageCount": 53,
+    "journalCount": 15,
+    "inboxCount": 3,
+    "processedCount": 50
   },
   {
     "name": "analyst",
-    "lastRun": "2026-03-11T18:15:00Z",
+    "lastRun": "2026-03-12T18:00:00Z",
     "currentFocus": [
-      "**Priority 0:** HIGH — **54b33aea: 3/5 CONSECUTIVE ≥0.80.** PIPELINE LEADER. Fresh BT=0.833 (stable). OOS expanding=0.811. IS DD 13.38% ✅. **Eval 4 (~Mar 12 02:15Z) is critical.** Probability of promotion: 55%.",
-      "**Priority 1:** MEDIUM — **EMERGING SAFETY TRACK CLIMBING FAST.** `[[model/fd60312c]]` 0.743↑ (IS DD 8.34%), `[[model/001b9ef2]]` 0.750↑ (IS DD 8.93%), `[[model/2d5307c8]]` 0.705↑ (IS DD 9.79%), `[[model/f601bbb5]]` 0.704 NEW (IS DD 8.93%). All actively trading (24-28 ops/4w). Could reach 0.80 in ~7-10 days.",
-      "**Priority 2:** MEDIUM — **61694274 BOUNCING BACK?** Fresh BT=0.802 (stored=0.793). May restart at 1/5 on next eval. But only 5 ops in 4w — fragile bounce. Probability of sustaining: 25%.",
-      "**Priority 3:** MEDIUM — Track C near threshold: 198d0c1f=0.799, 289705b1=0.796. Close but barely below 0.80."
+      "**Priority 0:** HIGH — **54b33aea: 4/5 CONSECUTIVE ≥0.80 — PROMOTION HELD.** 16w=0.831 (stable) BUT 30-day OOS validation FAILED (score 0.29, 65% deviation). 8w declining (0.659↓). 4w terrible (0.298). Multi-horizon analysis revealed 16w is propped up by stale Dec-Jan data. **Even at 5/5, DO NOT promote without short-horizon recovery.**",
+      "**Priority 1:** HIGH — **GLD REGIME SHIFT.** All GLD models show weak 4w scores (0.03-0.31). Only exception: 4fc2c04e (4w=0.607↑) — but IS DD blocked. This regime may be temporary or permanent. Monitor closely.",
+      "**Priority 2:** HIGH — **Scoring Investigation (Issue #121).** Responded to architect. Recommended multi-horizon composite scoring as a more fundamental fix than sigmoid recalibration alone.",
+      "**Priority 3:** MEDIUM — **EMERGING SAFETY TRACK CLIMBING (but 4w weak).** `[[model/001b9ef2]]` 16w 0.750↑ (4w: 0.311), `[[model/fd60312c]]` 16w 0.743↑ (4w: 0.238), `[[model/2d5307c8]]` 16w 0.708↑, `[[model/f601bbb5]]` 16w 0.704, `[[model/977e04dd]]` 16w 0.612↑. All climbing ~2-3pp/eval on 16w but 4w is also weak. May plateau."
     ],
-    "messageCount": 27,
-    "journalCount": 15,
+    "messageCount": 30,
+    "journalCount": 16,
     "inboxCount": 0,
-    "processedCount": 27
+    "processedCount": 30
   },
   {
     "name": "portfolio-manager",
-    "lastRun": "2026-03-11T10:00:00Z",
+    "lastRun": "2026-03-12T10:00:00Z",
     "currentFocus": [
-      "**PRIMARY**: ⭐⭐⭐ `[[model/54b33aea]]` (EXP-15 GLD nsga3) at **3/5 consecutive ≥0.80**. Score 0.8325 (INCREASING through GLD dip #5). Active trader. IS-OOS gap 15.2% (concern). **Awaiting Analyst assessment.** Earliest promotion ~Mar 13.",
-      "**TRACK B (RESET)**: `[[model/61694274]]` / `[[model/2704110c]]` at **0/5** (reset from 4/5). Score 0.7929. GLD dip casualty. May bounce on Mar 12 if GLD recovers.",
-      "**TRACK C (RESET)**: `[[model/198d0c1f]]` / `[[model/289705b1]]` at **0/5** (reset from 2/5). Score 0.7972/0.7937. Best quality candidates but need 5 fresh evals.",
-      "**TRACK A (STALE)**: `[[model/7f7ac2e4]]` — no eval since Mar 5 (0.738). Investigation requested."
+      "**PRIMARY**: ⭐⭐⭐⭐ `[[model/54b33aea]]` (EXP-14 GLD mut=0.35) at **4/5 consecutive ≥0.80**. Score 0.8308 (stable). Active trader. IS-OOS gap 15.4% (known risk). **Analyst pre-approved promotion at 5/5. PROMOTION EVAL: Mar 13 ~02:15Z.**",
+      "**TRACK C (RESTART 1/5)**: `[[model/198d0c1f]]` at 0.8064 (1/5), `[[model/289705b1]]` at 0.8036 (1/5). Bounced back. Ops increasing (+6 each). Actively trading.",
+      "**TRACK B (DECLINING)**: `[[model/61694274]]` / `[[model/2704110c]]` at 0.7833 (0/5). Continuous decline over 6 evals. Front-loading decay.",
+      "**TRACK A (RECOVERING)**: `[[model/7f7ac2e4]]` at 0.7976 (0/5). Close to 0.80 but IS DD borderline (14.03%)."
     ],
-    "messageCount": 45,
-    "journalCount": 14,
-    "inboxCount": 1,
-    "processedCount": 44
+    "messageCount": 49,
+    "journalCount": 15,
+    "inboxCount": 3,
+    "processedCount": 46
   },
   {
     "name": "risk-officer",
-    "lastRun": "2026-03-11T22:17Z",
+    "lastRun": "2026-03-12T18:17Z",
     "currentFocus": [
-      "**⭐ 54b33aea PIPELINE LEADER** — 3/5 consecutive ≥0.80. Increasing (0.8107→0.8317→0.8325). IS DD 13.38% (1.62% headroom). IS-OOS gap 15.2% (concern). cecpp declining marginally (0.9104→0.8956→0.8940, rate slowing −0.2% this eval). PM awaiting Analyst assessment. **Eval 4 arrives ~Mar 12 02:15Z — CRITICAL EVAL.**",
-      "**Track B**: `[[model/61694274]]`/`[[model/2704110c]]` at 0.7929/0.7928 (eval 5). 0/5. Must rebuild from scratch.",
-      "**Track C (NSGA3)**: 198d0c1f (0.7972), 289705b1 (0.7937), 4e87830e (0.7893). 0/5.",
-      "**Track A**: `[[model/7f7ac2e4]]` at 0.7874 (eval 8). Declining."
+      "**⭐ 54b33aea PIPELINE LEADER** — 4/5 consecutive ≥0.80. Trajectory: 0.8107→0.8317→0.8325→0.8308. IS DD 13.38% (1.62% headroom). IS-OOS gap 15.2% (concern). cecpp declining (0.9104→0.8956→0.8940→0.8915, -1.89% total, rate slowing). **Eval 5 arrives ~Mar 13 02:15Z — THE PROMOTION EVAL.** PM will promote at 5% if ≥0.80.",
+      "**Track C RESTART**: `[[model/198d0c1f]]` 0.8064 (1/5), `[[model/289705b1]]` 0.8036 (1/5). Bounced back above 0.80.",
+      "**Track C LAGGING**: `[[model/4e87830e]]` 0.7668 (0/5). Diverging from siblings.",
+      "**Track B**: `[[model/61694274]]`/`[[model/2704110c]]` at 0.7833/0.7833. 0/5. Continued decline."
     ],
+    "messageCount": 12,
+    "journalCount": 19,
+    "inboxCount": 0,
+    "processedCount": 12
+  },
+  {
+    "name": "operator",
+    "lastRun": "2026-03-12T18:31:00Z",
+    "currentFocus": [],
     "messageCount": 11,
-    "journalCount": 18,
+    "journalCount": 19,
     "inboxCount": 0,
     "processedCount": 11
   },
   {
-    "name": "operator",
-    "lastRun": "2026-03-11T22:02Z*",
-    "currentFocus": [],
-    "messageCount": 9,
-    "journalCount": 18,
-    "inboxCount": 0,
-    "processedCount": 9
-  },
-  {
     "name": "architect",
-    "lastRun": "2026-03-11T22:05Z",
+    "lastRun": "2026-03-12T18:09Z",
     "currentFocus": [],
-    "messageCount": 4,
-    "journalCount": 17,
-    "inboxCount": 0,
+    "messageCount": 5,
+    "journalCount": 18,
+    "inboxCount": 1,
     "processedCount": 4
   }
 ]
