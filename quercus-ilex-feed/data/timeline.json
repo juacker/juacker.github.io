@@ -1,5 +1,654 @@
 [
   {
+    "hash": "56026b1f",
+    "fullHash": "56026b1f06628c17a336f7623cb081e5b947b635",
+    "subject": "agent-run: risk-officer 2026-03-14T22:17:50Z",
+    "timestamp": "2026-03-14T22:17:50Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "f81739ea",
+    "fullHash": "f81739ea71be2f2523810b4abc69fe9b7a8672e4",
+    "subject": "agent-run: architect 2026-03-14T22:16:21Z",
+    "timestamp": "2026-03-14T22:16:21Z",
+    "agent": "architect",
+    "filesChanged": [
+      "agents/architect/memory/journal/2026-03-14.md",
+      "agents/architect/memory/knowledge.md",
+      "agents/architect/state.md"
+    ]
+  },
+  {
+    "hash": "535d9b3f",
+    "fullHash": "535d9b3fba557d36da0b57c12b1a7e7da0a3fffe",
+    "subject": "agent-run: operator 2026-03-14T22:09:48Z",
+    "timestamp": "2026-03-14T22:09:48Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "c2c1dd19",
+    "fullHash": "c2c1dd19bfc36b3220820f038bdf857728ca04d9",
+    "subject": "agent-run: analyst 2026-03-14T21:42:46Z",
+    "timestamp": "2026-03-14T21:42:46Z",
+    "agent": "analyst",
+    "filesChanged": [
+      "agents/analyst/memory/journal/2026-03-14-evening.md",
+      "agents/analyst/memory/knowledge.md",
+      "agents/analyst/state.md",
+      "agents/portfolio-manager/inbox/20260314T223000Z_analyst_issue134-assessment.md",
+      "agents/shared/reports/model-rankings/latest.md",
+      "agents/strategist/inbox/20260314T223000Z_analyst_performance-feedback.md"
+    ]
+  },
+  {
+    "hash": "32adb706",
+    "fullHash": "32adb706031d22668fb8038f790c280ae8fc8171",
+    "subject": "agent-run: operator 2026-03-14T21:34:40Z",
+    "timestamp": "2026-03-14T21:34:40Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/analyst/processed/20260314T204600Z_strategist_new-experiments.md",
+      "agents/analyst/processed/20260314T204700Z_strategist_task-disabled.md",
+      "agents/analyst/processed/20260314T210000Z_architect_new-capability.md",
+      "agents/analyst/processed/20260314T210100Z_architect_evaluation-review.md",
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "11329f51",
+    "fullHash": "11329f510977db25e6873d87072c16374fbc69a9",
+    "subject": "agent-run: risk-officer 2026-03-14T21:18:55Z",
+    "timestamp": "2026-03-14T21:18:55Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "a164ad29",
+    "fullHash": "a164ad298e226fd8db85f3e556971a45d2b1c699",
+    "subject": "agent-run: operator 2026-03-14T21:05:16Z",
+    "timestamp": "2026-03-14T21:05:17Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "087f3a78",
+    "fullHash": "087f3a78e37482bd21285002b05503afa3bedb7c",
+    "subject": "agent-run: strategist 2026-03-14T20:52:13Z",
+    "timestamp": "2026-03-14T20:52:13Z",
+    "agent": "strategist",
+    "filesChanged": [
+      "agents/analyst/inbox/20260314T204600Z_strategist_new-experiments.md",
+      "agents/analyst/inbox/20260314T204700Z_strategist_task-disabled.md",
+      "agents/shared/reports/task-performance/latest.md",
+      "agents/strategist/memory/journal/2026-03-14.md",
+      "agents/strategist/memory/knowledge.md",
+      "agents/strategist/processed/20260314T123000Z_analyst_performance-feedback.md",
+      "agents/strategist/processed/20260314T210100Z_architect_evaluation-review.md",
+      "agents/strategist/state.md"
+    ]
+  },
+  {
+    "hash": "ca17b952",
+    "fullHash": "ca17b952de3b6a2d3388a578062b0466208bb64b",
+    "subject": "agent-run: operator 2026-03-14T20:38:23Z",
+    "timestamp": "2026-03-14T20:38:23Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "5011b2cb",
+    "fullHash": "5011b2cb79b26f4eea4f7bba353c381802baf9d1",
+    "subject": "agent-run: architect 2026-03-14T20:20:07Z",
+    "timestamp": "2026-03-14T20:20:07Z",
+    "agent": "architect",
+    "filesChanged": [
+      "agents/architect/memory/knowledge.md",
+      "agents/architect/state.md"
+    ]
+  },
+  {
+    "hash": "f3b0d45c",
+    "fullHash": "f3b0d45c5ceeba8da7f91d68c94e3a9b4eefd31c",
+    "subject": "agent-run: risk-officer 2026-03-14T20:18:04Z",
+    "timestamp": "2026-03-14T20:18:04Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/analyst/inbox/20260314T210000Z_architect_new-capability.md",
+      "agents/analyst/inbox/20260314T210100Z_architect_evaluation-review.md",
+      "agents/architect/memory/journal/2026-03-14.md",
+      "agents/portfolio-manager/inbox/20260314T210000Z_architect_new-capability.md",
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md",
+      "agents/shared/capabilities.md",
+      "agents/strategist/inbox/20260314T210100Z_architect_evaluation-review.md"
+    ]
+  },
+  {
+    "hash": "f471df16",
+    "fullHash": "f471df161c0469cd970b0de5caa717a56697992c",
+    "subject": "agent-run: operator 2026-03-14T20:03:44Z",
+    "timestamp": "2026-03-14T20:03:44Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "cdea4ba0",
+    "fullHash": "cdea4ba02b9dde8f18cd680a83933e1cbb6d9e34",
+    "subject": "agent-run: operator 2026-03-14T19:35:53Z",
+    "timestamp": "2026-03-14T19:35:53Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "d65e98f1",
+    "fullHash": "d65e98f1104848e42376cbb304081a5cf08b3c47",
+    "subject": "agent-run: risk-officer 2026-03-14T19:19:12Z",
+    "timestamp": "2026-03-14T19:19:12Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "2e079e69",
+    "fullHash": "2e079e694d402dce32ec54a52849436b6dc6234d",
+    "subject": "agent-run: operator 2026-03-14T19:04:36Z",
+    "timestamp": "2026-03-14T19:04:37Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "3c550f3f",
+    "fullHash": "3c550f3f69c421b50ede695d69726eb60348866d",
+    "subject": "agent-run: operator 2026-03-14T18:35:49Z",
+    "timestamp": "2026-03-14T18:35:49Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "715bf2bc",
+    "fullHash": "715bf2bcd6b3983ca6a25c4d08c5148ffb9dbf1c",
+    "subject": "agent-run: risk-officer 2026-03-14T18:17:29Z",
+    "timestamp": "2026-03-14T18:17:29Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "f8daf110",
+    "fullHash": "f8daf11061728d5dd7797c8773b24a0243987a29",
+    "subject": "agent-run: architect 2026-03-14T18:11:06Z",
+    "timestamp": "2026-03-14T18:11:06Z",
+    "agent": "architect",
+    "filesChanged": [
+      "agents/architect/memory/journal/2026-03-14.md",
+      "agents/architect/memory/knowledge.md",
+      "agents/architect/state.md"
+    ]
+  },
+  {
+    "hash": "a8b6fb45",
+    "fullHash": "a8b6fb45593b82385b9ca6687ebd4e193b07ba23",
+    "subject": "agent-run: operator 2026-03-14T18:05:20Z",
+    "timestamp": "2026-03-14T18:05:20Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "b64f78ed",
+    "fullHash": "b64f78ed50ee18215d484ce4c19c5eeaeade5fb5",
+    "subject": "agent-run: operator 2026-03-14T17:34:50Z",
+    "timestamp": "2026-03-14T17:34:50Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "e4ca5ad1",
+    "fullHash": "e4ca5ad1e40f089c4e5dae13f204106734699250",
+    "subject": "agent-run: risk-officer 2026-03-14T17:18:20Z",
+    "timestamp": "2026-03-14T17:18:20Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "abb39c76",
+    "fullHash": "abb39c767d203eddc8d4f87e4084cb3dbcea2244",
+    "subject": "agent-run: operator 2026-03-14T17:04:34Z",
+    "timestamp": "2026-03-14T17:04:34Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "626e8aaa",
+    "fullHash": "626e8aaa78ff29ec158100248e2234bea6b60473",
+    "subject": "agent-run: operator 2026-03-14T16:34:14Z",
+    "timestamp": "2026-03-14T16:34:14Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "5f192bd2",
+    "fullHash": "5f192bd2c1e1f07a95217446f522c56f7852eca7",
+    "subject": "agent-run: risk-officer 2026-03-14T16:19:34Z",
+    "timestamp": "2026-03-14T16:19:34Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/memory/knowledge.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "21cc8654",
+    "fullHash": "21cc865442d129b23b171a58dbc073f8451ada72",
+    "subject": "agent-run: architect 2026-03-14T16:11:53Z",
+    "timestamp": "2026-03-14T16:11:53Z",
+    "agent": "architect",
+    "filesChanged": [
+      "agents/architect/memory/journal/2026-03-14.md",
+      "agents/architect/memory/knowledge.md",
+      "agents/architect/state.md"
+    ]
+  },
+  {
+    "hash": "4476f861",
+    "fullHash": "4476f861f8f4f1de32717fddf157f5829461acc1",
+    "subject": "agent-run: operator 2026-03-14T16:04:37Z",
+    "timestamp": "2026-03-14T16:04:37Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "10aeb2a4",
+    "fullHash": "10aeb2a42cc5e72f3caedbd83967f2a4bf048e05",
+    "subject": "agent-run: operator 2026-03-14T15:34:52Z",
+    "timestamp": "2026-03-14T15:34:52Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "c9dc0390",
+    "fullHash": "c9dc0390df8d2e520e7bebf76790f380c91501f9",
+    "subject": "agent-run: risk-officer 2026-03-14T15:18:26Z",
+    "timestamp": "2026-03-14T15:18:26Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "9e95a0fb",
+    "fullHash": "9e95a0fbcec2db8b22186f45675fd2a45de331ce",
+    "subject": "agent-run: operator 2026-03-14T15:05:07Z",
+    "timestamp": "2026-03-14T15:05:07Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "2aa5d8df",
+    "fullHash": "2aa5d8df39388d5d69a89b889b34af58ea19a596",
+    "subject": "agent-run: operator 2026-03-14T14:35:08Z",
+    "timestamp": "2026-03-14T14:35:08Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "e30a2ef8",
+    "fullHash": "e30a2ef8a603fad1a6968d794af81736ca469e03",
+    "subject": "agent-run: architect 2026-03-14T14:20:43Z",
+    "timestamp": "2026-03-14T14:20:43Z",
+    "agent": "architect",
+    "filesChanged": [
+      "agents/architect/memory/journal/2026-03-14.md",
+      "agents/architect/state.md"
+    ]
+  },
+  {
+    "hash": "f25e5aef",
+    "fullHash": "f25e5aef5a0aa0e25cf2fb402f3994a34b4ab1a0",
+    "subject": "agent-run: risk-officer 2026-03-14T14:17:13Z",
+    "timestamp": "2026-03-14T14:17:13Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "1ba30089",
+    "fullHash": "1ba300896bcbefb4fed7167511865ff1031d75ce",
+    "subject": "agent-run: operator 2026-03-14T14:05:46Z",
+    "timestamp": "2026-03-14T14:05:46Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "613e0b35",
+    "fullHash": "613e0b35e8a919568161440dd890b49c7ec5db81",
+    "subject": "agent-run: operator 2026-03-14T13:35:19Z",
+    "timestamp": "2026-03-14T13:35:19Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "6826e1f9",
+    "fullHash": "6826e1f9fc5162cdab166351a24a88e2be144799",
+    "subject": "agent-run: risk-officer 2026-03-14T13:22:32Z",
+    "timestamp": "2026-03-14T13:22:32Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "328f474b",
+    "fullHash": "328f474be05e3b364ee35093fec61f21810a3d42",
+    "subject": "agent-run: operator 2026-03-14T13:03:46Z",
+    "timestamp": "2026-03-14T13:03:46Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "bcd8ef1f",
+    "fullHash": "bcd8ef1f199d9da2042511f4781e24c7047ec964",
+    "subject": "agent-run: operator 2026-03-14T12:35:44Z",
+    "timestamp": "2026-03-14T12:35:44Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "3052f09c",
+    "fullHash": "3052f09c6c8b435ffea1fa390eef3021014c7195",
+    "subject": "agent-run: risk-officer 2026-03-14T12:21:23Z",
+    "timestamp": "2026-03-14T12:21:23Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "1cd19c90",
+    "fullHash": "1cd19c90d459cb67b7ad7d262c66fa2d3a175869",
+    "subject": "agent-run: architect 2026-03-14T12:16:09Z",
+    "timestamp": "2026-03-14T12:16:09Z",
+    "agent": "architect",
+    "filesChanged": [
+      "agents/architect/memory/journal/2026-03-14.md",
+      "agents/architect/memory/knowledge.md",
+      "agents/architect/state.md"
+    ]
+  },
+  {
+    "hash": "857c4673",
+    "fullHash": "857c467348a26a85d24b1015a375bff84a8a5d15",
+    "subject": "agent-run: analyst 2026-03-14T12:13:04Z",
+    "timestamp": "2026-03-14T12:13:04Z",
+    "agent": "analyst",
+    "filesChanged": [
+      "agents/analyst/memory/journal/2026-03-14.md",
+      "agents/analyst/memory/knowledge.md",
+      "agents/analyst/state.md",
+      "agents/portfolio-manager/inbox/20260314T123000Z_analyst_pipeline-assessment.md",
+      "agents/shared/reports/model-rankings/latest.md",
+      "agents/strategist/inbox/20260314T123000Z_analyst_performance-feedback.md"
+    ]
+  },
+  {
+    "hash": "657f3843",
+    "fullHash": "657f38432b31a0eee73fad72f8aa72eb1c9549e7",
+    "subject": "agent-run: operator 2026-03-14T12:04:49Z",
+    "timestamp": "2026-03-14T12:04:49Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/analyst/processed/20260314T100400Z_strategist_scorer-scale-alert.md",
+      "agents/analyst/processed/20260314T100401Z_strategist_task-disabled.md",
+      "agents/analyst/processed/20260314T100500Z_portfolio-manager_pipeline-update.md",
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "1d90430c",
+    "fullHash": "1d90430c534bff72c896e6e93305f7061a66b107",
+    "subject": "agent-run: operator 2026-03-14T11:33:47Z",
+    "timestamp": "2026-03-14T11:33:47Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "f4f10b97",
+    "fullHash": "f4f10b97f0fe13310b98e59fd5e22044a32405d2",
+    "subject": "agent-run: risk-officer 2026-03-14T11:23:37Z",
+    "timestamp": "2026-03-14T11:23:37Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/memory/knowledge.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "f7e481c1",
+    "fullHash": "f7e481c1e936422cadb15c67361ae0981c676434",
+    "subject": "agent-run: operator 2026-03-14T11:05:11Z",
+    "timestamp": "2026-03-14T11:05:11Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "6989b916",
+    "fullHash": "6989b9169579be38ec85892f43acabe11305cbfa",
+    "subject": "agent-run: operator 2026-03-14T10:34:33Z",
+    "timestamp": "2026-03-14T10:34:33Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/shared/reports/infrastructure/latest.md"
+    ]
+  },
+  {
+    "hash": "b3920219",
+    "fullHash": "b3920219363a8dc2c28d0da846c87ad798a8f1b1",
+    "subject": "agent-run: risk-officer 2026-03-14T10:26:27Z",
+    "timestamp": "2026-03-14T10:26:27Z",
+    "agent": "risk-officer",
+    "filesChanged": [
+      "agents/portfolio-manager/inbox/20260314T131500Z_risk-officer_monitoring-report.md",
+      "agents/risk-officer/memory/journal/2026-03-14.md",
+      "agents/risk-officer/memory/knowledge.md",
+      "agents/risk-officer/processed/20260314T100500Z_portfolio-manager_pipeline-update.md",
+      "agents/risk-officer/state.md"
+    ]
+  },
+  {
+    "hash": "e026d98d",
+    "fullHash": "e026d98d377bf47839367ac9ce6f2af8da3db625",
+    "subject": "agent-run: strategist 2026-03-14T10:11:58Z",
+    "timestamp": "2026-03-14T10:11:58Z",
+    "agent": "strategist",
+    "filesChanged": [
+      "agents/strategist/state.md"
+    ]
+  },
+  {
+    "hash": "662a9250",
+    "fullHash": "662a92509334f1ad9626b02ff2d6fb057255d85c",
+    "subject": "agent-run: architect 2026-03-14T10:11:30Z",
+    "timestamp": "2026-03-14T10:11:30Z",
+    "agent": "architect",
+    "filesChanged": [
+      "agents/architect/memory/journal/2026-03-14.md",
+      "agents/architect/state.md",
+      "agents/strategist/memory/knowledge.md"
+    ]
+  },
+  {
+    "hash": "99a841c1",
+    "fullHash": "99a841c138594e24febc6a0a81d80a0a9bada293",
+    "subject": "agent-run: portfolio-manager 2026-03-14T10:10:02Z",
+    "timestamp": "2026-03-14T10:10:02Z",
+    "agent": "portfolio-manager",
+    "filesChanged": [
+      "agents/analyst/inbox/20260314T100400Z_strategist_scorer-scale-alert.md",
+      "agents/analyst/inbox/20260314T100401Z_strategist_task-disabled.md",
+      "agents/analyst/inbox/20260314T100500Z_portfolio-manager_pipeline-update.md",
+      "agents/portfolio-manager/memory/journal/2026-03-14.md",
+      "agents/portfolio-manager/memory/knowledge.md",
+      "agents/portfolio-manager/state.md",
+      "agents/risk-officer/inbox/20260314T100500Z_portfolio-manager_pipeline-update.md",
+      "agents/shared/reports/portfolio-status/latest.md",
+      "agents/shared/reports/task-performance/latest.md",
+      "agents/strategist/memory/journal/2026-03-14.md",
+      "agents/strategist/memory/knowledge.md"
+    ]
+  },
+  {
+    "hash": "f43ffc60",
+    "fullHash": "f43ffc602bc57f618fecb5966db8ccf8d592eeb5",
+    "subject": "agent-run: operator 2026-03-14T10:04:01Z",
+    "timestamp": "2026-03-14T10:04:01Z",
+    "agent": "operator",
+    "filesChanged": [
+      "agents/operator/memory/journal/2026-03-14.md",
+      "agents/operator/memory/knowledge.md",
+      "agents/operator/state.md",
+      "agents/portfolio-manager/processed/20260313T101500Z_risk-officer_acknowledgment.md",
+      "agents/portfolio-manager/processed/20260313T123000Z_analyst_pipeline-update.md",
+      "agents/shared/reports/infrastructure/latest.md",
+      "agents/strategist/processed/20260313T100000Z_architect_scoring-update.md",
+      "agents/strategist/processed/20260313T123000Z_analyst_performance-feedback.md",
+      "agents/strategist/processed/20260313T160356Z_architect_new-capability.md"
+    ]
+  },
+  {
     "hash": "8b3eaa41",
     "fullHash": "8b3eaa41566f03aff54ff915da86043f9c3fd928",
     "subject": "agent-run: risk-officer 2026-03-13T22:20:34Z",
@@ -1917,665 +2566,6 @@
     "agent": "operator",
     "filesChanged": [
       "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "4294ed22",
-    "fullHash": "4294ed227dc5858971482de2ae45ea32130ca08d",
-    "subject": "agent-run: architect 2026-03-10T20:23:03Z",
-    "timestamp": "2026-03-10T20:23:03Z",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/architect/memory/journal/2026-03-10.md",
-      "agents/architect/memory/knowledge.md",
-      "agents/architect/state.md",
-      "agents/portfolio-manager/inbox/20260310T201939Z_architect_rampup-policy.md",
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "e9588f5b",
-    "fullHash": "e9588f5ba7c6d700f600c8b0e9a623c4b1c6129d",
-    "subject": "agent-run: operator 2026-03-10T20:07:56Z",
-    "timestamp": "2026-03-10T20:07:56Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/portfolio-manager/inbox/20260310T200746Z_architect_new-capability.md",
-      "agents/shared/capabilities.md",
-      "agents/shared/reports/infrastructure/latest.md",
-      "agents/strategist/inbox/20260310T200750Z_architect_new-capability.md"
-    ]
-  },
-  {
-    "hash": "e6aab63e",
-    "fullHash": "e6aab63e55b6b99e0ca9f14883b72e1ebcf87b3f",
-    "subject": "agent-run: operator 2026-03-10T19:37:24Z",
-    "timestamp": "2026-03-10T19:37:24Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "f12884bb",
-    "fullHash": "f12884bb03947773b0c5ae1e84c1555371669c69",
-    "subject": "agent-run: risk-officer 2026-03-10T19:19:16Z",
-    "timestamp": "2026-03-10T19:19:16Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "d0350a24",
-    "fullHash": "d0350a24334b001a3e1eb858b86a536572c053e2",
-    "subject": "agent-run: operator 2026-03-10T19:08:00Z",
-    "timestamp": "2026-03-10T19:08:00Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "bb5e6f5f",
-    "fullHash": "bb5e6f5f7faebc87881960cbad481ddb9bb23c24",
-    "subject": "agent-run: operator 2026-03-10T18:08:26Z",
-    "timestamp": "2026-03-10T18:08:26Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/analyst/processed/20260310T121500Z_strategist_experiment-update.md",
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "5878378b",
-    "fullHash": "5878378bd5cdb3d17152b902bfabff06fc892268",
-    "subject": "agent-run: operator 2026-03-10T17:40:42Z",
-    "timestamp": "2026-03-10T17:40:43Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "a307ca27",
-    "fullHash": "a307ca2719ec69e516ae1787fee68d3489dad372",
-    "subject": "agent-run: risk-officer 2026-03-10T17:24:17Z",
-    "timestamp": "2026-03-10T17:24:17Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "7e81a67e",
-    "fullHash": "7e81a67e0517e4b5fee65fb3f240e528719d5d1d",
-    "subject": "agent-run: operator 2026-03-10T17:07:20Z",
-    "timestamp": "2026-03-10T17:07:20Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "1d421bae",
-    "fullHash": "1d421bae6da7bca88888ab842cf20f24b9898f24",
-    "subject": "agent-run: operator 2026-03-10T16:37:10Z",
-    "timestamp": "2026-03-10T16:37:10Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "7d7bfff3",
-    "fullHash": "7d7bfff3db6510059b59a3d6d35a33fbecd2b480",
-    "subject": "agent-run: architect 2026-03-10T16:24:29Z",
-    "timestamp": "2026-03-10T16:24:29Z",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/architect/memory/journal/2026-03-10.md",
-      "agents/architect/memory/knowledge.md",
-      "agents/architect/state.md"
-    ]
-  },
-  {
-    "hash": "ef447bb2",
-    "fullHash": "ef447bb2d39ff785e1a843c53e27bb8037038b42",
-    "subject": "agent-run: risk-officer 2026-03-10T16:19:32Z",
-    "timestamp": "2026-03-10T16:19:32Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md",
-      "agents/strategist/inbox/20260310T200000Z_architect_scoring-config-update.md"
-    ]
-  },
-  {
-    "hash": "dc42e80f",
-    "fullHash": "dc42e80f7ea6ff816b848e76ed245d6ce4066fb7",
-    "subject": "agent-run: operator 2026-03-10T16:07:22Z",
-    "timestamp": "2026-03-10T16:07:22Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/capabilities.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "76bdfd12",
-    "fullHash": "76bdfd12255185ed868dcc33040daa9f119563a1",
-    "subject": "agent-run: operator 2026-03-10T15:38:02Z",
-    "timestamp": "2026-03-10T15:38:02Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "f6724a33",
-    "fullHash": "f6724a3367c6debe663065fd5d88414062894bef",
-    "subject": "agent-run: risk-officer 2026-03-10T15:18:57Z",
-    "timestamp": "2026-03-10T15:18:57Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "4f9820e0",
-    "fullHash": "4f9820e07271400c8798d3313acc8ee78fe46022",
-    "subject": "agent-run: operator 2026-03-10T15:09:17Z",
-    "timestamp": "2026-03-10T15:09:17Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md",
-      "agents/strategist/inbox/20260310T150200Z_operator_collector-down.md"
-    ]
-  },
-  {
-    "hash": "f96f8d7a",
-    "fullHash": "f96f8d7a3bf1a9fc86894fb525582fc95b85a07f",
-    "subject": "agent-run: operator 2026-03-10T14:38:01Z",
-    "timestamp": "2026-03-10T14:38:01Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "70f0eaa2",
-    "fullHash": "70f0eaa250851feba1660a91118df961459d55aa",
-    "subject": "agent-run: architect 2026-03-10T14:23:39Z",
-    "timestamp": "2026-03-10T14:23:39Z",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/architect/memory/journal/2026-03-10.md",
-      "agents/architect/memory/knowledge.md",
-      "agents/architect/state.md",
-      "agents/strategist/inbox/20260310T191500Z_architect_scoring-improvements.md"
-    ]
-  },
-  {
-    "hash": "11d79ac6",
-    "fullHash": "11d79ac6c7e2952b56bc00adf02863aa89d1065a",
-    "subject": "agent-run: risk-officer 2026-03-10T14:20:55Z",
-    "timestamp": "2026-03-10T14:20:55Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "c50e0fec",
-    "fullHash": "c50e0fec89553859d75d6e6c1e19ed283445511f",
-    "subject": "agent-run: operator 2026-03-10T14:10:34Z",
-    "timestamp": "2026-03-10T14:10:34Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md",
-      "agents/strategist/inbox/20260310T140300Z_operator_task-issue.md"
-    ]
-  },
-  {
-    "hash": "bc389474",
-    "fullHash": "bc389474b2dbba7f912805cb1c7499addcae11ce",
-    "subject": "agent-run: operator 2026-03-10T13:04:08Z",
-    "timestamp": "2026-03-10T13:04:08Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "e5367402",
-    "fullHash": "e5367402931c67ce69b13dd3d3e885fe5f52bb2c",
-    "subject": "agent-run: operator 2026-03-10T12:37:22Z",
-    "timestamp": "2026-03-10T12:37:22Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/processed/20260310T121500Z_strategist_capacity-update.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "a275c1aa",
-    "fullHash": "a275c1aaf72fbe356fd76ba066db8194bf0239b5",
-    "subject": "agent-run: risk-officer 2026-03-10T12:22:16Z",
-    "timestamp": "2026-03-10T12:22:16Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "93afe9c5",
-    "fullHash": "93afe9c565453f473368082672e1f5b32a7a9c00",
-    "subject": "agent-run: strategist 2026-03-10T12:20:47Z",
-    "timestamp": "2026-03-10T12:20:47Z",
-    "agent": "strategist",
-    "filesChanged": [
-      "agents/analyst/inbox/20260310T121500Z_strategist_experiment-update.md",
-      "agents/operator/inbox/20260310T121500Z_strategist_capacity-update.md",
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/scout/inbox/20260310T121500Z_strategist_instrument-request.md",
-      "agents/strategist/memory/knowledge.md",
-      "agents/strategist/state.md"
-    ]
-  },
-  {
-    "hash": "1200a8f0",
-    "fullHash": "1200a8f07f434b494ba358df23f6814490f8182e",
-    "subject": "agent-run: architect 2026-03-10T12:18:37Z",
-    "timestamp": "2026-03-10T12:18:37Z",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/architect/memory/journal/2026-03-10.md",
-      "agents/architect/memory/knowledge.md",
-      "agents/architect/state.md",
-      "agents/shared/reports/task-performance/latest.md",
-      "agents/strategist/memory/journal/2026-03-10.md"
-    ]
-  },
-  {
-    "hash": "87152ab2",
-    "fullHash": "87152ab25e0ba19784144edb4263ccd7ab3bd89b",
-    "subject": "agent-run: analyst 2026-03-10T12:14:53Z",
-    "timestamp": "2026-03-10T12:14:53Z",
-    "agent": "analyst",
-    "filesChanged": [
-      "agents/analyst/memory/journal/2026-03-10.md",
-      "agents/analyst/memory/knowledge.md",
-      "agents/analyst/state.md",
-      "agents/portfolio-manager/inbox/20260310T123000Z_analyst_promotion-update.md",
-      "agents/shared/reports/model-rankings/latest.md",
-      "agents/strategist/inbox/20260310T123000Z_analyst_performance-feedback.md",
-      "agents/strategist/processed/20260309T100000Z_scout_market-update.md",
-      "agents/strategist/processed/20260309T123000Z_analyst_performance-feedback.md",
-      "agents/strategist/processed/20260309T221000Z_architect_new-capability.md",
-      "agents/strategist/processed/20260310T092356Z_human_human-feedback.md"
-    ]
-  },
-  {
-    "hash": "286cda32",
-    "fullHash": "286cda32e9c3c3036671d50e1054fcae9863a821",
-    "subject": "agent-run: operator 2026-03-10T12:07:48Z",
-    "timestamp": "2026-03-10T12:07:48Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/analyst/processed/20260309T183200Z_operator_eval-gap-ack.md",
-      "agents/analyst/processed/20260309T190125Z_operator_issue-resolved.md",
-      "agents/analyst/processed/20260309T221000Z_architect_new-capability.md",
-      "agents/analyst/processed/20260310T100500Z_architect_scoring-review.md",
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "11023960",
-    "fullHash": "11023960ab26e29b726d2ffd00d6831e65e7d217",
-    "subject": "agent-run: operator 2026-03-10T11:37:40Z",
-    "timestamp": "2026-03-10T11:37:40Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "5d163b53",
-    "fullHash": "5d163b531e230916ac3eb2ef8e406c486c23608f",
-    "subject": "agent-run: risk-officer 2026-03-10T11:20:26Z",
-    "timestamp": "2026-03-10T11:20:26Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "a426e18a",
-    "fullHash": "a426e18a226f3b61733e1229bec5316b457c22d7",
-    "subject": "agent-run: operator 2026-03-10T11:07:37Z",
-    "timestamp": "2026-03-10T11:07:37Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "57ace49a",
-    "fullHash": "57ace49acb7f236f3f7856533f0673e68c9b31c2",
-    "subject": "agent-run: operator 2026-03-10T10:36:31Z",
-    "timestamp": "2026-03-10T10:36:31Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "df104a1c",
-    "fullHash": "df104a1c734b1c79faf3db4e62f7c4e0fd1e349b",
-    "subject": "agent-run: risk-officer 2026-03-10T10:22:08Z",
-    "timestamp": "2026-03-10T10:22:08Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "44b15fc1",
-    "fullHash": "44b15fc19e034172057d1e1d1d81c10bf99742c2",
-    "subject": "agent-run: architect 2026-03-10T10:14:59Z",
-    "timestamp": "2026-03-10T10:14:59Z",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/analyst/inbox/20260310T100500Z_architect_scoring-review.md",
-      "agents/architect/memory/journal/2026-03-10.md",
-      "agents/architect/memory/knowledge.md",
-      "agents/architect/state.md"
-    ]
-  },
-  {
-    "hash": "101fee63",
-    "fullHash": "101fee636b6e9f5ab2b624f9e54c3d6a20123292",
-    "subject": "agent-run: portfolio-manager 2026-03-10T10:08:01Z",
-    "timestamp": "2026-03-10T10:08:01Z",
-    "agent": "portfolio-manager",
-    "filesChanged": [
-      "agents/portfolio-manager/state.md",
-      "agents/shared/reports/portfolio-status/latest.md"
-    ]
-  },
-  {
-    "hash": "83ba0fc9",
-    "fullHash": "83ba0fc9890581bd6870bbdd2e42c51f79c261f9",
-    "subject": "agent-run: operator 2026-03-10T10:06:28Z",
-    "timestamp": "2026-03-10T10:06:28Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/portfolio-manager/memory/journal/2026-03-10.md",
-      "agents/portfolio-manager/memory/knowledge.md"
-    ]
-  },
-  {
-    "hash": "7a20f8aa",
-    "fullHash": "7a20f8aacd4b3543cd6efc63d2edf8f6f1c7e22f",
-    "subject": "install-agents: sync from repo 3550177",
-    "timestamp": "2026-03-10T10:03:59Z",
-    "agent": "portfolio-manager",
-    "filesChanged": [
-      "agents/portfolio-manager/processed/20260309T123000Z_analyst_pipeline-update.md",
-      "agents/portfolio-manager/processed/20260309T221000Z_architect_new-capability.md",
-      "agents/portfolio-manager/processed/20260310T060000Z_risk-officer_status-update.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "f01c3c34",
-    "fullHash": "f01c3c3485041ed8ba0b42aaebfcaf07b06afa47",
-    "subject": "agent-run: operator 2026-03-10T09:38:38Z",
-    "timestamp": "2026-03-10T09:38:38Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-10.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/processed/20260309T221000Z_architect_new-capability.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "6d5d0392",
-    "fullHash": "6d5d0392e3145ded5ac7cad3d6fc292aefdf522b",
-    "subject": "agent-run: risk-officer 2026-03-10T09:27:44Z",
-    "timestamp": "2026-03-10T09:27:46Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/portfolio-manager/inbox/20260310T060000Z_risk-officer_status-update.md",
-      "agents/risk-officer/memory/journal/2026-03-10.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "536d84b2",
-    "fullHash": "536d84b29f254275e8f0bad841099bf4b1060ca8",
-    "subject": "human: message to strategist (human-feedback)",
-    "timestamp": "2026-03-10T10:23:58+01:00",
-    "agent": "human",
-    "filesChanged": [
-      "agents/strategist/inbox/20260310T092356Z_human_human-feedback.md"
-    ]
-  },
-  {
-    "hash": "113ed7ff",
-    "fullHash": "113ed7ff325e60b04a6e6c408dd04ec37afb247f",
-    "subject": "agent-run: risk-officer 2026-03-09T22:21:40Z",
-    "timestamp": "2026-03-09T22:21:40Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-09.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/processed/20260309T221000Z_architect_new-capability.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "42523162",
-    "fullHash": "42523162a1f0660e4bcaa623892b8b08918ee4e6",
-    "subject": "agent-run: architect 2026-03-09T22:08:41Z",
-    "timestamp": "2026-03-09T22:08:41Z",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/architect/memory/knowledge.md",
-      "agents/architect/state.md"
-    ]
-  },
-  {
-    "hash": "66abe8ee",
-    "fullHash": "66abe8eef02d36b75070506913d857c1c6f43852",
-    "subject": "install-agents: sync from repo 3550177",
-    "timestamp": "2026-03-09T23:06:50+01:00",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/architect/memory/journal/2026-03-09.md",
-      "agents/architect/memory/knowledge.md"
-    ]
-  },
-  {
-    "hash": "48beed2b",
-    "fullHash": "48beed2b29402e726738eb46294e41153b5a9cd6",
-    "subject": "agent-run: operator 2026-03-09T22:05:59Z",
-    "timestamp": "2026-03-09T22:05:59Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/analyst/inbox/20260309T221000Z_architect_new-capability.md",
-      "agents/operator/inbox/20260309T221000Z_architect_new-capability.md",
-      "agents/operator/memory/journal/2026-03-09.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/portfolio-manager/inbox/20260309T221000Z_architect_new-capability.md",
-      "agents/risk-officer/inbox/20260309T221000Z_architect_new-capability.md",
-      "agents/scout/inbox/20260309T221000Z_architect_new-capability.md",
-      "agents/shared/capabilities.md",
-      "agents/shared/reports/infrastructure/latest.md",
-      "agents/strategist/inbox/20260309T221000Z_architect_new-capability.md"
-    ]
-  },
-  {
-    "hash": "86c8d66e",
-    "fullHash": "86c8d66e5f7ac3d129d7fc314197bb6a13618013",
-    "subject": "agent-run: operator 2026-03-09T21:36:53Z",
-    "timestamp": "2026-03-09T21:36:53Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-09.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "64229763",
-    "fullHash": "6422976344a240ba29adeaa928a3c1473cd01ac4",
-    "subject": "agent-run: risk-officer 2026-03-09T21:20:57Z",
-    "timestamp": "2026-03-09T21:20:57Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-09.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "b6515487",
-    "fullHash": "b65154877b11c0c62a1e195a9dfdb69d605c333f",
-    "subject": "agent-run: operator 2026-03-09T21:06:39Z",
-    "timestamp": "2026-03-09T21:06:39Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-09.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "2ec4c264",
-    "fullHash": "2ec4c264d91c6f0dee18d671b0f2397b9632801b",
-    "subject": "agent-run: operator 2026-03-09T20:37:02Z",
-    "timestamp": "2026-03-09T20:37:02Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/operator/memory/journal/2026-03-09.md",
-      "agents/operator/memory/knowledge.md",
-      "agents/operator/processed/20260309T213000Z_architect_issue95-resolved.md",
-      "agents/operator/state.md",
-      "agents/shared/reports/infrastructure/latest.md"
-    ]
-  },
-  {
-    "hash": "a562f0be",
-    "fullHash": "a562f0be959eb96c93195710a7cee1522e273385",
-    "subject": "agent-run: risk-officer 2026-03-09T20:21:00Z",
-    "timestamp": "2026-03-09T20:21:00Z",
-    "agent": "risk-officer",
-    "filesChanged": [
-      "agents/risk-officer/memory/journal/2026-03-09.md",
-      "agents/risk-officer/memory/knowledge.md",
-      "agents/risk-officer/state.md"
-    ]
-  },
-  {
-    "hash": "84add905",
-    "fullHash": "84add90504b5c6b8a1105855441c4dad2359c64a",
-    "subject": "agent-run: architect 2026-03-09T20:15:02Z",
-    "timestamp": "2026-03-09T20:15:02Z",
-    "agent": "architect",
-    "filesChanged": [
-      "agents/architect/memory/journal/2026-03-09.md",
-      "agents/architect/memory/knowledge.md",
-      "agents/architect/state.md"
-    ]
-  },
-  {
-    "hash": "70ba1d17",
-    "fullHash": "70ba1d1798ef7703b04eebb617981d298fb104f6",
-    "subject": "agent-run: operator 2026-03-09T20:06:46Z",
-    "timestamp": "2026-03-09T20:06:46Z",
-    "agent": "operator",
-    "filesChanged": [
-      "agents/architect/processed/20260309T183200Z_operator_eval-scheduler-bug.md",
-      "agents/operator/inbox/20260309T213000Z_architect_issue95-resolved.md",
-      "agents/operator/memory/journal/2026-03-09.md",
       "agents/operator/memory/knowledge.md",
       "agents/operator/state.md",
       "agents/shared/reports/infrastructure/latest.md"

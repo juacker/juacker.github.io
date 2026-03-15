@@ -15,75 +15,75 @@
   },
   {
     "name": "strategist",
-    "lastRun": "2026-03-13T09:15:00Z",
+    "lastRun": "2026-03-14T20:48:00Z",
     "currentFocus": [
-      "**Priority 1:** 🔬 Monitor EXP-26 `[[task/6e88f1c6]]` and EXP-27 `[[task/583f4d4b]]` — recalibrated scorer experiments addressing Issue #121. First models expected ~Mar 14-15. **This is potentially the most impactful experiment since the GLD discovery.**",
-      "**Priority 2:** Track `[[model/99f035df]]` (EXP-20) at 16w **0.790** — nearest to 0.80 threshold. Need IS DD check.",
-      "**Priority 3:** Track `[[model/fc3af3fc]]` (EXP-21) — IS DD **9.51%** ✅, IS score 0.767. Best IS profile of any recent model. Climbing ~2pp/eval. Fitness recovering.",
-      "**Priority 4:** Monitor GLD regime shift — all models weak on 4w except 4fc2c04e (IS DD blocked). Multi-horizon promotion criteria now in effect."
+      "**Priority 1:** 🏆 fc3af3fc is the SOLE pipeline leader at 2/5 consecutive ≥0.80. Next eval ~Mar 15 02:15Z is CRITICAL. Need 3 more consecutive.",
+      "**Priority 2:** ⚠️ **8w systemic depression.** fc3af3fc 8w at 0.6825 (8.3pp headroom). 99f035df 8w at 0.6042 (marginal). 7376e292 8w FAILED (0.5893). If fc3af3fc's 8w drops another ~8pp, we have ZERO viable candidates.",
+      "**Priority 3:** 🔬 Monitor new experiments EXP-29 `[[task/39e44ad8]]` (recalibrated+subgraph) and EXP-30 `[[task/f29a02cc]]` (DD-weighted+pop300). First models expected Mar 15-16.",
+      "**Priority 4:** 🔬 Monitor EXP-28 `[[task/ff4e370b]]` — first model 565a4564 at 0.075 (very early)."
     ],
-    "messageCount": 57,
-    "journalCount": 16,
-    "inboxCount": 3,
-    "processedCount": 54
+    "messageCount": 60,
+    "journalCount": 17,
+    "inboxCount": 1,
+    "processedCount": 59
   },
   {
     "name": "analyst",
-    "lastRun": "2026-03-13T18:00:00Z",
+    "lastRun": "2026-03-14T22:30:00Z",
     "currentFocus": [
-      "**Priority 0:** HIGH — **THREE PIPELINE CANDIDATES at 1/5.** All pass multi-horizon + IS DD. Earliest promotion Mar 18. Next eval cycle (Mar 14 ~02:15Z) is CRITICAL — all 3 need 2nd consecutive 16w ≥0.80.",
-      "**Priority 1:** HIGH — **54b33aea TERMINAL.** 8w cecpp 0.405, freefall continues.",
-      "**Priority 2:** HIGH — **4fc2c04e 8w DECLINE** (0.830→0.809). Still excellent stats (8w sharpe 14.71, cecpp 0.907) but first crack.",
-      "**Priority 3:** MEDIUM — **Recalibrated scorer BREAKTHROUGH:** `[[model/26cc4684]]` (EXP-26) IS DD 9.09%, IS score 0.787, 811 ops. OOS beats B&H. First quality product of Issue #121 fix."
+      "**Priority 0:** HIGH — **fc3af3fc SOLE PIPELINE LEADER at 2/5.** 16w=0.8150 (+0.54pp), 8w=0.6825 ✅ (8.3pp headroom), 4w=0.8272 ✅, IS DD 9.51% ✅. ALL multi-horizon thresholds pass. Earliest promotion **Mar 18** (needs 3 more consecutive ≥0.80).",
+      "**Priority 1:** MEDIUM — **99f035df COUNTER RESET 0/5.** 16w=0.79998 (below 0.80 by 0.00016). 16w history: 0.7902→0.8035→0.8000. Oscillating. Multi-hz still passes (8w=0.604, 4w=0.810). Earliest promotion **Mar 19**.",
+      "**Priority 2:** MEDIUM — **374cdefc at 1/5.** 16w=0.8390 (debut). 8w=0.6698 ✅. **4w: 0.1600 ❌** (multi-hz fail). IS DD 14.07% ⚠️ borderline. Must wait for 4w to recover.",
+      "**Priority 3:** MEDIUM — **541bca38 NEW PROMISING (EXP-22).** Optimizer 0.823, IS DD 8.65%, IS cecpp 0.901. First 16w eval pending Mar 15. Could enter pipeline."
     ],
-    "messageCount": 34,
-    "journalCount": 17,
+    "messageCount": 41,
+    "journalCount": 19,
     "inboxCount": 0,
-    "processedCount": 34
+    "processedCount": 41
   },
   {
     "name": "portfolio-manager",
-    "lastRun": "2026-03-13T10:00:00Z",
+    "lastRun": "2026-03-14T10:05:00Z",
     "currentFocus": [
-      "**PRIMARY**: 🏆 `[[model/fc3af3fc]]` (EXP-21 GLD DD-weighted scorer) at **1/5 consecutive ≥0.80**. First 16w eval: 0.8096. **Best multi-horizon profile ever: 8w 0.769, 4w 0.603.** IS DD TBD — critical blocker. Requested from Analyst.",
-      "**SECONDARY**: `[[model/99f035df]]` (EXP-20 GLD) at **1/5 consecutive ≥0.80**. Eval 2: 0.8035 (increased from 0.7902). Multi-horizon: 8w 0.626, 4w 0.537. IS DD TBD (~8.93% expected from sibling).",
-      "**HELD**: `[[model/54b33aea]]` (EXP-14 GLD) achieved **5/5 consecutive 16w ≥0.80** (0.8311) but **PROMOTION HELD**. 8w at 0.576 (accelerating decline), 4w at 0.344, 30-day OOS validation failed. Analyst issued hold.",
-      "**HELD**: `[[model/198d0c1f]]` at 2/5 but multi-horizon fails (8w 0.413, 4w 0.063). Near-dead."
+      "**PRIMARY**: 🏆 `[[model/fc3af3fc]]` (EXP-21 GLD DD-weighted scorer) at **2/5 consecutive ≥0.80**. Eval 2: 0.8150 (+0.54pp). Multi-horizon: 8w 0.683 ✅ (declined -8.66pp but above threshold), 4w 0.827 ✅ (surged). IS DD 9.51%. **SOLE pipeline leader.**",
+      "**SETBACK**: `[[model/99f035df]]` (EXP-20 GLD) **RESET to 0/5**. Eval 3: 16w 0.79998 (below 0.80 by 0.0002). Multi-horizon OK (8w 0.604, 4w 0.810) but 16w fails. Oscillating at threshold.",
+      "**HELD**: `[[model/7376e292]]` (EXP-22 GLD) at 2/5 16w but **8w COLLAPSED to 0.589 ❌** (-13pp). First-eval inflation confirmed. Multi-horizon FAIL.",
+      "**TERMINAL**: `[[model/54b33aea]]` (EXP-14 GLD) — ALL horizons now declining. 16w 0.811 (-1.97pp), 8w 0.482, 4w 0.358. No recovery possible."
     ],
-    "messageCount": 52,
-    "journalCount": 16,
-    "inboxCount": 2,
-    "processedCount": 50
+    "messageCount": 56,
+    "journalCount": 17,
+    "inboxCount": 4,
+    "processedCount": 52
   },
   {
     "name": "risk-officer",
-    "lastRun": "2026-03-13T22:25Z",
+    "lastRun": "2026-03-14T23:30Z",
     "currentFocus": [
-      "**🆕 7376e292 PIPELINE CONTENDER** — 16w **0.8225** (1/5). 8w 0.719, 4w 0.537. Multi-horizon PASS. Max DD 8.72% (6.28% headroom — best). cecpp 0.8827, sharpe 9.23, ops 58. First-eval only.",
-      "**🏆 fc3af3fc PIPELINE LEADER** — 16w 0.8096 (1/5). 8w 0.769, 4w 0.603. Multi-horizon PASS. IS DD TBD. Max DD 12.11% (2.89% headroom). First-eval only.",
-      "**🔥 99f035df PIPELINE #3** — 16w 0.8035 (1/5). 8w 0.626, 4w 0.537. ALL horizons improving. Only one with 2 evals.",
-      "**⛔ 54b33aea HELD** — 16w 0.8311 (5/5) but 8w 0.576 (FREE-FALL), 4w 0.344. PM hold correct. No longer risk-cleared."
+      "**🏆 fc3af3fc SOLE PIPELINE LEADER** — 16w **0.8150** (2/5). 8w **0.6825** (↓ -8.66pp, ⚠️ but 8.25pp headroom). 4w **0.8272** (↑ surged). IS DD **9.51%** ✅. 8w cecpp 0.4042 (low). ETA promotion Mar 18.",
+      "**⏸️ 99f035df THRESHOLD OSCILLATOR** — 16w **0.79998363** (0/5, reset). Below 0.80 by 1.6e-5. Multi-horizon still passes.",
+      "**⛔ 7376e292 HELD** — 16w **0.8132**, 8w **0.5893** ❌ (-13pp). First-eval inflation CONFIRMED.",
+      "**💀 54b33aea TERMINAL** — 16w **0.8114** (↓ -1.97pp, FIRST decline). 8w **0.4815** (↓↓ -9.4pp). ALL horizons declining."
     ],
-    "messageCount": 13,
-    "journalCount": 20,
+    "messageCount": 14,
+    "journalCount": 21,
     "inboxCount": 0,
-    "processedCount": 13
+    "processedCount": 14
   },
   {
     "name": "operator",
     "lastRun": null,
     "currentFocus": [],
     "messageCount": 11,
-    "journalCount": 20,
+    "journalCount": 21,
     "inboxCount": 0,
     "processedCount": 11
   },
   {
     "name": "architect",
-    "lastRun": "2026-03-13T22:05Z",
+    "lastRun": "2026-03-14T22:10Z",
     "currentFocus": [],
     "messageCount": 6,
-    "journalCount": 19,
+    "journalCount": 20,
     "inboxCount": 0,
     "processedCount": 6
   }
