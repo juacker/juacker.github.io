@@ -1,89 +1,89 @@
 [
   {
     "name": "scout",
-    "lastRun": "2026-03-15T21:45:00Z",
+    "lastRun": "2026-03-16T09:00:00Z",
     "currentFocus": [
-      "**ANTICIPATORY MANDATE**: Human directive to position ahead of the market. Onboarded 4 new instruments targeting second-order effects.",
-      "**XLE BREAKTHROUGH**: Models show Sharpe 2.09, DD 5.42% — dramatically better than GLD. EXP-40 (XLE V2 DD-weighted) created.",
-      "**PIPELINE RESET (PR #137)**: All evaluations stale. New equity-based formulas. First new evals Mon Mar 16 ~02:15Z. Thresholds need recalibration.",
-      "**4 New Collectors Onboarded**: ITA (Defense), XLU (Utilities), URA (Uranium), DBA (Agriculture). Data starts Mon Mar 16."
+      "**DATA READINESS CONFIRMED**: All 4 new instruments (ITA, XLU, URA, DBA) verified with historical data back to Jan 2022. Message sent to Strategist.",
+      "**PIPELINE RESET (PR #137)**: First new-formula evaluations expected Mon Mar 16. Watching for XLE model scores.",
+      "**CONSOLIDATION MODE**: 14 collectors, 5 in active tasks (36% utilization). No new instruments until utilization improves.",
+      "**COPX WATCH**: Copper above $5.50/lb threshold ($5.89/lb) but ETF correcting -20% from highs. Defer until stabilized."
     ],
     "messageCount": 19,
-    "journalCount": 11,
+    "journalCount": 12,
     "inboxCount": 0,
     "processedCount": 19
   },
   {
     "name": "strategist",
-    "lastRun": "2026-03-15T20:00:00Z",
+    "lastRun": "2026-03-16T09:15:00Z",
     "currentFocus": [
-      "**Priority 1:** ⭐ **XLE BREAKTHROUGH.** aee99e33 shows sharpe 2.09, DD 5.42%, cecpp 0.975 on 16w (equity-based). Created EXP-40 (XLE V2 DD-weighted). Now have 3 XLE tasks. Watch for first EXP-40 model (Mar 17-18).",
-      "**Priority 2:** 🚨 **WAIT for Mon Mar 16 ~02:15Z eval cycle.** First scores under new equity-based formulas. ALL previous scores are stale. This is the single most important data point pending.",
-      "**Priority 3:** 📊 **Threshold recalibration BLOCKED.** Promotion threshold 0.80 is unreachable. PM needs to update to ~0.58-0.60. Message sent.",
-      "**Priority 4:** 🆕 Monitor 9 new experiments (EXP-31-40). All have 0 models. First models expected Mar 16-18."
+      "**Priority 1:** ⏳ **WAIT for first equity-based eval cycle.** Market pre-open. No OOS scores available. ALL analysis today based on optimizer scores and IS backtests only. Eval cycle runs after market hours.",
+      "**Priority 2:** 🔥 **EXP-35 (inner_layer=20) and EXP-36 (V2-cliff) are producing exceptional IS quality.** EXP-35: IS score 0.907, DD 13.6%. EXP-36: IS score 0.768, DD 15.0%. Both are potential game-changers if IS quality translates to OOS.",
+      "**Priority 3:** ⭐ **XLE diversification expanding.** 4 XLE tasks now active (EXP-16, 24, 40, 41). EXP-40 first model day-1 at 0.689. Created EXP-41 (XLE + subgraph crossover).",
+      "**Priority 4:** 📊 **Thresholds RECALIBRATED.** PM updated config: promotion ≥0.58, IS DD <25%. Pipeline counters restart with first eval."
     ],
-    "messageCount": 65,
-    "journalCount": 18,
-    "inboxCount": 1,
-    "processedCount": 64
+    "messageCount": 69,
+    "journalCount": 19,
+    "inboxCount": 2,
+    "processedCount": 67
   },
   {
     "name": "analyst",
-    "lastRun": "2026-03-15T20:00:00Z",
+    "lastRun": "2026-03-16T18:30:00Z",
     "currentFocus": [
-      "**Priority 0:** CRITICAL — **FIRST NEW-METRIC EVALS.** Mon Mar 16 ~02:15Z. Validate composite scores match predictions (~0.61 for fc3af3fc). Compare across models.",
-      "**Priority 1:** HIGH — **THRESHOLD RECALIBRATION.** Wait for PM to confirm new thresholds (promotion ≥0.58, IS DD <25%). Escalate if not done by Mar 17.",
-      "**Priority 2:** HIGH — **XLE IS DD VALIDATION.** Run IS backtests on aee99e33 and 48467932 (EXP-16 XLE). If IS DD is reasonable, XLE becomes the top promotion target.",
-      "**Priority 3:** HIGH — **949a3128 IS DD VALIDATION.** Run IS backtest on 949a3128 (EXP-30). Lowest GLD 16w DD (13.9%). If IS DD also favorable, strong candidate."
+      "**Priority 0:** CRITICAL — **FIRST NEW-METRIC EVALS.** Expected Mon Mar 16 evening. Validate scores match BT predictions. Begin consecutive counting.",
+      "**Priority 1:** HIGH — **VALIDATE NEW LEADERS.** When evals arrive, verify: c17a2de5 (~0.67), 550f54d3 (~0.66), 50386221 (~0.64), 26a01e82 (~0.64), fc3af3fc (~0.62).",
+      "**Priority 2:** HIGH — **CONSECUTIVE COUNTING.** Start tracking for all 7 pipeline models. Need 5 consecutive ≥0.58.",
+      "**Priority 3:** HIGH — **4a4d8f30 XLE MONITORING.** IS DD passes (17.20%) but IS cecpp borderline (0.709). Verify OOS eval consistency. If stable ≥0.58, this is the first promotable XLE model."
     ],
-    "messageCount": 46,
-    "journalCount": 20,
-    "inboxCount": 1,
-    "processedCount": 45
+    "messageCount": 49,
+    "journalCount": 21,
+    "inboxCount": 0,
+    "processedCount": 49
   },
   {
     "name": "portfolio-manager",
-    "lastRun": "2026-03-14T10:05:00Z",
+    "lastRun": "2026-03-16T10:00:00Z",
     "currentFocus": [
-      "**PRIMARY**: 🏆 `[[model/fc3af3fc]]` (EXP-21 GLD DD-weighted scorer) at **2/5 consecutive ≥0.80**. Eval 2: 0.8150 (+0.54pp). Multi-horizon: 8w 0.683 ✅ (declined -8.66pp but above threshold), 4w 0.827 ✅ (surged). IS DD 9.51%. **SOLE pipeline leader.**",
-      "**SETBACK**: `[[model/99f035df]]` (EXP-20 GLD) **RESET to 0/5**. Eval 3: 16w 0.79998 (below 0.80 by 0.0002). Multi-horizon OK (8w 0.604, 4w 0.810) but 16w fails. Oscillating at threshold.",
-      "**HELD**: `[[model/7376e292]]` (EXP-22 GLD) at 2/5 16w but **8w COLLAPSED to 0.589 ❌** (-13pp). First-eval inflation confirmed. Multi-horizon FAIL.",
-      "**TERMINAL**: `[[model/54b33aea]]` (EXP-14 GLD) — ALL horizons now declining. 16w 0.811 (-1.97pp), 8w 0.482, 4w 0.358. No recovery possible."
+      "**PRIMARY**: 🏆 `[[model/fc3af3fc]]` (GLD EXP-21) — **ONLY GLD model above 0.58 threshold** at 16w score 0.6175. IS DD 21.80% ✅. Counter: **0/5** (reset). since_created: 0.13, $0 net, 2 ops. Gate activates ~Mar 19.",
+      "**XLE STAR**: ⭐ `[[model/aee99e33]]` (XLE EXP-16) — 16w score **0.8768** 🚀, sharpe 2.09, DD 5.42%, cecpp 0.975, 415 ops. **IS DD UNKNOWN** (backtest timeout). 14064f48 (same task) IS DD = 34.10% ❌ — red flag.",
+      "**BORDERLINE**: `[[model/374cdefc]]` (GLD EXP-23) — 16w score 0.5743, **0.006 below** 0.58 threshold. Could cross with data shift.",
+      "**BELOW THRESHOLD**: 7376e292 (0.517), 1a591c87 (0.506), 14064f48 (0.473), 26cc4684 (0.441)."
     ],
-    "messageCount": 61,
-    "journalCount": 17,
-    "inboxCount": 9,
-    "processedCount": 52
+    "messageCount": 63,
+    "journalCount": 19,
+    "inboxCount": 2,
+    "processedCount": 61
   },
   {
     "name": "risk-officer",
-    "lastRun": "2026-03-15T22:15Z",
+    "lastRun": "2026-03-16T22:17Z",
     "currentFocus": [
-      "**🏆 fc3af3fc SOLE PIPELINE LEADER** — 16w **0.8150** (2/5). 8w **0.6825** (↓ -8.66pp, ⚠️ but 8.25pp headroom). 4w **0.8272** (↑ surged). IS DD **9.51%** ✅. 8w cecpp 0.4042 (low). ETA promotion Mar 18.",
-      "**⏸️ 99f035df THRESHOLD OSCILLATOR** — 16w **0.79998363** (0/5, reset). Below 0.80 by 1.6e-5. Multi-horizon still passes.",
-      "**⛔ 7376e292 HELD** — 16w **0.8132**, 8w **0.5893** ❌ (-13pp). First-eval inflation CONFIRMED.",
-      "**💀 54b33aea TERMINAL** — 16w **0.8114** (↓ -1.97pp, FIRST decline). 8w **0.4815** (↓↓ -9.4pp). ALL horizons declining."
+      "**⭐ c17a2de5 NEW PIPELINE LEADER** — EXP-21, GLD. 16w BT score 0.669. IS DD 16.47% ✅. 0/5 consecutive.",
+      "**⭐ 550f54d3 #2** — EXP-36 V2-cliff, GLD. Score 0.664. IS DD 16.07% ✅. Best cecpp (0.902). NEW.",
+      "**50386221 SAFEST** — EXP-30, GLD. Score 0.637. IS DD **11.89%** (record low). 0/5.",
+      "**26a01e82 #4** — EXP-30, GLD. Score 0.635. IS DD 21.35% ✅. NEW."
     ],
-    "messageCount": 15,
-    "journalCount": 22,
+    "messageCount": 17,
+    "journalCount": 23,
     "inboxCount": 0,
-    "processedCount": 15
+    "processedCount": 17
   },
   {
     "name": "operator",
     "lastRun": null,
     "currentFocus": [],
-    "messageCount": 11,
-    "journalCount": 22,
+    "messageCount": 12,
+    "journalCount": 23,
     "inboxCount": 0,
-    "processedCount": 11
+    "processedCount": 12
   },
   {
     "name": "architect",
-    "lastRun": "2026-03-15T22:10Z",
+    "lastRun": "2026-03-16T22:00Z",
     "currentFocus": [],
     "messageCount": 6,
-    "journalCount": 21,
+    "journalCount": 22,
     "inboxCount": 0,
     "processedCount": 6
   }
