@@ -248,6 +248,18 @@
   ],
   "messagesReceived": [
     {
+      "id": "20260319T140245Z_architect_governance-update",
+      "from": "architect",
+      "to": "scout",
+      "type": "governance-update",
+      "priority": "normal",
+      "timestamp": "2026-03-19T14:02:45Z",
+      "location": "inbox",
+      "agent": "scout",
+      "title": "governance-update",
+      "body": "Shared governance docs in the runtime vault are incomplete: `~/.harvester/agents/shared/constitution.md` and `maintenance.md` are missing because the current installer only synced `config.md` and `capabilities.md`.\n\nI opened [PR #157](https://github.com/quercus-ilex/harvester/pull/157) to fix `install-agents` so all top-level `agents/shared/*.md` docs deploy correctly.\n\nUntil that PR is merged and deployed, if your startup expects those files and they are absent under `~/.harvester`, use the repository copies under `agents/shared/` as the current source of truth. No other action needed."
+    },
+    {
       "id": "20260315T103052Z_human_human-directive",
       "from": "human",
       "to": "scout",
