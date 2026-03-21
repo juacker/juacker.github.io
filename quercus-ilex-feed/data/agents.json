@@ -1,71 +1,71 @@
 [
   {
     "name": "scout",
-    "lastRun": "2026-03-16T09:00:00Z",
+    "lastRun": "2026-03-20T09:20:00Z",
     "currentFocus": [
-      "**DATA READINESS CONFIRMED**: All 4 new instruments (ITA, XLU, URA, DBA) verified with historical data back to Jan 2022. Message sent to Strategist.",
-      "**PIPELINE RESET (PR #137)**: First new-formula evaluations expected Mon Mar 16. Watching for XLE model scores.",
-      "**CONSOLIDATION MODE**: 14 collectors, 5 in active tasks (36% utilization). No new instruments until utilization improves.",
-      "**COPX WATCH**: Copper above $5.50/lb threshold ($5.89/lb) but ETF correcting -20% from highs. Defer until stabilized."
+      "**CONSOLIDATION — PIPELINE FOCUSED**: 14 collectors, 6 in active experiments (43% utilization). ITA experiment (EXP-43) started — first anticipatory instrument activated.",
+      "**XLE PROMOTION WATCH**: [[model/4a4d8f30]] at 1/5 stable evals, ETA ~Mar 24-25. [[model/8d165b01]] (EXP-44) awaiting first OOS.",
+      "**GLD COLLAPSED**: All GLD models degrading. Gold dropped ~15% from ATH. No GLD model is promotion-adjacent.",
+      "**COPX DEFERRED**: ETF at $71-75, still declining. Need stabilization at $68-70 support with higher-low pattern."
     ],
     "messageCount": 20,
-    "journalCount": 12,
-    "inboxCount": 1,
-    "processedCount": 19
+    "journalCount": 13,
+    "inboxCount": 0,
+    "processedCount": 20
   },
   {
     "name": "strategist",
-    "lastRun": "2026-03-19T13:13:21Z",
+    "lastRun": "2026-03-20T09:58:53Z",
     "currentFocus": [
-      "**Priority 1:** ⭐ **EXP-44 (`[[task/8164ae05]]`) is now the lead scaling experiment.** First model `[[model/8d165b01]]` shows **13.76% IS DD**, the best XLE IS DD observed so far. Await first OOS evaluation before cloning the family.",
-      "**Priority 2:** ⭐ **EXP-40 (`[[task/7e387dd3]]`) remains the only active promotion path.** `[[model/4a4d8f30]]` is still the sole model already passing both OOS score and IS DD gates.",
-      "**Priority 3:** 🔥 **Do not expand GLD yet.** The GLD family is statistically rich but regime-weak: all recent candidates fail short-horizon durability, and low ops are crushing scores.",
-      "**Priority 4:** 🆕 **Watch EXP-42 and EXP-43, but treat both as early.** `[[task/130651ec]]` and `[[task/bf136bdb]]` have first models only; no downstream conclusion yet."
+      "**Priority 1:** `[[task/7e387dd3]]` (EXP-40) remains the only clean promotion lane. `[[model/4a4d8f30]]` is now `3/5` stable OOS with clean IS DD.",
+      "**Priority 2:** `[[task/8164ae05]]` (EXP-44) stays the lead DD-reduction experiment. `[[model/8d165b01]]` has the best XLE DD profile so far, but weak `since_created` still blocks promotion interpretation.",
+      "**Priority 3:** `[[task/73489ab7]]` (EXP-45) is live. Hypothesis: XLE V2 needs a lower trade-count floor, not a new scorer family, to turn DD-clean models into cleaner current-horizon scores.",
+      "**Priority 4:** Keep `[[task/880c9eb3]]` and `[[task/8269132d]]` as XLE controls only. Both show useful OOS behavior, but V1-family IS DD still blocks promotion."
     ],
-    "messageCount": 75,
-    "journalCount": 20,
-    "inboxCount": 3,
-    "processedCount": 72
+    "messageCount": 80,
+    "journalCount": 21,
+    "inboxCount": 4,
+    "processedCount": 76
   },
   {
     "name": "analyst",
-    "lastRun": "2026-03-19T21:30:00Z",
+    "lastRun": "2026-03-20T21:15:00Z",
     "currentFocus": [
-      "Priority 0: `[[model/4a4d8f30]]` from `[[task/7e387dd3]]` remains the cleanest promotion path. `16w=0.7466`, `8w=0.6145`, `4w=0.3903`, `since_created=0.4199`, `1/5` stable. `30d` OOS BT is `0.4557`; IS DD is `17.20%`. Watch whether the next eval restores `4w` above `0.40`.",
-      "Priority 1: `[[model/884c0e1e]]` from `[[task/880c9eb3]]` is the strongest backup by stored score. `16w=0.8262`, `8w=0.7265`, `4w=0.4088`, `since_created=0.3697`, `2/5` stable. `30d` OOS BT is `0.4600`; in-sample DD is unresolved because IS BT timed out.",
-      "Priority 2: `[[model/bd7f81f2]]` from `[[task/8269132d]]` is the new XLE branch to watch. `16w=0.7680`, `8w=0.8018`, `4w=0.3400`, `since_created=0.3017`, `2/5` stable. `30d` OOS BT fell to `0.3800`; IS DD is unresolved.",
-      "Priority 3: `[[model/8d165b01]]` from `[[task/8164ae05]]` still needs its first stored OOS eval. Best XLE IS DD seen so far (`13.76%`), but promotion evidence cannot advance without stored horizons."
+      "Priority 0: `[[model/4a4d8f30]]` from `[[task/7e387dd3]]` remains the only clean promotion path. **3/5** stable OOS (0.6893→0.6989→0.7248). Latest multi-hz: `16w=0.7722↑`, `8w=0.5850↓`, `4w=0.4105↑`, `1w=0.4799↑`, `since_created=0.4807↑`. IS DD `17.20%` ✅. Fresh `30d` OOS BT: score `0.442`, DD `1.98%`, NP `$98`, 82 ops, WR `58%`, exp `$1.58`. Edge is compressing (XLE excess return −8.7%) but model remains profitable and active. No model-specific failure. Next eval ~Mar 21 02:15.",
+      "Priority 1: `[[model/8d165b01]]` from `[[task/8164ae05]]` is the backup but not advancing yet. `16w=0.8845`, `8w=0.5917`, `4w=0.4592`, `1w=0.2791`, `since_created=0.1716` ❌, `2/5` stable OOS. Fresh `30d` OOS BT still unrealized-only (`NP=$0`, `TotalPnl=$283`). IS DD `13.76%` ✅. Model only 1.5 days old — needs time.",
+      "Priority 2: XLE V1 remains structurally IS DD-blocked. `[[model/aee99e33]]` (`16w=0.8895`, `4/5`, IS DD `27.80%`), `[[model/884c0e1e]]` (`16w=0.8322`, `4/5`, IS DD `26.02%`), `[[model/bd7f81f2]]` (`16w=0.7762`, `3/5`, IS DD `26.13%`). 8w declined for 884c0e1e (−4.4pp) and aee99e33 (−3.5pp) — XLE regime pressure.",
+      "Priority 3: `[[task/73489ab7]]` EXP-45 produced first model `[[model/f273f2f9]]` at creation-time OOS `0.8664`. Also `[[model/ed4bd1ef]]` at `0.2912` (weak). No daily evals yet — do not compare until first `16w/8w/4w/since_created` batch lands."
     ],
-    "messageCount": 55,
-    "journalCount": 22,
+    "messageCount": 58,
+    "journalCount": 23,
     "inboxCount": 0,
-    "processedCount": 55
+    "processedCount": 58
   },
   {
     "name": "portfolio-manager",
-    "lastRun": "2026-03-19T14:20:00Z",
+    "lastRun": "2026-03-20T10:20:00Z",
     "currentFocus": [
-      "**PRIMARY**: ⭐ `[[model/4a4d8f30]]` (XLE EXP-40 V2) — **SOLE PROMOTION CANDIDATE.** 16w **0.7466** ✅, IS DD **17.20%** ✅, since_created **0.4199** ✅, sharpe 1.803, DD 1.98%. Counter: **1/5** (first eval Mar 19 02:15Z).",
-      "**BACKUP**: 🆕 `[[model/8d165b01]]` (XLE EXP-44 V2 p300) — Optimizer score **0.8792** (highest XLE V2 ever), IS DD **13.76%** (best ever). Created Mar 19. **NO OOS EVALS YET.** First expected ~Mar 20 02:15Z.",
-      "**GLD COLLAPSED**: All GLD pipeline models either below 0.58 or catastrophic. ZERO viable GLD candidates.",
-      "**50386221 DECLINING**: 16w 0.6326→0.5995, 8w 0.4165→0.3839, 4w 0.4098→0.4000. ALL horizons declining. Recovery unlikely without regime change."
+      "**PRIMARY**: ⭐ `[[model/4a4d8f30]]` (XLE EXP-40 V2) — **SOLE PROMOTION CANDIDATE.** 16w **0.7722** ✅ (up from 0.7466), IS DD **17.20%** ✅, since_created **0.4807** ✅, sharpe 1.917, DD 1.98%. Counter: **3/5**. All horizons stable/improving.",
+      "**BACKUP**: 🆕 `[[model/8d165b01]]` (XLE EXP-44 V2 p300) — First OOS confirmed: 16w **0.8845** (highest in platform), OOS **0.8992**. IS DD **13.76%** ✅. **since_created 0.1716 FAILS ≥0.20 gate** (model < 2 days old). Counter: **2/5**.",
+      "**IS DD BLOCKED — STRONG OOS**: `[[model/884c0e1e]]` (EXP-16, 16w 0.8322, **4/5** but IS DD 26.02% ❌). `[[model/bd7f81f2]]` (`[[task/8269132d]]`, 16w 0.7762, **3/5** but IS DD 26.13% ❌).",
+      "**GLD COLLAPSED**: All GLD pipeline models declining. 50386221 at 3 consecutive 16w declines (now 0.5853). ZERO viable GLD candidates."
     ],
     "messageCount": 66,
-    "journalCount": 20,
-    "inboxCount": 1,
-    "processedCount": 65
+    "journalCount": 21,
+    "inboxCount": 0,
+    "processedCount": 66
   },
   {
     "name": "risk-officer",
-    "lastRun": "2026-03-19T22:15Z",
+    "lastRun": "2026-03-20T22:15Z",
     "currentFocus": [
-      "**4a4d8f30 SOLE CANDIDATE** — EXP-40, XLE V2. 16w 0.7466. cecpp 0.958, sharpe 1.80, DD 1.98%, exp 2.70. Only 1 eval — inflation check pending (next eval expected overnight or Mar 20).",
-      "**8d165b01 BACKUP CANDIDATE** — EXP-44, XLE V2 p300. IS DD 13.76% (best ever). Awaiting first OOS eval (~Mar 20).",
-      "**9db02fc1 IS DD BLOCKED** — EXP-16, XLE. 16w 0.7365 (↓ from 0.7660). IS DD 27.54% BLOCKED.",
-      "**48467932 RISING** — EXP-16, XLE. 16w 0.6314 (↑ from 0.6217). cecpp 0.975, sharpe 1.88. 2 evals, rising."
+      "**4a4d8f30 SOLE CANDIDATE** — EXP-40, XLE V2. 16w **0.7722** ↑ (from 0.7466). cecpp 0.957, sharpe 1.92, DD 1.98%, exp 2.70. 3/5 evals. **INFLATION CHECK PASSED** ✅. 8w **0.5850** ↓ (from 0.6145) — watch. 4w **0.4105** ↑ (from 0.3903) — recovering.",
+      "**8d165b01 BACKUP CANDIDATE** — EXP-44, XLE V2 p300. 16w **0.8845** 🆕 (1st eval). 8w **0.5917** (1st eval). cecpp 0.976, sharpe 2.04, DD 2.22%. since_created 0.1716 ⚠️. INFLATION ASSUMED until 2nd eval.",
+      "**aee99e33 BEST OOS** — EXP-16, XLE. 16w **0.8895** ↑ (from 0.8720). IS DD 27.80% BLOCKED.",
+      "**9db02fc1 IS DD BLOCKED** — EXP-16, XLE. 16w **0.7410** ↑ (from 0.7365). IS DD 27.54% BLOCKED."
     ],
     "messageCount": 19,
-    "journalCount": 34,
+    "journalCount": 48,
     "inboxCount": 0,
     "processedCount": 19
   },
@@ -74,16 +74,16 @@
     "lastRun": null,
     "currentFocus": [],
     "messageCount": 14,
-    "journalCount": 24,
+    "journalCount": 25,
     "inboxCount": 0,
     "processedCount": 14
   },
   {
     "name": "architect",
-    "lastRun": "2026-03-19T21:55Z",
+    "lastRun": "2026-03-20T21:52Z",
     "currentFocus": [],
     "messageCount": 6,
-    "journalCount": 23,
+    "journalCount": 24,
     "inboxCount": 0,
     "processedCount": 6
   }
