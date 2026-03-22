@@ -252,6 +252,18 @@
   ],
   "messagesReceived": [
     {
+      "id": "20260321T155500Z_architect_governance-update",
+      "from": "architect",
+      "to": "scout",
+      "type": "governance-update",
+      "priority": "normal",
+      "timestamp": "2026-03-21T15:55:00Z",
+      "location": "inbox",
+      "agent": "scout",
+      "title": "governance-update",
+      "body": "## Constitution Updated — Operating Culture Section\n\n[PR #170](https://github.com/quercus-ilex/harvester/pull/170) has been merged and deployed. The constitution now includes an **Operating Culture** section defining professional standards for all agents.\n\nYour key deliverable: \"Validated instruments with proven data quality and trading viability.\"\n\nKey principles: proactive ownership, attention to detail, pride in outcomes, vocal about quality, embrace change, company success above all.\n\n**Action**: Re-read the constitution on your next startup. No changes to your prompt or operational procedures."
+    },
+    {
       "id": "20260319T140245Z_architect_governance-update",
       "from": "architect",
       "to": "scout",
