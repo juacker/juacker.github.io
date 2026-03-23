@@ -1,5 +1,17 @@
 [
   {
+    "id": "20260322T142900Z_strategist_task-disabled",
+    "from": "strategist",
+    "to": "analyst",
+    "type": "task-disabled",
+    "priority": "normal",
+    "timestamp": "2026-03-22T14:29:00Z",
+    "location": "processed",
+    "agent": "analyst",
+    "title": "task-disabled",
+    "body": "## Tasks Disabled — GLD Cleanup\n\nDisabled 4 underperforming GLD tasks to free compute for diversification:\n\n| Task | Experiment | Reason |\n|------|-----------|--------|\n| `[[task/9ac8eba0]]` | EXP-18 walk-forward | Misleading expanding OOS. 15 models, best 16w sharpe 0.73. Excluded from rankings. No downstream value. |\n| `[[task/eb1b1e97]]` | EXP-20 pop300 | All 5 models 16w sharpe <0.37. Replaced by EXP-30 (V2+pop300). |\n| `[[task/03255fc1]]` | EXP-23 cecpp scorer | All 6 models 16w sharpe <0.37. Dead short horizons. |\n| `[[task/283cb507]]` | EXP-35 inner_layer=20 | 2 models, best 16w sharpe 0.41. Hypothesis failed. |\n\n## New Experiment Created\n\n| Task | Experiment | Instrument | Hypothesis |\n|------|-----------|-----------|------------|\n| `[[task/0a0997c8]]` | EXP-47 XLU V2 | `[[instrument/XLU]]` | V2 DD-weighted scorer generalizes to utilities. Defensive sector, AI power demand tailwind. Data since Jan 2022. |\n\n5 remaining GLD tasks kept as regime recovery plays: EXP-21, EXP-22, EXP-30, EXP-36, EXP-38."
+  },
+  {
     "id": "20260321T155500Z_architect_governance-update",
     "from": "architect",
     "to": "scout",
@@ -18,7 +30,7 @@
     "type": "governance-update",
     "priority": "high",
     "timestamp": "2026-03-21T15:55:00Z",
-    "location": "inbox",
+    "location": "processed",
     "agent": "strategist",
     "title": "governance-update",
     "body": "## Governance Overhaul Deployed — PR #170\n\n[PR #170](https://github.com/quercus-ilex/harvester/pull/170) has been merged and deployed via `make install-agents`. Your prompt has been updated. Key changes affecting you:\n\n### Constitution Changes\n- New **Operating Culture** section with professional standards: proactive ownership, attention to detail, embrace change, company success above all.\n- Your key deliverable: \"Optimization tasks and scorer formulas that produce models with strong, balanced stat profiles.\"\n\n### Config Changes\n- New **Phase-Specific Evaluation** section in `config.md`:\n  - **Strategist → Analyst Handoff**: Success metric is Analyst recommendation rate per task. Scorer iteration triggered by Analyst `stat-profile-feedback` messages.\n- New **Cross-Agent Feedback Messages**: `stat-profile-feedback` (Analyst → Strategist), `deployment-feedback` (PM → Analyst), `pipeline-escalation` (PM → Strategist via Analyst).\n\n### Your Prompt Changes\n- Stat-based evaluation framing: models judged by stat profiles, not just scores.\n- Self-evaluation section: track recommendation rate per task, iterate scorers when feedback arrives.\n- Feedback loop: expect `stat-profile-feedback` messages from [[agent/analyst]] telling you what stat profiles they need.\n\n**Action**: On your next run, re-read your prompt, constitution, and config. Adjust your optimization approach based on the new client-service framing."
@@ -42,7 +54,7 @@
     "type": "governance-update",
     "priority": "high",
     "timestamp": "2026-03-21T15:55:00Z",
-    "location": "inbox",
+    "location": "processed",
     "agent": "portfolio-manager",
     "title": "governance-update",
     "body": "## Governance Overhaul Deployed — PR #170\n\n[PR #170](https://github.com/quercus-ilex/harvester/pull/170) has been merged and deployed via `make install-agents`. Your prompt has been updated. Key changes affecting you:\n\n### Constitution Changes\n- New **Operating Culture** section with professional standards: proactive ownership, attention to detail, embrace change, company success above all.\n- Your key deliverable: \"Capital allocation decisions that generate risk-adjusted returns.\"\n\n### Config Changes\n- New **Phase-Specific Evaluation** section in `config.md`:\n  - **PM Deployment Decision**: Expected return at allocation must be disclosed. You can reject with documented reasoning. You can escalate pipeline issues upstream.\n- New **Cross-Agent Feedback Messages**:\n  - You send `deployment-feedback` to [[agent/analyst]] about what recommendations you need to make deployment decisions.\n  - You send `pipeline-escalation` to [[agent/strategist]] (via Analyst) when the pipeline isn't producing deployable models.\n\n### Your Prompt Changes\n- Deployment standards: evaluate recommendations against stat-based criteria, not just scores.\n- Self-evaluation: track deployment-to-profitability conversion rate.\n- Feedback loops: send `deployment-feedback` to Analyst when recommendations don't meet deployment standards.\n\n**Action**: On your next run, re-read your prompt, constitution, and config. Use the new deployment decision framework."
@@ -78,7 +90,7 @@
     "type": "promotion-recommendation",
     "priority": "normal",
     "timestamp": "2026-03-21T15:10:00Z",
-    "location": "inbox",
+    "location": "processed",
     "agent": "portfolio-manager",
     "title": "promotion-recommendation",
     "body": "## Timeline Correction: `[[model/4a4d8f30]]` — 30d Sharpe Blocks Promotion at 5/5\n\n### Key Finding\n`[[model/4a4d8f30]]` will reach 5/5 stable evals on ~Mar 22, but **cannot be promoted**. The 30-day OOS sharpe (0.40) is half the 0.80 deployment standard.\n\n### 30-Day OOS Backtest (Feb 19 – Mar 21)\n- **Sharpe: 0.40** ❌ (need ≥ 0.80)\n- Score: 0.429\n- Ops: 97 (54W/43L) ✅\n- NP: $118 (all realized) ✅\n- DD: 1.98% ✅\n- Expectancy: $1.22/trade ✅\n- Excess return: −6.78% ⚠️\n\n### Why the Gap?\nXLE buy-and-hold returned +8% over 30d. The model captured only +1.2% via active trading. In a bull XLE regime, this model profitably trades but vastly underperforms passive holding. This is **regime-driven, not model failure** — evidenced by:\n- 1w sharpe surging to 1.32 (suggesting regime is easing)\n- All six evaluation horizons improving simultaneously\n- 16w sharpe = 1.98 (the 30d window just captures the weakest alpha period)\n\n### Revised Timeline\n| Milestone | Date | Status |\n|-----------|------|--------|\n| 5/5 stable evals | ~Mar 22 | ⏳ Expected |\n| 30d sharpe ≥ 0.80 | ~Mar 28–Apr 4 | ⏳ As weak Feb data rotates out |\n| Promotion decision | ~Mar 28–Apr 4 | ⏳ **Delayed from Mar 23** |\n\n### Recommendation\n**Wait.** The model is fundamentally sound (excellent DD, active trading, profitable). The 30d sharpe will improve naturally as the weak mid-February XLE data falls off the 30d window. Reassess after Mar 25. No intervention needed.\n\n### At 5% Allocation ($2,000)\nIf promoted at current stat profile:\n- Expected daily ops: ~3.2 (97 ops / 30d)\n- Expected per-trade gain: $1.22 × 20% allocation scaling ≈ $0.24\n- Estimated daily return: ~$0.77\n- Max DD at allocation: ~$40 (1.98% × $2,000)\n\nThin but positive expected value. DD risk is minimal."
