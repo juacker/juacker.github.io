@@ -15,75 +15,75 @@
   },
   {
     "name": "strategist",
-    "lastRun": "2026-03-23T09:45:00Z",
+    "lastRun": "2026-03-24T09:52:00Z",
     "currentFocus": [
-      "**Priority 1:** `[[task/7e387dd3]]` (EXP-40) anchor. `[[model/4a4d8f30]]` nearest promotion candidate — 30d sharpe 0.587 (improving), eval count 3/5. Waiting for Monday eval batch. Estimated promotion window Mar 25-28.",
-      "**Priority 2:** `[[task/8164ae05]]` (EXP-44) V2 pop300. `[[model/10c9f48f]]` strongest debut (16w 0.8611, sharpe 1.96). Post-creation profits pending.",
-      "**Priority 3:** `[[task/73489ab7]]` (EXP-45) V2 relaxed — most productive XLE V2 task. 3 models. `[[model/5bba88f6]]` sharpe 1.87, 399 ops, NP $1215.",
-      "**Priority 4:** `[[task/130651ec]]` (EXP-42) V2-cliff. `[[model/68223ba5]]` IS DD 12.05% — best IS safety. All profit unrealized."
+      "**Priority 1:** `[[task/73489ab7]]` (EXP-45) relaxed — **TOP PRODUCER.** 4 models. `[[model/e97b2a73]]` score 0.907 (highest ever). `[[model/5bba88f6]]` 401 ops (most robust). Both 1/5 evals.",
+      "**Priority 2:** `[[task/8164ae05]]` (EXP-44) pop300 — `[[model/10c9f48f]]` 0.873, sharpe 2.00, 4w sharpe 0.94. 2/5 evals. Best promotable candidate.",
+      "**Priority 3:** `[[task/7e387dd3]]` (EXP-40) anchor — `[[model/4a4d8f30]]` 4/5 evals. 30d sharpe 0.435 still binding. 4w improving (0.66).",
+      "**Priority 4:** `[[task/130651ec]]` (EXP-42) V2-cliff — **BREAKOUT.** `[[model/68223ba5]]` 0.680→0.879. IS DD 12.05%. New `[[model/78db9c76]]` pending eval."
     ],
-    "messageCount": 82,
-    "journalCount": 24,
-    "inboxCount": 0,
-    "processedCount": 82
+    "messageCount": 84,
+    "journalCount": 25,
+    "inboxCount": 1,
+    "processedCount": 83
   },
   {
     "name": "analyst",
-    "lastRun": "2026-03-23T21:17:00Z",
+    "lastRun": "2026-03-24T21:18:16Z",
     "currentFocus": [
-      "Priority 0: `[[model/4a4d8f30]]` from `[[task/7e387dd3]]` remains primary path. **3/5** stable 16w evals (0.7466→0.7722→0.7844). All horizons rising: `16w=0.7844↑`, `8w=0.6248↑`, `4w=0.4131↑`, `1w=0.6444↑↑↑`, `SC=0.6444`. IS DD `17.20%` ✅. OOS 16w DD `1.98%` ✅. **30d OOS BT: sharpe 0.432 FAILS 0.80 gate.** Score 0.413, ops 87, NP $121, DD 1.98%, exp $1.39, excess -6.55%. 4w exp $1.39 ✅. 1w sharpe 1.32, 28 ops, cecpp 0.944.",
-      "Priority 1: `[[model/10c9f48f]]` from `[[task/8164ae05]]` **STRONG DEBUT**. 1/5 evals. 16w=0.8611, **8w=0.8054** (highest 8w in pipeline). 4w=0.784 (highest 4w). Sharpe 1.963, exp $5.59, cecpp 0.976. $0 NP post-creation. SC=-1.811 (3 days old, gate N/A yet). IS DD ~13.76% ✅.",
-      "Priority 2: `[[model/8d165b01]]` from `[[task/8164ae05]]` backup at `2/5`. 16w=0.8606↓ (0.8845→0.8606). SC=0.1788 ❌ (fails ≥0.20, 4 days old). 8w improving (0.5979→0.6220). All horizons $0 NP. **16w sharpe declining (2.044→1.922).** 3rd eval is critical.",
-      "Priority 3: `[[model/f273f2f9]]` from `[[task/73489ab7]]` EXP-45. 1/5 evals. 16w=0.8577. SC=-1.519 (3 days old). $0 NP post-creation. Sharpe 1.912, exp $6.09."
+      "Priority 0: `[[model/4a4d8f30]]` from `[[task/7e387dd3]]` is now the only model that clears every PM gate except stable-eval count. `4/5` stable 16w evals. 30d OOS BT over `2026-02-23T20:00Z` to `2026-03-24T20:00Z`: `sharpe 0.842`, `exp $2.02`, `net_profit $153.63`, `DD 1.96%`, `excess_return -7.71%`. Positive 4w expectancy (`$2.46`) and positive since-created net profit (`$120.98`) remain intact.",
+      "Priority 1: `[[model/e97b2a73]]` from `[[task/73489ab7]]` is now the strongest fresh realized-edge model. `1/5`, 16w score `0.907`, 4w expectancy `$10.25`, 30d BT sharpe `1.098`, 30d net profit `$342.09`, DD `5.20%`. Still far too young for promotion.",
+      "Priority 2: `[[model/10c9f48f]]` from `[[task/8164ae05]]` remains the strongest historical stat profile (`2/5`, sharpe `2.002`, exp `$5.94`, cecpp `0.979`), and 30d BT sharpe is now `1.041`, but the current realized-profit profile is unresolved: `4w expectancy $0`, `since_created score 0.046`, `30d net_profit $0`.",
+      "Priority 3: `[[model/68223ba5]]` from `[[task/130651ec]]` remains the breakout (`0.680 → 0.879`, IS DD ~`12.1%`, 30d BT sharpe `1.075`), but the same realized-edge problem persists: `4w expectancy $0`, `since_created score 0.100`, `30d net_profit $0`."
     ],
-    "messageCount": 61,
-    "journalCount": 26,
+    "messageCount": 64,
+    "journalCount": 27,
     "inboxCount": 0,
-    "processedCount": 61
+    "processedCount": 64
   },
   {
     "name": "portfolio-manager",
-    "lastRun": "2026-03-23T10:20:00Z",
+    "lastRun": "2026-03-24T10:20:00Z",
     "currentFocus": [
-      "**PRIMARY**: ⭐ `[[model/4a4d8f30]]` (XLE EXP-40 V2) — **3/5 evals** (unchanged from Mar 22 — Monday evals overdue). 16w **0.7844** ✅, 8w **0.6248** ✅, 4w 0.4131, 1w **0.6444** ↑↑, SC **0.6444** ↑↑. **30d OOS sharpe 0.43 ❌ (regressed from 0.587; need ≥0.80).**",
-      "**RISING**: `[[model/10c9f48f]]` (XLE EXP-44 V2 p300) — **1/5 evals.** 16w **0.8611** 🔥. Sharpe 1.963, cecpp 0.976, 247 ops. SC -1.811 (2 days old). $0 NP post-creation. Strongest debut in pipeline.",
-      "**BACKUP**: `[[model/8d165b01]]` (XLE EXP-44 V2 p300) — **2/5 evals.** 16w **0.8606** (↓ from 0.8845). SC 0.1788 ❌. $0 NP post-creation. Weakening — may be superseded by 10c9f48f.",
-      "**EMERGING**: `[[model/f273f2f9]]` (XLE EXP-45 V2 relaxed) — **1/5 evals.** 16w 0.8577. SC sharpe negative. Zero realized profits."
+      "**PRIMARY**: ⭐ `[[model/4a4d8f30]]` (XLE EXP-40 V2) — **4/5 evals** (eval 5 expected Mar 25). 16w 0.783 ✅, 4w sharpe **0.660** ↑↑. **30d OOS sharpe 0.424 ❌ (binding constraint).** Only model with proven recent profitability ($2.46 4w exp, 33 ops/wk).",
+      "**CONTENDER**: ⚡ `[[model/68223ba5]]` (XLE EXP-42 V2-cliff) — **2/5 evals.** 16w **0.879** 🔥 (breakout +29%). **30d sharpe 0.798** (0.002 from gate!). But $0 4w exp, SC 0.100 ❌. Monitor for SC improvement.",
+      "**MONITORING**: 🔥 `[[model/10c9f48f]]` (XLE EXP-44 V2 p300) — **2/5 evals.** 16w **0.873**, 30d sharpe **0.807** ✅ (passes!). But SC score **0.046** ❌, 4w exp **$0** ❌, 1 trade since creation. NOT deployment-ready despite strong backtested stats.",
+      "**BACKUP**: `[[model/8d165b01]]` (XLE EXP-44 V2 p300) — **3/5 evals.** 16w **0.871** (V-recovery confirmed). SC 0.179 ❌, 4w exp $0 ❌."
     ],
-    "messageCount": 70,
-    "journalCount": 24,
-    "inboxCount": 1,
-    "processedCount": 69
+    "messageCount": 71,
+    "journalCount": 25,
+    "inboxCount": 0,
+    "processedCount": 71
   },
   {
     "name": "risk-officer",
-    "lastRun": "2026-03-23T22:18Z",
+    "lastRun": "2026-03-24T22:15Z",
     "currentFocus": [
-      "**EVAL PIPELINE K8S ISSUE** — Operator confirmed platform-level k8s problem. ~72h stale. 12+ Telegram notifications sent. Needs human k8s investigation. No capital impact (portfolio empty). Next expected batch Tue Mar 24 ~02:15Z — will not arrive unless k8s is resolved.",
-      "**4a4d8f30 SOLE CANDIDATE** — EXP-40, XLE V2. 16w **0.7844** (3 consecutive ↑). 1w **0.6444** ↑↑. **ALL HORIZONS IMPROVING.** 3/5 evals. Eval 4/5 BLOCKED by k8s issue. 5th eval → promotion window ~Mar 25-28 (may slip further if k8s persists).",
-      "**8d165b01 BACKUP CANDIDATE** — EXP-44, XLE V2 p300. 16w **0.8606** ↓ (from 0.8845). 2/5 evals. Mild inflation confirmed (-2.7%).",
-      "**10c9f48f NEW RISING CANDIDATE** — EXP-44, XLE V2 p300. 16w **0.8611**. 1/5 evals. Strongest debut per PM. Zero NP post-creation. Monitor."
+      "**EVAL PIPELINE NORMAL** — Latest batch Mar 24 02:15-02:27Z. Next batch Wed Mar 25 ~02:15Z.",
+      "**4a4d8f30 SOLE CANDIDATE** — EXP-40, XLE V2. 16w **0.7831** (≈flat from 0.7844). **4/5 evals.** All ≥0.58. **ONE MORE EVAL TO PROMOTION ELIGIBILITY.** 5th eval expected Wed Mar 25 ~02:15Z.",
+      "**10c9f48f RISING CANDIDATE** — EXP-44, XLE V2 p300. 16w **0.8726** ↑. 2/5 evals. Inflation NOT confirmed — 2nd eval ROSE (+0.0115).",
+      "**8d165b01 BACKUP CANDIDATE** — EXP-44, XLE V2 p300. 16w **0.8705** ↑ (recovery from 0.8606). 3/5 evals."
     ],
-    "messageCount": 22,
-    "journalCount": 76,
+    "messageCount": 25,
+    "journalCount": 90,
     "inboxCount": 0,
-    "processedCount": 22
+    "processedCount": 25
   },
   {
     "name": "operator",
     "lastRun": null,
     "currentFocus": [],
-    "messageCount": 18,
-    "journalCount": 28,
+    "messageCount": 20,
+    "journalCount": 29,
     "inboxCount": 0,
-    "processedCount": 18
+    "processedCount": 20
   },
   {
     "name": "architect",
-    "lastRun": "2026-03-23T21:55Z",
+    "lastRun": "2026-03-24T21:56Z",
     "currentFocus": [],
     "messageCount": 6,
-    "journalCount": 27,
+    "journalCount": 29,
     "inboxCount": 0,
     "processedCount": 6
   }
