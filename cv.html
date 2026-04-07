@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Juan Cañete Azorín</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fafafa;
+    }
+
+    .cv {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+
+    /* Toolbar */
+    .toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .toolbar a {
+      color: #888;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.15s;
+    }
+
+    .toolbar a:hover {
+      color: #1a1a1a;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1.1rem;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      background: #fff;
+      color: #374151;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+
+    .btn-download:hover {
+      border-color: #374151;
+      color: #111827;
+    }
+
+    .btn-download svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* Header */
+    .cv-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .cv-header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 0.4rem;
+    }
+
+    .cv-header .contact {
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+
+    .cv-header .contact a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    .cv-header .contact a:hover {
+      color: #111827;
+    }
+
+    .cv-header .contact .sep {
+      color: #cbd5e1;
+      margin: 0 0.3rem;
+    }
+
+    .cv-summary {
+      text-align: center;
+      color: #475569;
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cv-quote {
+      text-align: center;
+      color: #94a3b8;
+      font-size: 0.8rem;
+      font-style: italic;
+      margin-bottom: 2.5rem;
+      line-height: 1.5;
+    }
+
+    .cv-quote .author {
+      font-style: normal;
+      display: block;
+      margin-top: 0.2rem;
+      font-size: 0.75rem;
+    }
+
+    /* Sections */
+    .cv-section {
+      margin-bottom: 2.2rem;
+    }
+
+    .cv-section h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #9ca3af;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.3rem;
+    }
+
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 1.8rem;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: #e2e8f0;
+    }
+
+    .job {
+      position: relative;
+      margin-bottom: 1.8rem;
+      break-inside: avoid;
+    }
+
+    .job:last-child {
+      margin-bottom: 0;
+    }
+
+    .job::before {
+      content: "";
+      position: absolute;
+      left: -1.8rem;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #9ca3af;
+      border: 2px solid #fafafa;
+      box-shadow: 0 0 0 1.5px #d1d5db;
+    }
+
+    .job.earlier::before {
+      background: #d1d5db;
+      box-shadow: 0 0 0 1.5px #e5e7eb;
+    }
+
+    .job-header {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.25rem;
+    }
+
+    .job-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .job-title a {
+      color: #1e293b;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .job-title a:hover {
+      border-color: #9ca3af;
+      color: #374151;
+    }
+
+    .job-period {
+      color: #94a3b8;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .job-narrative {
+      color: #64748b;
+      font-size: 0.88rem;
+      margin-bottom: 0.4rem;
+      font-style: italic;
+    }
+
+    .job ul {
+      list-style: none;
+      margin: 0.3rem 0 0;
+    }
+
+    .job > ul > li {
+      position: relative;
+      padding-left: 1rem;
+      color: #475569;
+      font-size: 0.88rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .job > ul > li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #cbd5e1;
+    }
+
+    /* Tech pills */
+    .tech-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.5rem;
+    }
+
+    .tech-pills span {
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: #6b7280;
+      background: #f3f4f6;
+      border: 1px solid #e5e7eb;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+    }
+
+    /* Education */
+    .edu-item {
+      margin-bottom: 1rem;
+    }
+
+    .edu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .edu-school {
+      color: #94a3b8;
+      font-size: 0.83rem;
+    }
+
+    .edu-detail {
+      color: #64748b;
+      font-size: 0.85rem;
+      margin-top: 0.1rem;
+    }
+
+    /* Certs */
+    .cert-list {
+      list-style: none;
+    }
+
+    .cert-list li {
+      position: relative;
+      padding-left: 1rem;
+      color: #475569;
+      font-size: 0.88rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .cert-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #cbd5e1;
+    }
+
+    /* Languages */
+    .lang-list {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+
+    .lang-list li {
+      font-size: 0.9rem;
+      color: #475569;
+    }
+
+    .lang-list strong {
+      color: #1e293b;
+    }
+
+    /* Bottom sections grid */
+    .cv-bottom {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .cv-bottom .cv-section {
+      margin-bottom: 0;
+    }
+
+    /* Print styles */
+    @media print {
+      @page {
+        margin: 1.5cm 2cm;
+        size: A4;
+      }
+
+      body {
+        background: #fff;
+      }
+
+      .cv {
+        max-width: none;
+        padding: 0;
+      }
+
+      .toolbar {
+        display: none;
+      }
+
+      .job {
+        break-inside: avoid;
+      }
+
+      .edu-item {
+        break-inside: avoid;
+      }
+
+      a {
+        color: inherit !important;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .cv {
+        padding: 1.5rem 1.2rem;
+      }
+
+      .cv-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .cv-bottom {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .lang-list {
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <div class="toolbar">
+      <a href="/">&larr; Back</a>
+      <button class="btn-download" id="downloadBtn">
+        <svg viewBox="0 0 16 16"><path d="M8 0a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 12.293V.5A.5.5 0 0 1 8 0z"/></svg>
+        Download PDF
+      </button>
+    </div>
+
+    <div id="cv-content">
+      <header class="cv-header">
+        <h1>Juan Cañete Azorín</h1>
+        <p class="contact">
+          <a href="mailto:juacker@komlog.org">juacker@komlog.org</a>
+          <span class="sep">&middot;</span>
+          <a href="https://linkedin.com/in/juacker">LinkedIn</a>
+          <span class="sep">&middot;</span>
+          <a href="https://github.com/juacker">GitHub</a>
+          <span class="sep">&middot;</span>
+          <a href="https://juacker.github.io">juacker.github.io</a>
+        </p>
+      </header>
+
+      <p class="cv-summary">
+        Software engineer with more than 10 years of experience in software development
+        and systems architecture. Curious, persistent and pragmatic. I love learning and building things.
+      </p>
+
+      <div class="cv-quote">
+        "Sow an act and you reap a habit;<br>
+        sow a habit and you reap a character;<br>
+        sow a character and you reap a destiny."
+        <span class="author">Charles Reade</span>
+      </div>
+
+      <section class="cv-section">
+        <h2>Experience</h2>
+
+        <div class="timeline">
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Senior Software Engineer @ <a href="https://www.netdata.cloud">Netdata</a></div>
+              <div class="job-period">Sep 2021 &ndash; Present</div>
+            </div>
+            <ul>
+              <li>Designing and building backend systems for a SaaS infrastructure monitoring product used by millions of nodes.</li>
+              <li>Leading the development of multi-agent AI systems for autonomous data analysis and report generation.</li>
+              <li>Driving architectural improvements for system performance and stability at scale.</li>
+            </ul>
+            <div class="tech-pills">
+              <span>Go</span>
+              <span>PostgreSQL</span>
+              <span>Elasticsearch</span>
+              <span>Kubernetes</span>
+              <span>Pulsar</span>
+              <span>EMQX</span>
+              <span>Agentic AI</span>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Senior Software Engineer @ <a href="https://www.bbva.com">BBVA</a></div>
+              <div class="job-period">Jun 2020 &ndash; Sep 2021</div>
+            </div>
+            <ul>
+              <li>Built observability solutions providing visibility into customer traffic across hundreds of services.</li>
+              <li>Improved reliability and scalability of data pipelines ingesting terabytes daily.</li>
+            </ul>
+            <div class="tech-pills">
+              <span>Go</span>
+              <span>Java</span>
+              <span>Python</span>
+              <span>Kafka</span>
+              <span>InfluxDB</span>
+              <span>Elasticsearch</span>
+              <span>Hashicorp</span>
+              <span>AWS</span>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Senior Software Engineer @ <a href="https://www.ovhcloud.com">OVHcloud</a></div>
+              <div class="job-period">Dec 2017 &ndash; Jun 2020</div>
+            </div>
+            <ul>
+              <li>Designed and built microservices for billing, payments and antifraud systems.</li>
+              <li>Worked in a distributed international team across multiple countries.</li>
+            </ul>
+            <div class="tech-pills">
+              <span>Go</span>
+              <span>Python</span>
+              <span>Kafka</span>
+              <span>PostgreSQL</span>
+              <span>Elasticsearch</span>
+              <span>Redis</span>
+              <span>Docker</span>
+            </div>
+          </div>
+
+          <div class="job">
+            <div class="job-header">
+              <div class="job-title">Founder @ <a href="https://github.com/komlog-io/komlog">Komlog</a></div>
+              <div class="job-period">Jan 2015 &ndash; Dec 2017</div>
+            </div>
+            <p class="job-narrative">
+              Self-funded and built a SaaS platform for system monitoring that extracted metrics from unstructured data. Full stack, from infrastructure to ML algorithms.
+            </p>
+            <ul>
+              <li>Designed and operated the full platform: Python backend, React frontend, Cassandra + PostgreSQL storage, Kubernetes orchestration.</li>
+              <li>Applied ML and NLP techniques for automatic metric extraction from logs and unstructured text.</li>
+            </ul>
+            <div class="tech-pills">
+              <span>Python</span>
+              <span>React</span>
+              <span>Cassandra</span>
+              <span>PostgreSQL</span>
+              <span>Kubernetes</span>
+              <span>ML / NLP</span>
+            </div>
+          </div>
+
+          <div class="job earlier">
+            <div class="job-header">
+              <div class="job-title">Earlier roles</div>
+              <div class="job-period">2005 &ndash; 2014</div>
+            </div>
+            <ul>
+              <li>Systems Analyst at Panel Sistemas &mdash; telecom consulting, HA architecture, team management (20 people).</li>
+              <li>Systems Engineer at GFI Espa&ntilde;a &mdash; production deployments for international telecom customers.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Education</h2>
+
+        <div class="edu-item">
+          <div class="edu-title">Master in Artificial Intelligence and Deep Learning</div>
+          <div class="edu-school">Alcal&aacute; University, 2018 &ndash; 2019</div>
+          <p class="edu-detail">Thesis: recommender system for research papers using deep reinforcement learning.</p>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-title">Telecommunication Engineer</div>
+          <div class="edu-school">Alfonso X El Sabio University, 2007 &ndash; 2011</div>
+        </div>
+
+        <div class="edu-item">
+          <div class="edu-title">Technical Telecommunications Engineer &mdash; Telematics</div>
+          <div class="edu-school">Alcal&aacute; University, 1999 &ndash; 2003</div>
+        </div>
+      </section>
+
+      <div class="cv-bottom">
+        <section class="cv-section">
+          <h2>Certifications</h2>
+          <ul class="cert-list">
+            <li>Machine Learning &amp; AI (Stanford University)</li>
+            <li>Reliable Distributed Algorithms (KTH Stockholm)</li>
+            <li>Algorithmic Trading Systems (UPM Madrid)</li>
+            <li>Red Hat Clustering &amp; Storage (RH436)</li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h2>Languages</h2>
+          <ul class="lang-list">
+            <li><strong>Spanish:</strong> Native</li>
+            <li><strong>English:</strong> C1</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('downloadBtn').addEventListener('click', function () {
+      var el = document.getElementById('cv-content');
+      var opt = {
+        margin:       [15, 18, 15, 18],
+        filename:     'CV_Juan_Canete.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak:    { mode: ['css'] }
+      };
+      html2pdf().set(opt).from(el).save();
+    });
+  </script>
+</body>
+</html>
