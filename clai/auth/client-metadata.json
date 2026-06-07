@@ -1,0 +1,14 @@
+{
+  "client_id": "https://juacker.github.io/clai/auth/client-metadata.json",
+  "client_name": "CLAI",
+  "client_uri": "https://juacker.github.io/clai/",
+  "logo_uri": "https://juacker.github.io/clai/auth/logo.png",
+  "application_type": "native",
+  "token_endpoint_auth_method": "none",
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "redirect_uris": [
+    "http://127.0.0.1/oauth/mcp/callback"
+  ],
+  "scope": ""
+}
