@@ -33,11 +33,10 @@
   /* hero */
   .hero{position:relative; overflow:hidden; text-align:center; margin-bottom:34px}
   .hero::before{
-    content:""; position:absolute; inset:-40% 0 auto 0; height:460px; z-index:0;
-    background:
-      radial-gradient(closest-side at 50% 38%, rgba(99,102,241,.30), transparent 70%),
-      radial-gradient(closest-side at 50% 42%, rgba(0,196,154,.16), transparent 60%);
-    filter:blur(8px);
+    content:""; position:absolute; left:50%; top:-40px; transform:translateX(-50%);
+    width:460px; height:300px; z-index:0; pointer-events:none;
+    background:radial-gradient(circle at center, rgba(99,102,241,.14), transparent 68%);
+    filter:blur(26px);
   }
   .hero > *{position:relative; z-index:1}
   .logo{width:88px; height:88px; margin:0 auto 18px; display:block; filter:drop-shadow(0 8px 28px rgba(99,102,241,.35))}
