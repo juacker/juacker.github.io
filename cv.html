@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Juan Cañete</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
   <style>
     * {
       margin: 0;
@@ -269,6 +268,45 @@
       border-radius: 3px;
     }
 
+    /* Projects (same look as jobs, no timeline) */
+    .project {
+      margin-bottom: 1.4rem;
+      break-inside: avoid;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .project ul {
+      list-style: none;
+      margin: 0.3rem 0 0;
+    }
+
+    .project > ul > li {
+      position: relative;
+      padding-left: 1rem;
+      color: #475569;
+      font-size: 0.88rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .project > ul > li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #cbd5e1;
+    }
+
+    .job-period a {
+      color: inherit;
+      text-decoration: none;
+    }
+
     /* Education */
     .edu-item {
       margin-bottom: 1rem;
@@ -366,8 +404,14 @@
         display: none;
       }
 
-      .job {
+      .job,
+      .project {
         break-inside: avoid;
+      }
+
+      .tech-pills span {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       .edu-item {
@@ -422,12 +466,15 @@
           <a href="https://github.com/juacker">GitHub</a>
           <span class="sep">&middot;</span>
           <a href="https://juacker.github.io">juacker.github.io</a>
+          <span class="sep">&middot;</span>
+          Madrid, Spain (remote)
         </p>
       </header>
 
       <p class="cv-summary">
-        Software engineer with more than 10 years of experience in software development
-        and systems architecture. Curious, persistent and pragmatic. I love learning and building things.
+        Backend engineer with 10+ years in distributed systems and infrastructure. Lately building
+        AI agent systems: the multi-agent platform at Netdata, and CLAI, an open-source agent
+        orchestrator written in Rust. Curious, persistent and pragmatic. I love learning and building things.
       </p>
 
       <div class="cv-quote">
@@ -447,9 +494,10 @@
               <div class="job-period">Sep 2021 &ndash; Present</div>
             </div>
             <ul>
-              <li>Designing and building backend systems for a SaaS infrastructure monitoring product used by millions of nodes.</li>
-              <li>Leading the development of multi-agent AI systems for autonomous data analysis and report generation.</li>
-              <li>Driving architectural improvements for system performance and stability at scale.</li>
+              <li>Lead the design and development of Netdata's multi-agent AI system: agents that analyse infrastructure data autonomously and produce reports for users, running inside the product.</li>
+              <!-- TODO Juan: one line of scale here if you can share it (nodes/users served, runs per day, models or tools in the harness). Leave it out rather than guess. -->
+              <li>Backend systems for a SaaS monitoring product that ingests data from millions of nodes: Go services, PostgreSQL, Elasticsearch, Pulsar, on Kubernetes.</li>
+              <li>Own performance and stability work at scale, from design to production incidents.</li>
             </ul>
             <div class="tech-pills">
               <span>Go</span>
@@ -458,7 +506,8 @@
               <span>Kubernetes</span>
               <span>Pulsar</span>
               <span>EMQX</span>
-              <span>Agentic AI</span>
+              <span>AI Agents</span>
+              <span>LLMs</span>
             </div>
           </div>
 
@@ -540,6 +589,46 @@
       </section>
 
       <section class="cv-section">
+        <h2>Projects</h2>
+
+        <div class="project">
+          <div class="job-header">
+            <div class="job-title"><a href="https://clai.run/">CLAI</a></div>
+            <div class="job-period">2025 &ndash; Present &middot; <a href="https://github.com/clairun/clai">github.com/clairun/clai</a></div>
+          </div>
+          <p class="job-narrative">Open-source desktop app to run teams of AI agents. Sole author.</p>
+          <ul>
+            <li>Agents get MCP tools, shared workspaces and a shell, with execution sandboxed (bubblewrap on Linux) and command policies enforced outside the model.</li>
+            <li>Scheduled automations: agents that run unattended, keep their own memory across runs and delegate work to each other.</li>
+            <li>Every prompt and tool call is recorded in SQLite, so runs can be audited and replayed.</li>
+          </ul>
+          <div class="tech-pills">
+            <span>Rust</span>
+            <span>Tauri</span>
+            <span>React</span>
+            <span>MCP</span>
+            <span>SQLite</span>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="job-header">
+            <div class="job-title">Quercus Ilex</div>
+            <div class="job-period">Private &middot; <a href="https://juacker.github.io/quercus-ilex-feed/">public feed</a></div>
+          </div>
+          <ul>
+            <li>Algorithmic trading platform. Multi-objective evolutionary algorithms evolve strategies; AI agents backtest them, manage portfolios and watch live trades.</li>
+          </ul>
+          <div class="tech-pills">
+            <span>Go</span>
+            <span>React</span>
+            <span>PostgreSQL</span>
+            <span>AI Agents</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cv-section">
         <h2>Education</h2>
 
         <div class="edu-item">
@@ -582,17 +671,10 @@
   </div>
 
   <script>
+    // Browser print keeps the PDF as real text (selectable, parseable by ATS),
+    // unlike html2canvas which rasterises the page into an image.
     document.getElementById('downloadBtn').addEventListener('click', function () {
-      var el = document.getElementById('cv-content');
-      var opt = {
-        margin:       [15, 18, 15, 18],
-        filename:     'CV_Juan_Canete.pdf',
-        image:        { type: 'jpeg', quality: 0.98 },
-        html2canvas:  { scale: 2, useCORS: true },
-        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
-        pagebreak:    { mode: ['css'] }
-      };
-      html2pdf().set(opt).from(el).save();
+      window.print();
     });
   </script>
 </body>
