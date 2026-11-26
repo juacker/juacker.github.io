@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Observability · Thursday 26 November 2026 · Juan Cañete</title>
+  <meta name="description" content="Observability — 8 items from the daily briefing of Thursday 26 November 2026.">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../assets/site.css?v=2">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__brand" href="../../">Juan Cañete</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul role="list">
+          <li><a href="../../#briefing">Today</a></li>
+          <li><a href="../../briefings/">Briefings</a></li>
+          <li><a href="../../cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="briefing">
+    <header class="briefing__head">
+      <p class="briefing__eyebrow"><a href="../">← Full edition</a> · Daily briefing</p>
+      <h1 class="briefing__title">Observability</h1>
+      <p class="briefing__meta">8 items · English · Coverage window 22 November 2026 19:35:28 UTC → 26 November 2026 11:00:03 UTC (87:24:35)</p>
+    </header>
+    <section class="briefing__subjects">
+      <article class="subject">
+        <ul class="subject__items">
+          <li class="subject__item">
+            <a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.166.0">OpenTelemetry Collector v0.166.0 adds gRPC address-list shuffling, listener middleware extensions and FIPS 140-3 startup logging</a>
+            <span class="subject__source">open-telemetry/opentelemetry-collector - released 23 Nov 2026 22:26 UTC</span>
+            <p>The release adds the pick_first.shuffle_address_list option for gRPC clients that use the pick_first balancer, so clients resolving the same address list no longer all connect to the first address; the option is off by default and implements gRFC A62. Listener middleware extensions can now create HTTP and gRPC server listeners, and the Collector reports in its startup log line whether it is running in FIPS 140-3 mode.</p>
+          </li>
+          <li class="subject__item">
+            <a href="https://github.com/open-telemetry/opentelemetry-specification/releases/tag/v1.63.0">OpenTelemetry Specification v1.63.0 marks environment variables as stable context propagation carriers and adds a traces data model</a>
+            <span class="subject__source">open-telemetry/opentelemetry-specification - released 23 Nov 2026 17:25 UTC</span>
+            <p>Release 1.63.0 stabilizes environment variables as context propagation carriers and adds the traces data model to the specification. It introduces a development span type with an optional span creation parameter, ReadableSpan access and SDK syntax validation, and allows an exception to the finite upper bound on exporter Export calls for synchronous output through APIs without deadline or cancellation support.</p>
+          </li>
+          <li class="subject__item">
+            <a href="https://github.com/SigNoz/signoz/releases/tag/v0.152.0">SigNoz v0.152.0 removes the saved-view v1 APIs and starts moving log bodies to native JSON storage</a>
+            <span class="subject__source">SigNoz/signoz - released 26 Nov 2026 09:28 UTC</span>
+            <p>The release deletes the saved view v1 APIs, deprecated since v0.137.0, so callers using them directly have to migrate to v2. Log bodies move to native JSON storage with dual ingestion, which the project says requires additional collector CPU and memory, ClickHouse CPU and log disk capacity before the upgrade.</p>
+          </li>
+          <li class="subject__item">
+            <a href="https://github.com/openobserve/openobserve/releases/tag/v1.2.0">OpenObserve v1.2.0 rebuilds dashboards, ships a second-generation metrics explorer and adds product analytics and continuous profiling</a>
+            <span class="subject__source">openobserve/openobserve - released 24 Nov 2026 12:39 UTC</span>
+            <p>More than 900 changes from 40 contributors. Dashboards gain public read-only links, a TV mode, a layout editor with undo, live panel preview and four new panel types; the metrics explorer v2 can create alerts from any chart, compare periods, forecast, write formulas and use Prometheus 3.x functions. Product analytics and continuous profiling are included out of the box alongside dozens of alerting improvements.</p>
+          </li>
+          <li class="subject__item">
+            <a href="https://github.com/grafana/mcp-grafana/releases/tag/v2.4.0">Grafana MCP v2.4.0 adds notebook tools and opt-in AWS X-Ray trace tooling</a>
+            <span class="subject__source">grafana/mcp-grafana - released 24 Nov 2026 10:01 UTC</span>
+            <p>The release adds tools for the Grafana 13.3 notebooks preview: list, search, get by UID, render to PDF, create, update and delete. The update tool keeps the notebook metadata and checks the resourceVersion it was read at, so a concurrent edit fails instead of being overwritten. An opt-in xray category adds search_xray_traces and get_xray_trace, the latter returning a trace as a tree of segments with timings and HTTP status codes.</p>
+          </li>
+          <li class="subject__item">
+            <a href="https://github.com/grafana/grafana/releases/tag/v13.3.2">Grafana v13.3.2 fixes two CVEs and preserves folder identities during provisioning</a>
+            <span class="subject__source">grafana/grafana - released 24 Nov 2026 17:58 UTC</span>
+            <p>The patch release fixes CVE-2026-107561 and CVE-2026-88960. Its provisioning change keeps existing folder identities when children are created instead of regenerating them, so dashboards and folders produced by the same provisioning job keep stable identifiers across runs.</p>
+          </li>
+          <li class="subject__item">
+            <a href="https://github.com/grafana/beyla/releases/tag/v3.44.0">Grafana Beyla v3.44.0 adds GPU metrics collection to the eBPF auto-instrumentation</a>
+            <span class="subject__source">grafana/beyla - released 25 Nov 2026 10:27 UTC</span>
+            <p>Beyla v3.44.0 adds GPU metrics collection and export, and makes server.address and server.port opt-in on HTTP request duration and body size so those labels are no longer emitted by default. It also carries upstream changes from opentelemetry-ebpf-instrumentation, including Go channel links moved to runtime configuration, preserved custom query-parameter redaction in Config v2 and runtime.goexit1-based Go exception cleanup.</p>
+          </li>
+          <li class="subject__item">
+            <a href="https://github.com/prometheus/alertmanager/releases/tag/v0.35.1">Prometheus Alertmanager v0.35.1 raises the HTTP server idle timeout so alert deliveries are not cut off</a>
+            <span class="subject__source">prometheus/alertmanager - released 24 Nov 2026 22:47 UTC</span>
+            <p>The fix raises the Alertmanager HTTP server idle timeout from 90 seconds to 6 minutes, outlasting the 5-minute client idle timeout used by Prometheus, so alert POSTs are no longer failed by connections closed on the server side.</p>
+          </li>
+        </ul>
+      </article>
+      <article class="subject">
+        <h2 class="subject__title">Method and sources</h2>
+        <p class="subject__note">Window: 22 Nov 2026 19:35 UTC to 26 Nov 2026 11:00:03 UTC (87:24:35). Sources: the GitHub release feeds for the OpenTelemetry Collector, Collector Contrib, the OpenTelemetry specification, the OpenTelemetry Operator, Prometheus Alertmanager, Grafana, Grafana Beyla, the Grafana MCP server, Fluent Bit, OpenObserve, SigNoz, VictoriaMetrics and InfluxDB, each release checked against its GitHub publication timestamp. The sweep returned 31 release records and 40 merged-pull-request records dated 23, 24, 25 and 26 November; only releases with a verified in-window publication timestamp are listed. VictoriaMetrics v1.157.0 was published on GitHub on 23 November at 12:36 UTC but its release notes state that the release itself is dated 20 November, so it falls outside the window and is excluded. Grafana&#x27;s blog and XML feeds, The New Stack and the Fru.dev release listing returned HTTP 403 or were not reachable from the fetcher, so no vendor announcement pages could be checked in this window.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <h2 class="visually-hidden">Contact</h2>
+      <ul role="list">
+        <li><a href="../../">Home</a></li>
+        <li><a href="mailto:juacker@komlog.org">juacker@komlog.org</a></li>
+        <li><a href="https://github.com/juacker">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/juacker">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

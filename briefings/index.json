@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-11-26T12:09:48Z",
+  "subjects": [
+    {
+      "slug": "observability",
+      "title": "Observability",
+      "lang": "en"
+    },
+    {
+      "slug": "ai",
+      "title": "AI industry & research",
+      "lang": "en"
+    },
+    {
+      "slug": "agentic-ai",
+      "title": "Agentic AI papers",
+      "lang": "en"
+    },
+    {
+      "slug": "spanish-startups",
+      "title": "Spanish startups",
+      "lang": "es"
+    },
+    {
+      "slug": "podcasts",
+      "title": "Podcasts",
+      "lang": "en"
+    }
+  ],
+  "editions": [
+    {
+      "date": "2026-11-26",
+      "published_at": "2026-11-26T11:00:03Z",
+      "window": {
+        "start": "2026-11-22T19:35:28Z",
+        "end": "2026-11-26T11:00:03Z",
+        "duration": "87:24:35"
+      },
+      "path": "briefings/2026-11-26/index.html",
+      "total_items": 40,
+      "subjects": [
+        {
+          "slug": "observability",
+          "title": "Observability",
+          "lang": "en",
+          "count": 8,
+          "path": "briefings/2026-11-26/observability.html",
+          "headlines": [
+            {
+              "title": "OpenTelemetry Collector v0.166.0 adds gRPC address-list shuffling, listener middleware extensions and FIPS 140-3 startup logging",
+              "url": "https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.166.0"
+            },
+            {
+              "title": "OpenTelemetry Specification v1.63.0 marks environment variables as stable context propagation carriers and adds a traces data model",
+              "url": "https://github.com/open-telemetry/opentelemetry-specification/releases/tag/v1.63.0"
+            },
+            {
+              "title": "SigNoz v0.152.0 removes the saved-view v1 APIs and starts moving log bodies to native JSON storage",
+              "url": "https://github.com/SigNoz/signoz/releases/tag/v0.152.0"
+            },
+            {
+              "title": "OpenObserve v1.2.0 rebuilds dashboards, ships a second-generation metrics explorer and adds product analytics and continuous profiling",
+              "url": "https://github.com/openobserve/openobserve/releases/tag/v1.2.0"
+            },
+            {
+              "title": "Grafana MCP v2.4.0 adds notebook tools and opt-in AWS X-Ray trace tooling",
+              "url": "https://github.com/grafana/mcp-grafana/releases/tag/v2.4.0"
+            },
+            {
+              "title": "Grafana v13.3.2 fixes two CVEs and preserves folder identities during provisioning",
+              "url": "https://github.com/grafana/grafana/releases/tag/v13.3.2"
+            },
+            {
+              "title": "Grafana Beyla v3.44.0 adds GPU metrics collection to the eBPF auto-instrumentation",
+              "url": "https://github.com/grafana/beyla/releases/tag/v3.44.0"
+            },
+            {
+              "title": "Prometheus Alertmanager v0.35.1 raises the HTTP server idle timeout so alert deliveries are not cut off",
+              "url": "https://github.com/prometheus/alertmanager/releases/tag/v0.35.1"
+            }
+          ]
+        },
+        {
+          "slug": "ai",
+          "title": "AI industry & research",
+          "lang": "en",
+          "count": 8,
+          "path": "briefings/2026-11-26/ai.html",
+          "headlines": [
+            {
+              "title": "Marlowe raises $277M to build inference clusters with chips from Nvidia rivals",
+              "url": "https://siliconangle.com/2026/11/24/marlowe-raises-277m-to-build-inference-clusters-with-chips-from-nvidia-rivals/"
+            },
+            {
+              "title": "OpenAI and Cisco release Shirudo, an open-source Linux runtime for protecting systems during patching",
+              "url": "https://openai.com/index/introducing-shirudo"
+            },
+            {
+              "title": "OpenAI reports that GPT-6 models design protein structures from reasoning and code",
+              "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities"
+            },
+            {
+              "title": "OpenAI documents a distant-planet search with Astra",
+              "url": "https://openai.com/index/searching-for-distant-planets-with-astra"
+            },
+            {
+              "title": "Amazon says attackers' AI agents found and exploited a zero-day with little human input",
+              "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+            },
+            {
+              "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+              "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+            },
+            {
+              "title": "US state attorneys general challenge Character.AI's plan to auction off users' private chats",
+              "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"
+            },
+            {
+              "title": "Tidal to ban and remove millions of AI-generated tracks",
+              "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/"
+            }
+          ]
+        },
+        {
+          "slug": "agentic-ai",
+          "title": "Agentic AI papers",
+          "lang": "en",
+          "count": 8,
+          "path": "briefings/2026-11-26/agentic-ai.html",
+          "headlines": [
+            {
+              "title": "ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks",
+              "url": "https://arxiv.org/abs/2611.32946"
+            },
+            {
+              "title": "Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance",
+              "url": "https://arxiv.org/abs/2611.33098"
+            },
+            {
+              "title": "RECAP: Training Long-horizon LLM Agents with Context Compaction",
+              "url": "https://arxiv.org/abs/2611.31258"
+            },
+            {
+              "title": "ExpGuard: Guarding Long-Horizon LLM Agents against Corrupted Experience",
+              "url": "https://arxiv.org/abs/2611.32085"
+            },
+            {
+              "title": "When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents",
+              "url": "https://arxiv.org/abs/2611.28341"
+            },
+            {
+              "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+              "url": "https://arxiv.org/abs/2611.31063"
+            },
+            {
+              "title": "Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning",
+              "url": "https://arxiv.org/abs/2611.34703"
+            },
+            {
+              "title": "MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2611.34327"
+            }
+          ]
+        },
+        {
+          "slug": "spanish-startups",
+          "title": "Spanish startups",
+          "lang": "es",
+          "count": 8,
+          "path": "briefings/2026-11-26/spanish-startups.html",
+          "headlines": [
+            {
+              "title": "Permut cierra una ronda de 3 millones de euros liderada por Next Tier Ventures",
+              "url": "https://elreferente.es/inversiones/permut-cierra-una-ronda-de-tres-millones-de-euros-liderara-por-next-tier-ventures/"
+            },
+            {
+              "title": "Newborn Town compra Softonic para acelerar su crecimiento y mantener sede y equipo en Barcelona",
+              "url": "https://forbes.es/ultima-hora/1074011/newborn-town-compra-softonic-para-acelerar-su-crecimiento-y-mantener-su-sede-y-equipo-en-barcelona/"
+            },
+            {
+              "title": "Invivo Partners lidera una ronda de 4,15 millones de euros en Undara Bio, con el ICF y BStartup",
+              "url": "https://www.webcapitalriesgo.com/invivo-partners-lidera-una-ronda-de-e415m-en-undara-bio-participan-el-icf-y-bstartup/"
+            },
+            {
+              "title": "Holidu adquiere CasasRurales.Net para reforzar el turismo rural en España",
+              "url": "https://elreferente.es/startups/holidu-adquiere-casasrurales-net/"
+            },
+            {
+              "title": "Fermat cierra una ronda de 8 millones de dólares coliderada por Kibo y Lunar",
+              "url": "https://www.webcapitalriesgo.com/fermat-cierra-una-ronda-de-8m-coliderada-por-kibo-y-lunar/"
+            },
+            {
+              "title": "Fluidra Ventures lidera una ronda de inversión en Aerisio, de refrigeración urbana",
+              "url": "https://www.webcapitalriesgo.com/fluidra-ventures-lidera-una-ronda-de-inversion-en-aerisio-refrigeracion-urbana/"
+            },
+            {
+              "title": "Henko Capital lanza su tercer fondo con un objetivo de 300 millones de euros",
+              "url": "https://www.webcapitalriesgo.com/henko-capital-lanza-su-tercer-fondo-con-un-objetivo-de-e300m/"
+            },
+            {
+              "title": "Reversa, IA para el trabajo regulatorio, atrae 750.000 euros en una ronda liderada por itnig",
+              "url": "https://www.webcapitalriesgo.com/reversa-ia-trabajo-regulatorio-atrae-e750-000-en-una-ronda-liderada-por-itnig/"
+            }
+          ]
+        },
+        {
+          "slug": "podcasts",
+          "title": "Podcasts",
+          "lang": "en",
+          "count": 8,
+          "path": "briefings/2026-11-26/podcasts.html",
+          "headlines": [
+            {
+              "title": "The Revolution vs The Renaissance — Thariq Shihipar, OpenAI",
+              "url": "https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/the_revolution_vs_the_renaissance_thariq_shihipar_openai"
+            },
+            {
+              "title": "If AI Can Pass the Exam, What Should College Test For? with Suzy Siegle",
+              "url": "https://www.artificialintelligencepod.com/if-ai-can-pass-the-exam-what-should-college-test-for-with-suzy-siegle/"
+            },
+            {
+              "title": "Claude AI's Biggest Math Breakthrough Has A Problem.",
+              "url": "https://www.youtube.com/watch?v=hwWlEuI359w"
+            },
+            {
+              "title": "Responding to objections to recursive self-improvement",
+              "url": "https://www.dwarkesh.com/p/rsiobjections"
+            },
+            {
+              "title": "Warp bets on the software factory",
+              "url": "https://changelog.com/podcast/693"
+            },
+            {
+              "title": "What Should a Lab Do Before It Feeds Its Data to AI? with Loren Perelman",
+              "url": "https://www.artificialintelligencepod.com/what-should-a-lab-do-before-it-feeds-its-data-to-ai-with-loren-perelman/"
+            },
+            {
+              "title": "Podcast-EP80: El resumen semanal de noticias sobre Inteligencia Artificial.",
+              "url": "https://iaenespanol.substack.com/p/podcast-ep80-el-resumen-semanal-de"
+            },
+            {
+              "title": "Claude AI Solved The Secret Of Black Holes",
+              "url": "https://www.youtube.com/watch?v=1jPdehG3Hms"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
