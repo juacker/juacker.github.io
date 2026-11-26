@@ -19,7 +19,7 @@
   <meta name="twitter:description" content="Daily briefing of Thursday 26 November 2026: 40 items across 5 subjects.">
   <meta name="twitter:image" content="https://juacker.github.io/assets/social-card.png">
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-  <link rel="stylesheet" href="../../assets/site.css?v=2">
+  <link rel="stylesheet" href="../../assets/site.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -29,7 +29,7 @@
       <a class="site-header__brand" href="../../">Juan Cañete</a>
       <nav class="site-nav" aria-label="Main">
         <ul role="list">
-          <li><a href="../../#briefing">Today</a></li>
+          <li><a href="../../#briefing">News</a></li>
           <li><a href="../../briefings/">Briefings</a></li>
           <li><a href="../../cv.html">CV</a></li>
         </ul>
@@ -37,14 +37,14 @@
     </div>
   </header>
 
-  <main id="main" class="briefing">
+  <main id="main" class="briefing briefing--edition">
     <header class="briefing__head">
-      <p class="briefing__eyebrow">Daily briefing</p>
+      <p class="briefing__eyebrow"><a href="../">All briefings</a> / Daily briefing</p>
       <h1 class="briefing__title">Thursday 26 November 2026</h1>
       <p class="briefing__meta">40 items · 5 subjects · Coverage window 22 November 2026 19:35:28 UTC → 26 November 2026 11:00:03 UTC (87:24:35)</p>
     </header>
-    <section class="briefing__subjects">
-      <article class="subject">
+    <section class="briefing__subjects" aria-label="Subjects">
+      <article class="subject" id="observability">
         <h2 class="subject__title"><a href="observability.html">Observability</a></h2>
         <p class="subject__meta">8 items · English</p>
         <ul class="subject__items">
@@ -58,7 +58,7 @@
           <li class="subject__item"><a href="https://github.com/prometheus/alertmanager/releases/tag/v0.35.1">Prometheus Alertmanager v0.35.1 raises the HTTP server idle timeout so alert deliveries are not cut off</a></li>
         </ul>
       </article>
-      <article class="subject">
+      <article class="subject" id="ai">
         <h2 class="subject__title"><a href="ai.html">AI industry &amp; research</a></h2>
         <p class="subject__meta">8 items · English</p>
         <ul class="subject__items">
@@ -72,7 +72,7 @@
           <li class="subject__item"><a href="https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/">Tidal to ban and remove millions of AI-generated tracks</a></li>
         </ul>
       </article>
-      <article class="subject">
+      <article class="subject" id="agentic-ai">
         <h2 class="subject__title"><a href="agentic-ai.html">Agentic AI papers</a></h2>
         <p class="subject__meta">8 items · English</p>
         <ul class="subject__items">
@@ -86,7 +86,7 @@
           <li class="subject__item"><a href="https://arxiv.org/abs/2611.34327">MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems</a></li>
         </ul>
       </article>
-      <article class="subject">
+      <article class="subject" id="spanish-startups">
         <h2 class="subject__title"><a href="spanish-startups.html">Spanish startups</a></h2>
         <p class="subject__meta">8 elementos · En español</p>
         <ul class="subject__items">
@@ -100,7 +100,7 @@
           <li class="subject__item"><a href="https://www.webcapitalriesgo.com/reversa-ia-trabajo-regulatorio-atrae-e750-000-en-una-ronda-liderada-por-itnig/">Reversa, IA para el trabajo regulatorio, atrae 750.000 euros en una ronda liderada por itnig</a></li>
         </ul>
       </article>
-      <article class="subject">
+      <article class="subject" id="podcasts">
         <h2 class="subject__title"><a href="podcasts.html">Podcasts</a></h2>
         <p class="subject__meta">8 items · English</p>
         <ul class="subject__items">

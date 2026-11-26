@@ -1,11 +1,10 @@
-/* juacker.github.io — hero animation and daily-briefing rendering. No dependencies. */
+/* juacker.github.io — hero animation and briefing archive. No dependencies. */
 (function () {
   'use strict';
 
   // Site is served from the domain root; paths inside index.json are relative to it.
   var SITE_ROOT = '/';
   var INDEX_URL = SITE_ROOT + 'briefings/index.json';
-  var PREVIOUS_ON_HOME = 6;
 
   var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
@@ -63,10 +62,6 @@
     return n + ' ' + word + (n === 1 ? '' : 's');
   }
 
-  function langName(lang) {
-    return lang === 'es' ? 'Spanish' : lang === 'en' ? 'English' : (lang || '');
-  }
-
   function timeEl(iso, fmt) {
     return el('time', { datetime: iso, text: fmtDay(iso, fmt) });
   }
@@ -97,23 +92,6 @@
     container.insertBefore(el('p', { className: 'notice', role: 'status', 'data-generated': true, text: message }), container.firstChild);
   }
 
-  /* ---------- Homepage: latest edition ---------- */
-
-  function subjectCard(subject) {
-    var href = siteHref(subject.path);
-    var isEs = subject.lang === 'es';
-    var meta = el('span', { className: 'subject-card__meta' }, [
-      typeof subject.count === 'number' ? plural(subject.count, 'item') : '',
-      subject.lang ? ' · ' : '',
-      isEs ? el('span', { className: 'lang-badge', title: 'In Spanish', text: 'ES' }) : langName(subject.lang),
-      isEs ? el('span', { className: 'visually-hidden', text: ' (in Spanish)' }) : null
-    ]);
-    var children = [el('span', { className: 'subject-card__title', text: subject.title || subject.slug }), meta];
-    return el('li', null, [href
-      ? el('a', { className: 'subject-card', href: href, hreflang: subject.lang || null }, children)
-      : el('div', { className: 'subject-card' }, children)]);
-  }
-
   function editionSummary(edition) {
     var parts = [];
     if (typeof edition.total_items === 'number') parts.push(plural(edition.total_items, 'item'));
@@ -122,40 +100,6 @@
     var dur = edition.window && fmtDuration(edition.window.duration);
     if (dur) parts.push('covers ' + dur);
     return parts.join(' · ');
-  }
-
-  function renderHome(root, data) {
-    var editions = data.editions;
-    var latestEl = root.querySelector('[data-briefing-latest]');
-    var previousEl = root.querySelector('[data-briefing-previous]');
-    if (!latestEl || !previousEl) return;
-
-    if (!editions.length) {
-      latestEl.replaceChildren(el('p', { className: 'notice', role: 'status', text: 'No briefings published yet. Check back soon.' }));
-      previousEl.replaceChildren();
-      return;
-    }
-
-    var latest = editions[0];
-    var latestHref = siteHref(latest.path);
-    var date = timeEl(latest.date, longDayFmt);
-    latestEl.replaceChildren(
-      el('p', { className: 'latest__date' }, [latestHref ? el('a', { href: latestHref }, [date]) : date]),
-      el('p', { className: 'latest__meta', text: editionSummary(latest) }),
-      el('ul', { className: 'subject-grid', role: 'list' }, (latest.subjects || []).map(subjectCard))
-    );
-
-    var previous = editions.slice(1, 1 + PREVIOUS_ON_HOME);
-    if (!previous.length) {
-      previousEl.replaceChildren(el('p', { className: 'latest__meta', text: 'Earlier editions will appear here.' }));
-      return;
-    }
-    previousEl.replaceChildren(el('ul', { className: 'edition-list', role: 'list' }, previous.map(function (e) {
-      var href = siteHref(e.path);
-      var inner = [el('span', { className: 'edition-list__date' }, [timeEl(e.date)]),
-        el('span', { className: 'edition-list__count', text: typeof e.total_items === 'number' ? plural(e.total_items, 'item') : '' })];
-      return el('li', null, [href ? el('a', { href: href }, inner) : el('span', null, inner)]);
-    })));
   }
 
   /* ---------- Archive page ---------- */
@@ -404,16 +348,13 @@
   var canvas = document.getElementById('life');
   if (canvas) startLife(canvas);
 
-  var home = document.querySelector('[data-briefings="home"]');
   var archive = document.querySelector('[data-briefings="archive"]');
-  if (!home && !archive) return;
+  if (!archive) return;
 
   loadIndex().then(function (data) {
-    if (home) renderHome(home, data);
     if (archive) renderArchive(archive, data);
   }).catch(function () {
     var message = 'The briefing index could not be loaded right now. Showing the last edition known when this page was published.';
-    showNotice(home && home.querySelector('[data-briefing-latest]'), message);
     showNotice(archive && archive.querySelector('[data-archive-list]'), message);
   });
 })();
