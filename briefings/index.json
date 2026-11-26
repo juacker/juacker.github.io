@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T12:21:37Z",
+  "generated_at": "2026-11-26T13:49:27Z",
   "subjects": [
     {
       "slug": "observability",
@@ -37,7 +37,7 @@
         "duration": "87:24:35"
       },
       "path": "briefings/2026-11-26/index.html",
-      "total_items": 40,
+      "total_items": 37,
       "subjects": [
         {
           "slug": "observability",
@@ -207,7 +207,7 @@
           "slug": "podcasts",
           "title": "Podcasts",
           "lang": "en",
-          "count": 8,
+          "count": 5,
           "path": "briefings/2026-11-26/podcasts.html",
           "headlines": [
             {
@@ -217,10 +217,6 @@
             {
               "title": "If AI Can Pass the Exam, What Should College Test For? with Suzy Siegle",
               "url": "https://www.artificialintelligencepod.com/if-ai-can-pass-the-exam-what-should-college-test-for-with-suzy-siegle/"
-            },
-            {
-              "title": "Claude AI's Biggest Math Breakthrough Has A Problem.",
-              "url": "https://www.youtube.com/watch?v=hwWlEuI359w"
             },
             {
               "title": "Responding to objections to recursive self-improvement",
@@ -233,14 +229,6 @@
             {
               "title": "What Should a Lab Do Before It Feeds Its Data to AI? with Loren Perelman",
               "url": "https://www.artificialintelligencepod.com/what-should-a-lab-do-before-it-feeds-its-data-to-ai-with-loren-perelman/"
-            },
-            {
-              "title": "Podcast-EP80: El resumen semanal de noticias sobre Inteligencia Artificial.",
-              "url": "https://iaenespanol.substack.com/p/podcast-ep80-el-resumen-semanal-de"
-            },
-            {
-              "title": "Claude AI Solved The Secret Of Black Holes",
-              "url": "https://www.youtube.com/watch?v=1jPdehG3Hms"
             }
           ]
         }
