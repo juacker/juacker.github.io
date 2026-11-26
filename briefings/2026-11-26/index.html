@@ -19,7 +19,7 @@
   <meta name="twitter:description" content="Daily briefing of Thursday 26 November 2026: 37 items across 5 subjects.">
   <meta name="twitter:image" content="https://juacker.github.io/assets/social-card.png">
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-  <link rel="stylesheet" href="../../assets/site.css?v=4">
+  <link rel="stylesheet" href="../../assets/site.css?v=5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -29,7 +29,6 @@
       <a class="site-header__brand" href="../../">Juan Cañete</a>
       <nav class="site-nav" aria-label="Main">
         <ul role="list">
-          <li><a href="../../#briefing">News</a></li>
           <li><a href="../../briefings/">Briefings</a></li>
           <li><a href="../../cv.html">CV</a></li>
         </ul>
@@ -42,76 +41,248 @@
       <p class="briefing__eyebrow"><a href="../">All briefings</a> / Daily briefing</p>
       <h1 class="briefing__title">Thursday 26 November 2026</h1>
       <p class="briefing__meta">37 items · 5 subjects · Coverage window 22 November 2026 19:35:28 UTC → 26 November 2026 11:00:03 UTC (87:24:35)</p>
+      <nav class="edition-toc" aria-label="Subjects in this edition">
+        <ul role="list">
+          <li><a href="#observability">Observability <span class="edition-toc__count">8<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#ai">AI industry &amp; research <span class="edition-toc__count">8<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#agentic-ai">Agentic AI papers <span class="edition-toc__count">8<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#spanish-startups">Spanish startups <span class="lang-badge" aria-hidden="true">ES</span><span class="visually-hidden"> (in Spanish)</span> <span class="edition-toc__count">8<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#podcasts">Podcasts <span class="edition-toc__count">5<span class="visually-hidden"> items</span></span></a></li>
+        </ul>
+      </nav>
     </header>
-    <section class="briefing__subjects" aria-label="Subjects">
-      <article class="subject" id="observability">
-        <h2 class="subject__title"><a href="observability.html">Observability</a></h2>
-        <p class="subject__meta">8 items · English</p>
-        <ul class="subject__items">
-          <li class="subject__item"><a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.166.0">OpenTelemetry Collector v0.166.0 adds gRPC address-list shuffling, listener middleware extensions and FIPS 140-3 startup logging</a></li>
-          <li class="subject__item"><a href="https://github.com/open-telemetry/opentelemetry-specification/releases/tag/v1.63.0">OpenTelemetry Specification v1.63.0 marks environment variables as stable context propagation carriers and adds a traces data model</a></li>
-          <li class="subject__item"><a href="https://github.com/SigNoz/signoz/releases/tag/v0.152.0">SigNoz v0.152.0 removes the saved-view v1 APIs and starts moving log bodies to native JSON storage</a></li>
-          <li class="subject__item"><a href="https://github.com/openobserve/openobserve/releases/tag/v1.2.0">OpenObserve v1.2.0 rebuilds dashboards, ships a second-generation metrics explorer and adds product analytics and continuous profiling</a></li>
-          <li class="subject__item"><a href="https://github.com/grafana/mcp-grafana/releases/tag/v2.4.0">Grafana MCP v2.4.0 adds notebook tools and opt-in AWS X-Ray trace tooling</a></li>
-          <li class="subject__item"><a href="https://github.com/grafana/grafana/releases/tag/v13.3.2">Grafana v13.3.2 fixes two CVEs and preserves folder identities during provisioning</a></li>
-          <li class="subject__item"><a href="https://github.com/grafana/beyla/releases/tag/v3.44.0">Grafana Beyla v3.44.0 adds GPU metrics collection to the eBPF auto-instrumentation</a></li>
-          <li class="subject__item"><a href="https://github.com/prometheus/alertmanager/releases/tag/v0.35.1">Prometheus Alertmanager v0.35.1 raises the HTTP server idle timeout so alert deliveries are not cut off</a></li>
+    <div class="briefing__subjects">
+      <section class="subject" id="observability" aria-labelledby="observability-title">
+        <h2 class="subject__title" id="observability-title">Observability</h2>
+        <p class="subject__meta">8 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector/releases/tag/v0.166.0">OpenTelemetry Collector v0.166.0 adds gRPC address-list shuffling, listener middleware extensions and FIPS 140-3 startup logging</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector - released 23 Nov 2026 22:26 UTC</p>
+            <p class="subject__summary">The release adds the pick_first.shuffle_address_list option for gRPC clients that use the pick_first balancer, so clients resolving the same address list no longer all connect to the first address; the option is off by default and implements gRFC A62. Listener middleware extensions can now create HTTP and gRPC server listeners, and the Collector reports in its startup log line whether it is running in FIPS 140-3 mode.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-specification/releases/tag/v1.63.0">OpenTelemetry Specification v1.63.0 marks environment variables as stable context propagation carriers and adds a traces data model</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-specification - released 23 Nov 2026 17:25 UTC</p>
+            <p class="subject__summary">Release 1.63.0 stabilizes environment variables as context propagation carriers and adds the traces data model to the specification. It introduces a development span type with an optional span creation parameter, ReadableSpan access and SDK syntax validation, and allows an exception to the finite upper bound on exporter Export calls for synchronous output through APIs without deadline or cancellation support.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/SigNoz/signoz/releases/tag/v0.152.0">SigNoz v0.152.0 removes the saved-view v1 APIs and starts moving log bodies to native JSON storage</a></h3>
+            <p class="subject__source">SigNoz/signoz - released 26 Nov 2026 09:28 UTC</p>
+            <p class="subject__summary">The release deletes the saved view v1 APIs, deprecated since v0.137.0, so callers using them directly have to migrate to v2. Log bodies move to native JSON storage with dual ingestion, which the project says requires additional collector CPU and memory, ClickHouse CPU and log disk capacity before the upgrade.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/openobserve/openobserve/releases/tag/v1.2.0">OpenObserve v1.2.0 rebuilds dashboards, ships a second-generation metrics explorer and adds product analytics and continuous profiling</a></h3>
+            <p class="subject__source">openobserve/openobserve - released 24 Nov 2026 12:39 UTC</p>
+            <p class="subject__summary">More than 900 changes from 40 contributors. Dashboards gain public read-only links, a TV mode, a layout editor with undo, live panel preview and four new panel types; the metrics explorer v2 can create alerts from any chart, compare periods, forecast, write formulas and use Prometheus 3.x functions. Product analytics and continuous profiling are included out of the box alongside dozens of alerting improvements.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/grafana/mcp-grafana/releases/tag/v2.4.0">Grafana MCP v2.4.0 adds notebook tools and opt-in AWS X-Ray trace tooling</a></h3>
+            <p class="subject__source">grafana/mcp-grafana - released 24 Nov 2026 10:01 UTC</p>
+            <p class="subject__summary">The release adds tools for the Grafana 13.3 notebooks preview: list, search, get by UID, render to PDF, create, update and delete. The update tool keeps the notebook metadata and checks the resourceVersion it was read at, so a concurrent edit fails instead of being overwritten. An opt-in xray category adds search_xray_traces and get_xray_trace, the latter returning a trace as a tree of segments with timings and HTTP status codes.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/grafana/grafana/releases/tag/v13.3.2">Grafana v13.3.2 fixes two CVEs and preserves folder identities during provisioning</a></h3>
+            <p class="subject__source">grafana/grafana - released 24 Nov 2026 17:58 UTC</p>
+            <p class="subject__summary">The patch release fixes CVE-2026-107561 and CVE-2026-88960. Its provisioning change keeps existing folder identities when children are created instead of regenerating them, so dashboards and folders produced by the same provisioning job keep stable identifiers across runs.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/grafana/beyla/releases/tag/v3.44.0">Grafana Beyla v3.44.0 adds GPU metrics collection to the eBPF auto-instrumentation</a></h3>
+            <p class="subject__source">grafana/beyla - released 25 Nov 2026 10:27 UTC</p>
+            <p class="subject__summary">Beyla v3.44.0 adds GPU metrics collection and export, and makes server.address and server.port opt-in on HTTP request duration and body size so those labels are no longer emitted by default. It also carries upstream changes from opentelemetry-ebpf-instrumentation, including Go channel links moved to runtime configuration, preserved custom query-parameter redaction in Config v2 and runtime.goexit1-based Go exception cleanup.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/prometheus/alertmanager/releases/tag/v0.35.1">Prometheus Alertmanager v0.35.1 raises the HTTP server idle timeout so alert deliveries are not cut off</a></h3>
+            <p class="subject__source">prometheus/alertmanager - released 24 Nov 2026 22:47 UTC</p>
+            <p class="subject__summary">The fix raises the Alertmanager HTTP server idle timeout from 90 seconds to 6 minutes, outlasting the 5-minute client idle timeout used by Prometheus, so alert POSTs are no longer failed by connections closed on the server side.</p>
+          </li>
         </ul>
-      </article>
-      <article class="subject" id="ai">
-        <h2 class="subject__title"><a href="ai.html">AI industry &amp; research</a></h2>
-        <p class="subject__meta">8 items · English</p>
-        <ul class="subject__items">
-          <li class="subject__item"><a href="https://siliconangle.com/2026/11/24/marlowe-raises-277m-to-build-inference-clusters-with-chips-from-nvidia-rivals/">Marlowe raises $277M to build inference clusters with chips from Nvidia rivals</a></li>
-          <li class="subject__item"><a href="https://openai.com/index/introducing-shirudo">OpenAI and Cisco release Shirudo, an open-source Linux runtime for protecting systems during patching</a></li>
-          <li class="subject__item"><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">OpenAI reports that GPT-6 models design protein structures from reasoning and code</a></li>
-          <li class="subject__item"><a href="https://openai.com/index/searching-for-distant-planets-with-astra">OpenAI documents a distant-planet search with Astra</a></li>
-          <li class="subject__item"><a href="https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/">Amazon says attackers&#x27; AI agents found and exploited a zero-day with little human input</a></li>
-          <li class="subject__item"><a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/">OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work</a></li>
-          <li class="subject__item"><a href="https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/">US state attorneys general challenge Character.AI&#x27;s plan to auction off users&#x27; private chats</a></li>
-          <li class="subject__item"><a href="https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/">Tidal to ban and remove millions of AI-generated tracks</a></li>
+      </section>
+      <section class="subject" id="ai" aria-labelledby="ai-title">
+        <h2 class="subject__title" id="ai-title">AI industry &amp; research</h2>
+        <p class="subject__meta">8 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://siliconangle.com/2026/11/24/marlowe-raises-277m-to-build-inference-clusters-with-chips-from-nvidia-rivals/">Marlowe raises $277M to build inference clusters with chips from Nvidia rivals</a></h3>
+            <p class="subject__source">SiliconANGLE - 24 Nov 2026 23:49 UTC</p>
+            <p class="subject__summary">Marlowe closed a $277 million seed round to fund inference clusters built on accelerators from suppliers other than Nvidia. The structure makes non-Nvidia inference capacity a standalone business rather than a hedge, and puts the round among the largest seed rounds of the year.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://openai.com/index/introducing-shirudo">OpenAI and Cisco release Shirudo, an open-source Linux runtime for protecting systems during patching</a></h3>
+            <p class="subject__source">OpenAI - 23 Nov 2026 21:20 UTC</p>
+            <p class="subject__summary">OpenAI and Cisco introduced Shirudo, an open-source runtime for Linux that protects running systems while patches are rolled out, so hardening does not require taking workloads offline. The runtime is built on eBPF-based enforcement, the mechanism Cisco uses to constrain what running code is allowed to do, applied to the case the two companies describe as fully authorized agents that still act destructively.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities">OpenAI reports that GPT-6 models design protein structures from reasoning and code</a></h3>
+            <p class="subject__source">OpenAI - 24 Nov 2026 13:00 UTC</p>
+            <p class="subject__summary">OpenAI says GPT-6 models design protein structures and sequences by reasoning and generating code rather than by retrieving known templates. Laboratory tests found evidence of binding across five targets. The claim is that de novo design falls out of the model&#x27;s general reasoning and coding ability; independent structural verification of the designs was not published with the post.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://openai.com/index/searching-for-distant-planets-with-astra">OpenAI documents a distant-planet search with Astra</a></h3>
+            <p class="subject__source">OpenAI - 24 Nov 2026 11:00 UTC</p>
+            <p class="subject__summary">OpenAI published a report on using Astra, its search system, to look for distant planets, describing the pipeline applied to survey data and the candidates it flags. The post is an example of a lab pointing a general-purpose system at an astronomy problem rather than a model release.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/">Amazon says attackers&#x27; AI agents found and exploited a zero-day with little human input</a></h3>
+            <p class="subject__source">Ars Technica - 24 Nov 2026</p>
+            <p class="subject__summary">Amazon reported that AI agents operated by attackers located and exploited a zero-day vulnerability with minimal human direction. The report describes the Cairn AI framework, which Amazon presents as used by defenders and attackers alike to run automated security work, making it one of the first vendor accounts of autonomous agents being used end to end against production flaws.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/">OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work</a></h3>
+            <p class="subject__source">TechCrunch - 25 Nov 2026 19:54 UTC</p>
+            <p class="subject__summary">OpenAI said heavy ChatGPT users may hit usage limits sooner, a change that follows the company merging Chat and Work into a single surface. The limit change is a user-visible side effect of a product consolidation rather than a standalone pricing announcement.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/">US state attorneys general challenge Character.AI&#x27;s plan to auction off users&#x27; private chats</a></h3>
+            <p class="subject__source">TechCrunch - 25 Nov 2026 17:35 UTC</p>
+            <p class="subject__summary">A group of state attorneys general is challenging Character.AI&#x27;s plan to auction off users&#x27; private conversations. The legal action puts the company&#x27;s approach to monetising chat data under scrutiny and tests whether consent collected for the service extends to the sale of conversation content.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/">Tidal to ban and remove millions of AI-generated tracks</a></h3>
+            <p class="subject__source">TechCrunch - 24 Nov 2026 16:46 UTC</p>
+            <p class="subject__summary">Tidal said it will ban and remove millions of fully AI-generated tracks from its catalogue, citing the volume of machine-made material on music streaming. The company said it will keep accepting tracks made with AI tools under human authorship, so the rule applies to fully generated recordings rather than to the use of AI in production.</p>
+          </li>
         </ul>
-      </article>
-      <article class="subject" id="agentic-ai">
-        <h2 class="subject__title"><a href="agentic-ai.html">Agentic AI papers</a></h2>
-        <p class="subject__meta">8 items · English</p>
-        <ul class="subject__items">
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.32946">ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks</a></li>
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.33098">Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance</a></li>
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.31258">RECAP: Training Long-horizon LLM Agents with Context Compaction</a></li>
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.32085">ExpGuard: Guarding Long-Horizon LLM Agents against Corrupted Experience</a></li>
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.28341">When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents</a></li>
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.31063">From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems</a></li>
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.34703">Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning</a></li>
-          <li class="subject__item"><a href="https://arxiv.org/abs/2611.34327">MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems</a></li>
+      </section>
+      <section class="subject" id="agentic-ai" aria-labelledby="agentic-ai-title">
+        <h2 class="subject__title" id="agentic-ai-title">Agentic AI papers</h2>
+        <p class="subject__meta">8 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.32946">ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks</a></h3>
+            <p class="subject__source">arXiv:2611.32946 - listed 25 Nov 2026</p>
+            <p class="subject__summary">ShellBench is a benchmark of 100 day-to-day tasks built from more than 10 million user requests, each set in a realistic workspace with messy files and competing data sources, and graded for both correctness and safety. The authors evaluate 12 models across five agent harnesses at three reasoning levels for 53,100 rollouts, 20% of them on tasks released publicly. Model choice affected performance more than harness choice, but the three leading models were separated by only 1.1 percentage points, and the cheapest leading model passed 61.4% of attempts at roughly one-sixth of the cost of the most expensive one.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33098">Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance</a></h3>
+            <p class="subject__source">arXiv:2611.33098 - listed 25 Nov 2026</p>
+            <p class="subject__summary">Delegent is a harness built on Claude Code in which the frontier model stays in charge of every task but hands focused subtasks, such as investigating code, running tests and searching a corpus, to small language model subagents running on hardware the user already owns. The authors report cost reductions of about 67% on long-horizon coding tasks and 59% on agentic search against the frontier-only baseline, and distinguish the design from cascades and model routers, which assign whole tasks to the cheaper model.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.31258">RECAP: Training Long-horizon LLM Agents with Context Compaction</a></h3>
+            <p class="subject__source">arXiv:2611.31258 - listed 25 Nov 2026</p>
+            <p class="subject__summary">RECAP is a reinforcement-learning framework that learns context compaction jointly with the agent policy, on the principle that a summary should preserve the behaviour the original interaction history would have induced. The paper formalises that as a behaviour-distortion objective and shows its gradient decomposes into two complementary learning signals, one for the summariser and one for the policy, which addresses the fact that a compacted summary changes task success over many subsequent interactions.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.32085">ExpGuard: Guarding Long-Horizon LLM Agents against Corrupted Experience</a></h3>
+            <p class="subject__source">arXiv:2611.32085 - listed 25 Nov 2026</p>
+            <p class="subject__summary">ExpGuard addresses the risk that long-horizon agents distil misleading or adversarial instructions from past trajectories into reusable experience that then persists across tasks. It models provenance and execution dependencies before an experience is reused, learns task-conditioned risk from trajectory outcomes, and repairs risky experiences at online inference through retrieval-triggered assessment.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.28341">When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents</a></h3>
+            <p class="subject__source">arXiv:2611.28341 - listed 24 Nov 2026</p>
+            <p class="subject__summary">Using RetryRealistic, a sandboxed testbed with controlled fault injection over 8 tools, 9 fault types and 30 multi-step tasks, the authors run 2,100 faulted runs of four agents against ground truth. Recovery was unreliable at between 19% and 68% correct, and frequently silent: 6% to 26% of runs ended in a confident fabrication, a wrong answer asserted as fact. The failure mode was governed more by the fault type than by the model, which argues for verification-first oversight rather than model scaling.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.31063">From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems</a></h3>
+            <p class="subject__source">arXiv:2611.31063 - listed 24 Nov 2026</p>
+            <p class="subject__summary">REPA is a structural model that links measured local agent responses to system-level error propagation in multi-agent systems, estimating input assembly and agent processing separately across error channels and relating local modelling error to endpoint prediction error. Across three Qwen base models, six multi-agent workflows and ten knowledge and reasoning settings in the new ErrPropBench-10 benchmark, REPA reaches a mean condition-level Spearman correlation of 0.84 against 0.47 for direct regression, with a retrieval gain of about 19 points.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34703">Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning</a></h3>
+            <p class="subject__source">arXiv:2611.34703 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Maco-RL scales mixed-task reinforcement learning, where one policy is trained across domains instead of a specialist per domain and no separate distillation stage is needed. It uses a quota-based scheduler for asynchronous rollouts across task domains to balance gradient contributions and limit off-policy effects, and adds Tri-Buffer Sampling to allocate rollout compute, targeting stable training and continual domain expansion.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34327">MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems</a></h3>
+            <p class="subject__source">arXiv:2611.34327 - listed 26 Nov 2026</p>
+            <p class="subject__summary">MeterRouter treats cost as an explicit optimisation constraint for multi-agent systems, incrementally synthesising a collaboration graph per query by choosing how many agents to recruit, which model each should get and how they communicate. The authors report accuracy comparable to assigning a large model to every agent at about 82% lower cost, and note that a fixed accuracy-cost preference cannot express what a particular query is worth.</p>
+          </li>
         </ul>
-      </article>
-      <article class="subject" id="spanish-startups">
-        <h2 class="subject__title"><a href="spanish-startups.html">Spanish startups</a></h2>
-        <p class="subject__meta">8 elementos · En español</p>
-        <ul class="subject__items">
-          <li class="subject__item"><a href="https://elreferente.es/inversiones/permut-cierra-una-ronda-de-tres-millones-de-euros-liderara-por-next-tier-ventures/">Permut cierra una ronda de 3 millones de euros liderada por Next Tier Ventures</a></li>
-          <li class="subject__item"><a href="https://forbes.es/ultima-hora/1074011/newborn-town-compra-softonic-para-acelerar-su-crecimiento-y-mantener-su-sede-y-equipo-en-barcelona/">Newborn Town compra Softonic para acelerar su crecimiento y mantener sede y equipo en Barcelona</a></li>
-          <li class="subject__item"><a href="https://www.webcapitalriesgo.com/invivo-partners-lidera-una-ronda-de-e415m-en-undara-bio-participan-el-icf-y-bstartup/">Invivo Partners lidera una ronda de 4,15 millones de euros en Undara Bio, con el ICF y BStartup</a></li>
-          <li class="subject__item"><a href="https://elreferente.es/startups/holidu-adquiere-casasrurales-net/">Holidu adquiere CasasRurales.Net para reforzar el turismo rural en España</a></li>
-          <li class="subject__item"><a href="https://www.webcapitalriesgo.com/fermat-cierra-una-ronda-de-8m-coliderada-por-kibo-y-lunar/">Fermat cierra una ronda de 8 millones de dólares coliderada por Kibo y Lunar</a></li>
-          <li class="subject__item"><a href="https://www.webcapitalriesgo.com/fluidra-ventures-lidera-una-ronda-de-inversion-en-aerisio-refrigeracion-urbana/">Fluidra Ventures lidera una ronda de inversión en Aerisio, de refrigeración urbana</a></li>
-          <li class="subject__item"><a href="https://www.webcapitalriesgo.com/henko-capital-lanza-su-tercer-fondo-con-un-objetivo-de-e300m/">Henko Capital lanza su tercer fondo con un objetivo de 300 millones de euros</a></li>
-          <li class="subject__item"><a href="https://www.webcapitalriesgo.com/reversa-ia-trabajo-regulatorio-atrae-e750-000-en-una-ronda-liderada-por-itnig/">Reversa, IA para el trabajo regulatorio, atrae 750.000 euros en una ronda liderada por itnig</a></li>
+      </section>
+      <section class="subject" id="spanish-startups" aria-labelledby="spanish-startups-title">
+        <h2 class="subject__title" id="spanish-startups-title">Spanish startups</h2>
+        <p class="subject__meta">8 items · In Spanish</p>
+        <ul class="subject__items" role="list" lang="es">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://elreferente.es/inversiones/permut-cierra-una-ronda-de-tres-millones-de-euros-liderara-por-next-tier-ventures/">Permut cierra una ronda de 3 millones de euros liderada por Next Tier Ventures</a></h3>
+            <p class="subject__source">El Referente - 25 nov 2026 08:00 UTC</p>
+            <p class="subject__summary">Permut, empresa española que desarrolla IA conversacional para marcas, cierra una ronda de 3 millones de euros liderada por Next Tier Ventures. La operación se presenta como el paso para convertir el producto en un motor de ingresos para las compañías que lo integran en sus canales de atención. El reparto entre inversores y el uso concreto del capital no se han hecho públicos.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://forbes.es/ultima-hora/1074011/newborn-town-compra-softonic-para-acelerar-su-crecimiento-y-mantener-su-sede-y-equipo-en-barcelona/">Newborn Town compra Softonic para acelerar su crecimiento y mantener sede y equipo en Barcelona</a></h3>
+            <p class="subject__source">Forbes España - 26 nov 2026 10:21 UTC</p>
+            <p class="subject__summary">Newborn Town compra Softonic, operación con la que la firma acelera su crecimiento y mantiene la sede y el equipo en Barcelona. La compra incorpora la compañía de software al perímetro del grupo y aporta una base de usuarios de consumo ya instalada, con la continuidad del equipo y de la actividad en Barcelona como condición pactada por ambas partes.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.webcapitalriesgo.com/invivo-partners-lidera-una-ronda-de-e415m-en-undara-bio-participan-el-icf-y-bstartup/">Invivo Partners lidera una ronda de 4,15 millones de euros en Undara Bio, con el ICF y BStartup</a></h3>
+            <p class="subject__source">Web Capitalries Go - 25 nov 2026 08:25 UTC</p>
+            <p class="subject__summary">Undara Bio cierra una ronda de 4,15 millones de euros liderada por Invivo Partners, con participación del ICF y BStartup, dos programas públicos de apoyo al emprendimiento. La operación combina capital privado y apoyo público, un esquema habitual en la financiación biotecnológica española. La nota no detalla el reparto exacto entre participantes.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://elreferente.es/startups/holidu-adquiere-casasrurales-net/">Holidu adquiere CasasRurales.Net para reforzar el turismo rural en España</a></h3>
+            <p class="subject__source">El Referente - 25 nov 2026 12:20 UTC</p>
+            <p class="subject__summary">Holidu adquiere CasasRurales.Net, operación que refuerza el negocio de alquiler vacacional rural de la compañía y amplia su oferta de vivienda en destinos de interior. No se han publicado los términos económicos de la operación.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.webcapitalriesgo.com/fermat-cierra-una-ronda-de-8m-coliderada-por-kibo-y-lunar/">Fermat cierra una ronda de 8 millones de dólares coliderada por Kibo y Lunar</a></h3>
+            <p class="subject__source">Web Capitalries Go - 23 nov 2026 08:27 UTC</p>
+            <p class="subject__summary">Fermat cierra una ronda de 8 millones de dólares coliderada por Kibo y Lunar. Es una de las mayores operaciones del periodo y sitú a dos inversores de referencia en el capital de la compañía. La nota no revela el reparto entre participantes ni el uso previsto del capital.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.webcapitalriesgo.com/fluidra-ventures-lidera-una-ronda-de-inversion-en-aerisio-refrigeracion-urbana/">Fluidra Ventures lidera una ronda de inversión en Aerisio, de refrigeración urbana</a></h3>
+            <p class="subject__source">Web Capitalries Go - 25 nov 2026 08:48 UTC</p>
+            <p class="subject__summary">Aerisio, compañía española de refrigeración urbana, capta una ronda de inversión liderada por Fluidra Ventures, la rama de inversión del grupo de equipos de piscina. La operación muestra el interés del capital industrial en la climatización de espacios públicos, y la nota no revela el importe de la ronda.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.webcapitalriesgo.com/henko-capital-lanza-su-tercer-fondo-con-un-objetivo-de-e300m/">Henko Capital lanza su tercer fondo con un objetivo de 300 millones de euros</a></h3>
+            <p class="subject__source">Web Capitalries Go - 24 nov 2026 08:26 UTC</p>
+            <p class="subject__summary">Henko Capital lanza su tercer fondo, con un objetivo de 300 millones de euros. La puesta en marcha amplia la oferta de capital riesgo para compañías en crecimiento en España. La nota no precisa el capital comprometido ni la fecha prevista de cierre.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.webcapitalriesgo.com/reversa-ia-trabajo-regulatorio-atrae-e750-000-en-una-ronda-liderada-por-itnig/">Reversa, IA para el trabajo regulatorio, atrae 750.000 euros en una ronda liderada por itnig</a></h3>
+            <p class="subject__source">Web Capitalries Go - 25 nov 2026 09:01 UTC</p>
+            <p class="subject__summary">Reversa, compañía española que aplica IA al trabajo regulatorio, atrae 750.000 euros en una ronda liderada por itnig. Es una operación de importe reducido, propia de una etapa temprana, y añade una compañía al sector español de software jurídico. La nota no precisa la valoración previa.</p>
+          </li>
         </ul>
-      </article>
-      <article class="subject" id="podcasts">
-        <h2 class="subject__title"><a href="podcasts.html">Podcasts</a></h2>
-        <p class="subject__meta">5 items · English</p>
-        <ul class="subject__items">
-          <li class="subject__item"><a href="https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/the_revolution_vs_the_renaissance_thariq_shihipar_openai">The Revolution vs The Renaissance — Thariq Shihipar, OpenAI</a></li>
-          <li class="subject__item"><a href="https://www.artificialintelligencepod.com/if-ai-can-pass-the-exam-what-should-college-test-for-with-suzy-siegle/">If AI Can Pass the Exam, What Should College Test For? with Suzy Siegle</a></li>
-          <li class="subject__item"><a href="https://www.dwarkesh.com/p/rsiobjections">Responding to objections to recursive self-improvement</a></li>
-          <li class="subject__item"><a href="https://changelog.com/podcast/693">Warp bets on the software factory</a></li>
-          <li class="subject__item"><a href="https://www.artificialintelligencepod.com/what-should-a-lab-do-before-it-feeds-its-data-to-ai-with-loren-perelman/">What Should a Lab Do Before It Feeds Its Data to AI? with Loren Perelman</a></li>
+      </section>
+      <section class="subject" id="podcasts" aria-labelledby="podcasts-title">
+        <h2 class="subject__title" id="podcasts-title">Podcasts</h2>
+        <p class="subject__meta">5 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/the_revolution_vs_the_renaissance_thariq_shihipar_openai">The Revolution vs The Renaissance — Thariq Shihipar, OpenAI</a></h3>
+            <p class="subject__source">Latent Space - 25 Nov 2026 22:28 UTC</p>
+            <p class="subject__summary">In a talk recorded at AI Engineer CODE, OpenAI&#x27;s Thariq Shihipar argues that cheap, model-generated software and small-batch work that has to feel right can coexist rather than compete. The episode is built around a fighting game in which he edits the size of a rock.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.artificialintelligencepod.com/if-ai-can-pass-the-exam-what-should-college-test-for-with-suzy-siegle/">If AI Can Pass the Exam, What Should College Test For? with Suzy Siegle</a></h3>
+            <p class="subject__source">The Artificial Intelligence Podcast - 25 Nov 2026 14:00 UTC</p>
+            <p class="subject__summary">Jonathan Green interviews Walsh College president Suzy Siegle on what universities should assess once models can pass exams: critical thinking, problem solving and grit rather than lecture content, with lecture material turned self-serve and the live session kept for argument and connection. She also describes the entry-level rung of the career ladder as the first thing to break.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.dwarkesh.com/p/rsiobjections">Responding to objections to recursive self-improvement</a></h3>
+            <p class="subject__source">Dwarkesh Podcast - 24 Nov 2026 21:45 UTC</p>
+            <p class="subject__summary">Dwarkesh Patel answers objections to his essay arguing that recursive self-improvement leads to superintelligence by 2030, working through the strongest counterarguments with his general manager Max Farrens. The episode is framed around what the skeptics get right.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://changelog.com/podcast/693">Warp bets on the software factory</a></h3>
+            <p class="subject__source">Changelog Interviews #693 - 24 Nov 2026 20:00 UTC</p>
+            <p class="subject__summary">Warp founder Zach Lloyd presents Warp Factories, open infrastructure he bills as the successor to CI/CD for agent-driven development, covering factory-as-code, what an agent trace contains and why self-improving systems drift. He also describes how Warp&#x27;s senior engineers moved from guarding code to being its heaviest adopters once the models were good enough.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.artificialintelligencepod.com/what-should-a-lab-do-before-it-feeds-its-data-to-ai-with-loren-perelman/">What Should a Lab Do Before It Feeds Its Data to AI? with Loren Perelman</a></h3>
+            <p class="subject__source">The Artificial Intelligence Podcast - 24 Nov 2026 14:00 UTC</p>
+            <p class="subject__summary">Loren Perelman of Zontal argues that laboratory and industrial data has to be gathered, categorized and modelled before it reaches a model, because a model fed unordered data forms connections that do not hold. The episode sets out the order of operations - collect, classify, drop what does not matter, then model - and notes that fear of replacement stalls the projects that would carry the value.</p>
+          </li>
         </ul>
-      </article>
-    </section>
+      </section>
+      <section class="subject subject--method" aria-labelledby="method-title">
+        <h2 class="subject__title" id="method-title">Method and sources</h2>
+        <dl class="method-notes">
+          <dt>Observability</dt>
+          <dd>Window: 22 Nov 2026 19:35 UTC to 26 Nov 2026 11:00:03 UTC (87:24:35). Sources: the GitHub release feeds for the OpenTelemetry Collector, Collector Contrib, the OpenTelemetry specification, the OpenTelemetry Operator, Prometheus Alertmanager, Grafana, Grafana Beyla, the Grafana MCP server, Fluent Bit, OpenObserve, SigNoz, VictoriaMetrics and InfluxDB, each release checked against its GitHub publication timestamp. The sweep returned 31 release records and 40 merged-pull-request records dated 23, 24, 25 and 26 November; only releases with a verified in-window publication timestamp are listed. VictoriaMetrics v1.157.0 was published on GitHub on 23 November at 12:36 UTC but its release notes state that the release itself is dated 20 November, so it falls outside the window and is excluded. Grafana&#x27;s blog and XML feeds, The New Stack and the Fru.dev release listing returned HTTP 403 or were not reachable from the fetcher, so no vendor announcement pages could be checked in this window.</dd>
+          <dt>AI industry &amp; research</dt>
+          <dd>Window: 22 Nov 2026 19:35 UTC to 26 Nov 2026 11:00:03 UTC (87:24:35). Sources: the OpenAI news feed, the TechCrunch feed and the SiliconANGLE feed, plus article pages where the feed entry was incomplete; every publication timestamp was verified inside the window. The digest covers model and research releases, financing, security developments and policy and product changes. Agent research papers are covered in the Agentic AI digest, and vendor marketing, opinion pieces, event promos and customer case studies are excluded.</dd>
+          <dt>Agentic AI papers</dt>
+          <dd>Window: 22 Nov 2026 19:35 UTC to 26 Nov 2026 11:00:03 UTC (87:24:35). Sources: the arXiv daily listings for cs.AI, cs.CL, cs.LG and cs.MA, refreshed for 24, 25 and 26 November, with each abstract read from the arXiv record. Eligibility follows the announcement date shown in the daily listing rather than the original submission date, which keeps a paper submitted in October but listed on 25 November inside the window and excludes papers that were only submitted. The digest is restricted to research papers: agent products, framework launches and financing are covered in the AI digest, and any paper with an evolutionary-computation or trading angle is covered in the Harvester research digest.</dd>
+          <dt>Spanish startups</dt>
+          <dd lang="es">Ventana: del 22 nov 2026 19:35 UTC al 26 nov 2026 11:00:03 UTC (87:24:35). Fuentes revisadas: El Referente, Web Capitalries Go y Forbes España, con fecha y hora verificadas en cada caso a través del feed. Se incluyen rondas de financiación con importes e inversores, adquisiciones, nuevos fondos de capital y normativa del ecosistema. Quedan fuera las piezas de opinión, los premios, las entrevistas y las notas de marketing. Octo Health queda fuera por ser una empresa portuguesa. EU-Startups y Emprendedores devolvieron HTTP 403 al recuperador, de modo que no pudieron comprobarse otras publicaciones del sector en esta ventana.</dd>
+          <dt>Podcasts</dt>
+          <dd>Window: 22 Nov 2026 19:35 UTC to 26 Nov 2026 11:00:03 UTC (87:24:35). Sources: episode feeds for Latent Space, Dwarkesh, Changelog and The Artificial Intelligence Podcast. Each included episode has an in-window feed timestamp and identifiable human speakers.</dd>
+        </dl>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">

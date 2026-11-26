@@ -19,7 +19,7 @@
   <meta name="twitter:description" content="Agentic AI papers — 8 items from the daily briefing of Thursday 26 November 2026.">
   <meta name="twitter:image" content="https://juacker.github.io/assets/social-card.png">
   <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
-  <link rel="stylesheet" href="../../assets/site.css?v=4">
+  <link rel="stylesheet" href="../../assets/site.css?v=5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -29,7 +29,6 @@
       <a class="site-header__brand" href="../../">Juan Cañete</a>
       <nav class="site-nav" aria-label="Main">
         <ul role="list">
-          <li><a href="../../#briefing">News</a></li>
           <li><a href="../../briefings/">Briefings</a></li>
           <li><a href="../../cv.html">CV</a></li>
         </ul>
@@ -39,53 +38,53 @@
 
   <main id="main" class="briefing briefing--subject">
     <header class="briefing__head">
-      <p class="briefing__eyebrow"><a href="index.html">← Full edition</a> · Daily briefing</p>
+      <p class="briefing__eyebrow"><a href="index.html#agentic-ai">← Full edition</a> · Daily briefing</p>
       <h1 class="briefing__title">Agentic AI papers</h1>
       <p class="briefing__meta">8 items · English · Coverage window 22 November 2026 19:35:28 UTC → 26 November 2026 11:00:03 UTC (87:24:35)</p>
     </header>
     <section class="briefing__subjects" aria-label="Stories">
       <article class="subject">
         <h2 class="subject__title">Stories</h2>
-        <ul class="subject__items">
+        <ul class="subject__items" role="list">
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.32946">ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks</a>
-            <span class="subject__source">arXiv:2611.32946 - listed 25 Nov 2026</span>
-            <p>ShellBench is a benchmark of 100 day-to-day tasks built from more than 10 million user requests, each set in a realistic workspace with messy files and competing data sources, and graded for both correctness and safety. The authors evaluate 12 models across five agent harnesses at three reasoning levels for 53,100 rollouts, 20% of them on tasks released publicly. Model choice affected performance more than harness choice, but the three leading models were separated by only 1.1 percentage points, and the cheapest leading model passed 61.4% of attempts at roughly one-sixth of the cost of the most expensive one.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.32946">ShellBench: What Matters More for AI Agents, Models, or Harness for Everyday Tasks</a></h3>
+            <p class="subject__source">arXiv:2611.32946 - listed 25 Nov 2026</p>
+            <p class="subject__summary">ShellBench is a benchmark of 100 day-to-day tasks built from more than 10 million user requests, each set in a realistic workspace with messy files and competing data sources, and graded for both correctness and safety. The authors evaluate 12 models across five agent harnesses at three reasoning levels for 53,100 rollouts, 20% of them on tasks released publicly. Model choice affected performance more than harness choice, but the three leading models were separated by only 1.1 percentage points, and the cheapest leading model passed 61.4% of attempts at roughly one-sixth of the cost of the most expensive one.</p>
           </li>
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.33098">Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance</a>
-            <span class="subject__source">arXiv:2611.33098 - listed 25 Nov 2026</span>
-            <p>Delegent is a harness built on Claude Code in which the frontier model stays in charge of every task but hands focused subtasks, such as investigating code, running tests and searching a corpus, to small language model subagents running on hardware the user already owns. The authors report cost reductions of about 67% on long-horizon coding tasks and 59% on agentic search against the frontier-only baseline, and distinguish the design from cascades and model routers, which assign whole tasks to the cheaper model.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33098">Delegent: A Multi-Agent Harness That Reduces Cost without Sacrificing Performance</a></h3>
+            <p class="subject__source">arXiv:2611.33098 - listed 25 Nov 2026</p>
+            <p class="subject__summary">Delegent is a harness built on Claude Code in which the frontier model stays in charge of every task but hands focused subtasks, such as investigating code, running tests and searching a corpus, to small language model subagents running on hardware the user already owns. The authors report cost reductions of about 67% on long-horizon coding tasks and 59% on agentic search against the frontier-only baseline, and distinguish the design from cascades and model routers, which assign whole tasks to the cheaper model.</p>
           </li>
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.31258">RECAP: Training Long-horizon LLM Agents with Context Compaction</a>
-            <span class="subject__source">arXiv:2611.31258 - listed 25 Nov 2026</span>
-            <p>RECAP is a reinforcement-learning framework that learns context compaction jointly with the agent policy, on the principle that a summary should preserve the behaviour the original interaction history would have induced. The paper formalises that as a behaviour-distortion objective and shows its gradient decomposes into two complementary learning signals, one for the summariser and one for the policy, which addresses the fact that a compacted summary changes task success over many subsequent interactions.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.31258">RECAP: Training Long-horizon LLM Agents with Context Compaction</a></h3>
+            <p class="subject__source">arXiv:2611.31258 - listed 25 Nov 2026</p>
+            <p class="subject__summary">RECAP is a reinforcement-learning framework that learns context compaction jointly with the agent policy, on the principle that a summary should preserve the behaviour the original interaction history would have induced. The paper formalises that as a behaviour-distortion objective and shows its gradient decomposes into two complementary learning signals, one for the summariser and one for the policy, which addresses the fact that a compacted summary changes task success over many subsequent interactions.</p>
           </li>
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.32085">ExpGuard: Guarding Long-Horizon LLM Agents against Corrupted Experience</a>
-            <span class="subject__source">arXiv:2611.32085 - listed 25 Nov 2026</span>
-            <p>ExpGuard addresses the risk that long-horizon agents distil misleading or adversarial instructions from past trajectories into reusable experience that then persists across tasks. It models provenance and execution dependencies before an experience is reused, learns task-conditioned risk from trajectory outcomes, and repairs risky experiences at online inference through retrieval-triggered assessment.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.32085">ExpGuard: Guarding Long-Horizon LLM Agents against Corrupted Experience</a></h3>
+            <p class="subject__source">arXiv:2611.32085 - listed 25 Nov 2026</p>
+            <p class="subject__summary">ExpGuard addresses the risk that long-horizon agents distil misleading or adversarial instructions from past trajectories into reusable experience that then persists across tasks. It models provenance and execution dependencies before an experience is reused, learns task-conditioned risk from trajectory outcomes, and repairs risky experiences at online inference through retrieval-triggered assessment.</p>
           </li>
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.28341">When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents</a>
-            <span class="subject__source">arXiv:2611.28341 - listed 24 Nov 2026</span>
-            <p>Using RetryRealistic, a sandboxed testbed with controlled fault injection over 8 tools, 9 fault types and 30 multi-step tasks, the authors run 2,100 faulted runs of four agents against ground truth. Recovery was unreliable at between 19% and 68% correct, and frequently silent: 6% to 26% of runs ended in a confident fabrication, a wrong answer asserted as fact. The failure mode was governed more by the fault type than by the model, which argues for verification-first oversight rather than model scaling.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.28341">When Tools Fail, Agents Fabricate: Silent Failure and Verification-First Oversight in Tool-Using LLM Agents</a></h3>
+            <p class="subject__source">arXiv:2611.28341 - listed 24 Nov 2026</p>
+            <p class="subject__summary">Using RetryRealistic, a sandboxed testbed with controlled fault injection over 8 tools, 9 fault types and 30 multi-step tasks, the authors run 2,100 faulted runs of four agents against ground truth. Recovery was unreliable at between 19% and 68% correct, and frequently silent: 6% to 26% of runs ended in a confident fabrication, a wrong answer asserted as fact. The failure mode was governed more by the fault type than by the model, which argues for verification-first oversight rather than model scaling.</p>
           </li>
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.31063">From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems</a>
-            <span class="subject__source">arXiv:2611.31063 - listed 24 Nov 2026</span>
-            <p>REPA is a structural model that links measured local agent responses to system-level error propagation in multi-agent systems, estimating input assembly and agent processing separately across error channels and relating local modelling error to endpoint prediction error. Across three Qwen base models, six multi-agent workflows and ten knowledge and reasoning settings in the new ErrPropBench-10 benchmark, REPA reaches a mean condition-level Spearman correlation of 0.84 against 0.47 for direct regression, with a retrieval gain of about 19 points.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.31063">From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems</a></h3>
+            <p class="subject__source">arXiv:2611.31063 - listed 24 Nov 2026</p>
+            <p class="subject__summary">REPA is a structural model that links measured local agent responses to system-level error propagation in multi-agent systems, estimating input assembly and agent processing separately across error channels and relating local modelling error to endpoint prediction error. Across three Qwen base models, six multi-agent workflows and ten knowledge and reasoning settings in the new ErrPropBench-10 benchmark, REPA reaches a mean condition-level Spearman correlation of 0.84 against 0.47 for direct regression, with a retrieval gain of about 19 points.</p>
           </li>
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.34703">Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning</a>
-            <span class="subject__source">arXiv:2611.34703 - listed 26 Nov 2026</span>
-            <p>Maco-RL scales mixed-task reinforcement learning, where one policy is trained across domains instead of a specialist per domain and no separate distillation stage is needed. It uses a quota-based scheduler for asynchronous rollouts across task domains to balance gradient contributions and limit off-policy effects, and adds Tri-Buffer Sampling to allocate rollout compute, targeting stable training and continual domain expansion.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34703">Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning</a></h3>
+            <p class="subject__source">arXiv:2611.34703 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Maco-RL scales mixed-task reinforcement learning, where one policy is trained across domains instead of a specialist per domain and no separate distillation stage is needed. It uses a quota-based scheduler for asynchronous rollouts across task domains to balance gradient contributions and limit off-policy effects, and adds Tri-Buffer Sampling to allocate rollout compute, targeting stable training and continual domain expansion.</p>
           </li>
           <li class="subject__item">
-            <a href="https://arxiv.org/abs/2611.34327">MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems</a>
-            <span class="subject__source">arXiv:2611.34327 - listed 26 Nov 2026</span>
-            <p>MeterRouter treats cost as an explicit optimisation constraint for multi-agent systems, incrementally synthesising a collaboration graph per query by choosing how many agents to recruit, which model each should get and how they communicate. The authors report accuracy comparable to assigning a large model to every agent at about 82% lower cost, and note that a fixed accuracy-cost preference cannot express what a particular query is worth.</p>
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34327">MeterRouter: Budget-Aware Dynamic Routing for Multi-Agent Systems</a></h3>
+            <p class="subject__source">arXiv:2611.34327 - listed 26 Nov 2026</p>
+            <p class="subject__summary">MeterRouter treats cost as an explicit optimisation constraint for multi-agent systems, incrementally synthesising a collaboration graph per query by choosing how many agents to recruit, which model each should get and how they communicate. The authors report accuracy comparable to assigning a large model to every agent at about 82% lower cost, and note that a fixed accuracy-cost preference cannot express what a particular query is worth.</p>
           </li>
         </ul>
       </article>
