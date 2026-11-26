@@ -2,7 +2,7 @@
 
 /* ---------- Tokens ---------- */
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
   --bg: #f7f7f3;
   --surface: #ffffff;
   --surface-2: #eeefe9;
@@ -31,25 +31,6 @@
   --tap: 44px;
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #101b1a;
-    --surface: #182523;
-    --surface-2: #22312e;
-    --text: #f1f5ef;
-    --text-2: #c4d2ca;
-    --muted: #b1c0b7;
-    --border: #34473f;
-    --border-strong: #658176;
-    --accent: #8de0c7;
-    --accent-soft: #1d3933;
-    --focus: #8de0c7;
-    --mark: #5c4d00;
-    --life: rgba(255, 255, 255, 0.08);
-    --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
-  }
 }
 
 /* ---------- Base ---------- */

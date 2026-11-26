@@ -323,8 +323,6 @@
     }
     document.addEventListener('visibilitychange', resume);
     reducedMotion.addEventListener && reducedMotion.addEventListener('change', resume);
-    var scheme = window.matchMedia('(prefers-color-scheme: dark)');
-    scheme.addEventListener && scheme.addEventListener('change', function () { readColor(); draw(); });
     resume();
   }
 
