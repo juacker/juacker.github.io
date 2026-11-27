@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Observability · Friday 27 November 2026 · Juan Cañete</title>
+  <meta name="description" content="Observability — 8 items from the daily briefing of Friday 27 November 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://juacker.github.io/briefings/2026-11-27/observability.html">
+  <meta property="og:site_name" content="Juan Cañete">
+  <meta property="og:title" content="Observability · Friday 27 November 2026">
+  <meta property="og:description" content="Observability — 8 items from the daily briefing of Friday 27 November 2026.">
+  <meta property="og:image" content="https://juacker.github.io/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Observability · Friday 27 November 2026">
+  <meta name="twitter:description" content="Observability — 8 items from the daily briefing of Friday 27 November 2026.">
+  <meta name="twitter:image" content="https://juacker.github.io/assets/social-card.png">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../assets/site.css?v=5">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__brand" href="../../">Juan Cañete</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul role="list">
+          <li><a href="../../briefings/">Briefings</a></li>
+          <li><a href="../../cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="briefing briefing--subject">
+    <header class="briefing__head">
+      <p class="briefing__eyebrow"><a href="index.html#observability">← Full edition</a> · Daily briefing</p>
+      <h1 class="briefing__title">Observability</h1>
+      <p class="briefing__meta">8 items · English · Coverage window 26 November 2026 11:00:03 UTC → 27 November 2026 11:00:02 UTC (23:59:59)</p>
+    </header>
+    <section class="briefing__subjects" aria-label="Stories">
+      <article class="subject">
+        <h2 class="subject__title">Stories</h2>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector/pull/16494">OpenTelemetry Collector deprecates the batch processor and warns at startup</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector PR #16494 - merged 26 Nov 2026 12:41 UTC</p>
+            <p class="subject__summary">The batch processor is now marked deprecated for traces, metrics and logs, and a collector logs a startup warning pointing at the project blog post whenever a batch processor instance is configured. The change tracks issue 12022 and updates the processor README; nothing is removed yet, and the deprecation is the signal for the collector&#x27;s batching migration.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector/pull/16511">OpenTelemetry Collector cancels the 21 December 2026 release</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector PR #16511 - merged 26 Nov 2026 16:36 UTC</p>
+            <p class="subject__summary">The 2026-12-21 release is removed from the release list so that no collector release lands during the end-of-year break, following the discussion in the open-telemetry/community issue 3855. The commit also removes past release entries from the repository, and the author notes that an earlier slot can be taken if nobody is available for a given date.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53632">Collector Contrib turns on batching by default for the Sentry exporter</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector-contrib PR #53632 - merged 26 Nov 2026 17:24 UTC</p>
+            <p class="subject__summary">The Sentry exporter now batches with the component&#x27;s default settings, as part of a staged rollout that will eventually enable exporter-level batching across all collector components. The change is tracked under issue 53588 and references the collector batching migration published by the project.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53572">Collector Contrib MongoDB receiver extracts W3C trace context from query comments</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector-contrib PR #53572 - merged 26 Nov 2026 18:23 UTC</p>
+            <p class="subject__summary">The receiver reads document-valued MongoDB query comments, extracts a W3C traceparent when one is present and attaches it to the db.server.query_sample log records it emits; operations without a valid traceparent are logged without trace context. The change follows the context-propagation section of the OpenTelemetry semantic conventions for MongoDB and adds tests for valid, invalid and missing trace context.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/prometheus/prometheus/pull/19991">Prometheus search API honors cancellation and reports deadline timeouts</a></h3>
+            <p class="subject__source">prometheus/prometheus PR #19991 - merged 27 Nov 2026 08:50 UTC</p>
+            <p class="subject__summary">The request context is now passed into storage.ApplySearchHints so indexed search filtering stops when a query is canceled, and search deadlines are classified consistently: HTTP 503 before streaming starts, or a terminal timeout record once streaming is under way. The Go API of ApplySearchHints changes to take a context and return an error, so downstream callers must be updated.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/prometheus/alertmanager/pull/5534">Alertmanager SNS notifier upgrades sigv4 and adds session name and tag support</a></h3>
+            <p class="subject__source">prometheus/alertmanager PR #5534 - merged 27 Nov 2026 10:06 UTC</p>
+            <p class="subject__summary">The SNS notifier moves from prometheus/sigv4 v0.4.1 to v0.5.0 and supports the session_name and tags fields of the sigv4 configuration, so STS AssumeRole calls can carry per-caller identity and AWS cost-allocation session tags. The release note describes it as an enhancement.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/grafana/loki/pull/26591">Loki restores support for GLACIER_IR and INTELLIGENT_TIERING S3 storage classes</a></h3>
+            <p class="subject__source">grafana/loki PR #26591 - merged 26 Nov 2026 19:14 UTC</p>
+            <p class="subject__summary">Loki&#x27;s storage layer accepts the GLACIER_IR and INTELLIGENT_TIERING S3 storage classes again; GLACIER_IR keeps the availability and performance guarantees of STANDARD and STANDARD_IA, while INTELLIGENT_TIERING moves objects automatically between STANDARD, STANDARD_IA and GLACIER_IR. The pull request frames the change as a billing and retention decision for infrequently accessed logs rather than a performance change, and fixes issue 26495.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/grafana/beyla/pull/3308">Grafana Beyla reloads sampling configuration without a restart</a></h3>
+            <p class="subject__source">grafana/beyla PR #3308 - merged 27 Nov 2026 07:45 UTC</p>
+            <p class="subject__summary">Beyla can apply a changed sampling configuration through the reload path it already had for service selection criteria; the same support was ported from OpenTelemetry&#x27;s OBI, together with the dynamic-PID change that lets the sampler be modified. Most of the 92 changed files are the vendored OBI sources.</p>
+          </li>
+        </ul>
+      </article>
+      <article class="subject">
+        <h2 class="subject__title">Method and sources</h2>
+        <p class="subject__note">Window: 26 Nov 2026 11:00:03 UTC to 27 Nov 2026 11:00:02 UTC (23:59:59). Sources: the merged pull request feeds of twenty observability repositories - OpenTelemetry Collector and Collector Contrib, Prometheus and Alertmanager, Grafana (Loki, Beyla, Mimir, Pyroscope, Tempo, Alloy and the MCP server), Jaeger, Cilium, SigNoz, OpenObserve, Vector, OpenTelemetry Go and OpenTelemetry .NET - with each pull request body read through the GitHub API. No repository published a release inside the window, so the digest is built from merged pull requests that change user-visible behaviour; 209 pull requests merged in the window were screened and the eight with material effects were kept, with CI, dependency, documentation, test and refactor churn excluded. Each entry is dated by the merge timestamp published by GitHub.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <h2 class="visually-hidden">Contact</h2>
+      <ul role="list">
+        <li><a href="../../">Home</a></li>
+        <li><a href="mailto:juacker@komlog.org">juacker@komlog.org</a></li>
+        <li><a href="https://github.com/juacker">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/juacker">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

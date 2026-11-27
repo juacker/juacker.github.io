@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:49:27Z",
+  "generated_at": "2026-11-27T21:05:27Z",
   "subjects": [
     {
       "slug": "observability",
@@ -28,6 +28,188 @@
     }
   ],
   "editions": [
+    {
+      "date": "2026-11-27",
+      "published_at": "2026-11-27T11:00:02Z",
+      "window": {
+        "start": "2026-11-26T11:00:03Z",
+        "end": "2026-11-27T11:00:02Z",
+        "duration": "23:59:59"
+      },
+      "path": "briefings/2026-11-27/index.html",
+      "total_items": 31,
+      "subjects": [
+        {
+          "slug": "observability",
+          "title": "Observability",
+          "lang": "en",
+          "count": 8,
+          "path": "briefings/2026-11-27/observability.html",
+          "headlines": [
+            {
+              "title": "OpenTelemetry Collector deprecates the batch processor and warns at startup",
+              "url": "https://github.com/open-telemetry/opentelemetry-collector/pull/16494"
+            },
+            {
+              "title": "OpenTelemetry Collector cancels the 21 December 2026 release",
+              "url": "https://github.com/open-telemetry/opentelemetry-collector/pull/16511"
+            },
+            {
+              "title": "Collector Contrib turns on batching by default for the Sentry exporter",
+              "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53632"
+            },
+            {
+              "title": "Collector Contrib MongoDB receiver extracts W3C trace context from query comments",
+              "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53572"
+            },
+            {
+              "title": "Prometheus search API honors cancellation and reports deadline timeouts",
+              "url": "https://github.com/prometheus/prometheus/pull/19991"
+            },
+            {
+              "title": "Alertmanager SNS notifier upgrades sigv4 and adds session name and tag support",
+              "url": "https://github.com/prometheus/alertmanager/pull/5534"
+            },
+            {
+              "title": "Loki restores support for GLACIER_IR and INTELLIGENT_TIERING S3 storage classes",
+              "url": "https://github.com/grafana/loki/pull/26591"
+            },
+            {
+              "title": "Grafana Beyla reloads sampling configuration without a restart",
+              "url": "https://github.com/grafana/beyla/pull/3308"
+            }
+          ]
+        },
+        {
+          "slug": "ai",
+          "title": "AI industry & research",
+          "lang": "en",
+          "count": 8,
+          "path": "briefings/2026-11-27/ai.html",
+          "headlines": [
+            {
+              "title": "Nvidia tells manufacturing partners to pause server shipments to Southeast Asia",
+              "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/"
+            },
+            {
+              "title": "SAP weighs at least 10,000 job cuts as it reshapes its software business around AI",
+              "url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html"
+            },
+            {
+              "title": "Chip sellers tell neoclouds to rule out Chinese renters of Nvidia capacity",
+              "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html"
+            },
+            {
+              "title": "C4ADS investigation details China links of US-based Nvidia partners",
+              "url": "https://siliconangle.com/2026/11/26/report-sheds-light-on-china-ties-of-some-us-based-nvidia-partners/"
+            },
+            {
+              "title": "Hugging Face publishes a llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+              "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+            },
+            {
+              "title": "Running the LTX-2.5 video model on AWS Trainium3",
+              "url": "https://huggingface.co/blog/video-trainium3"
+            },
+            {
+              "title": "AI agent completes a cardless Papa John's payment in a UK regulatory trial",
+              "url": "https://tech.eu/2026/11/27/papa-johns-pizza-order-first-uk-cardless-payment-by-ai-agent/"
+            },
+            {
+              "title": "Portuguese startup Lampsy Health raises €1.1M for a seizure-detecting bedside lamp",
+              "url": "https://tech.eu/2026/11/27/lampsy-health-raises-eur11m-to-shine-a-light-on-undetected-night-time-seizures/"
+            }
+          ]
+        },
+        {
+          "slug": "agentic-ai",
+          "title": "Agentic AI papers",
+          "lang": "en",
+          "count": 8,
+          "path": "briefings/2026-11-27/agentic-ai.html",
+          "headlines": [
+            {
+              "title": "When Are Parallel Subagents Effective for Coding? An Empirical Study on Repository Construction",
+              "url": "https://arxiv.org/abs/2611.33893"
+            },
+            {
+              "title": "When Every Rollout Fails: Splicing Learner-Conditioned Options into Long-Horizon Agent RL",
+              "url": "https://arxiv.org/abs/2611.34777"
+            },
+            {
+              "title": "PROVE: Mitigating Long-Horizon LLM Collusion with Reinforcement Learning from Verified Evidence",
+              "url": "https://arxiv.org/abs/2611.34215"
+            },
+            {
+              "title": "EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams",
+              "url": "https://arxiv.org/abs/2611.34400"
+            },
+            {
+              "title": "Failure Broadens, Success Sharpens: Continual Adaptation of Tool-Use Agents with Dual-Polarity Memory",
+              "url": "https://arxiv.org/abs/2611.33612"
+            },
+            {
+              "title": "HoMe: Toward Practical Harness Optimization of Memory Systems for AI Assistants",
+              "url": "https://arxiv.org/abs/2611.34624"
+            },
+            {
+              "title": "CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems",
+              "url": "https://arxiv.org/abs/2611.33242"
+            },
+            {
+              "title": "Crucible: Evaluating LLM Agents in Executable Chemistry Research Environments",
+              "url": "https://arxiv.org/abs/2611.34254"
+            }
+          ]
+        },
+        {
+          "slug": "spanish-startups",
+          "title": "Spanish startups",
+          "lang": "es",
+          "count": 5,
+          "path": "briefings/2026-11-27/spanish-startups.html",
+          "headlines": [
+            {
+              "title": "DesafIA Madrid presenta ocho pilotos de IA con startups y empresas",
+              "url": "https://elreferente.es/ecosistema/la-ii-edicion-de-desafia-madrid-pone-en-marcha-ocho-proyectos-piloto-para-fomentar-la-innovacion-en-la-capital/"
+            },
+            {
+              "title": "Las scaleups piden acelerar una normativa específica tras la Ley de Startups",
+              "url": "https://elreferente.es/ecosistema/las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-startups-para-liderar-la-agenda-tecnologica-europea/"
+            },
+            {
+              "title": "COFIDES aporta 11 millones de euros a la serie E de Anaconda Biomed",
+              "url": "https://elreferente.es/inversiones/cofides-invierte-11-millones-de-euros-en-anaconda-biomed-para-impulsar-una-tecnologia-contra-el-ictus/"
+            },
+            {
+              "title": "Deudafix adquiere Evalúa Mis Finanzas tras la entrada de Alantra en su capital",
+              "url": "https://www.webcapitalriesgo.com/deudafix-participada-por-alantra-adquiere-evalua-mis-finanzas/"
+            },
+            {
+              "title": "Eatable Adventures invierte 500.000 euros en cinco startups de Raíces",
+              "url": "https://www.webcapitalriesgo.com/eatable-adventures-invierte-500000-euros-cinco-startups-raices/"
+            }
+          ]
+        },
+        {
+          "slug": "podcasts",
+          "title": "Podcasts",
+          "lang": "en",
+          "count": 2,
+          "path": "briefings/2026-11-27/podcasts.html",
+          "headlines": [
+            {
+              "title": "How Clay Builds GTM Agents - Jeff Barg, Head of AI at Clay",
+              "url": "https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/how_clay_builds_gtm_agents_jeff_barg_head_of_ai"
+            },
+            {
+              "title": "Can AI Really Speed Up Drug Discovery? - Evan Stoll, Cresset",
+              "url": "https://artificialintelligencepod.com/can-ai-really-speed-up-drug-discovery-with-evan-stoll/"
+            }
+          ]
+        }
+      ]
+    },
     {
       "date": "2026-11-26",
       "published_at": "2026-11-26T11:00:03Z",

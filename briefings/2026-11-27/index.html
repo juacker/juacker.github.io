@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Daily briefing · Friday 27 November 2026 · Juan Cañete</title>
+  <meta name="description" content="Daily briefing of Friday 27 November 2026: 31 items across 5 subjects.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://juacker.github.io/briefings/2026-11-27/">
+  <meta property="og:site_name" content="Juan Cañete">
+  <meta property="og:title" content="Daily briefing · Friday 27 November 2026">
+  <meta property="og:description" content="Daily briefing of Friday 27 November 2026: 31 items across 5 subjects.">
+  <meta property="og:image" content="https://juacker.github.io/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daily briefing · Friday 27 November 2026">
+  <meta name="twitter:description" content="Daily briefing of Friday 27 November 2026: 31 items across 5 subjects.">
+  <meta name="twitter:image" content="https://juacker.github.io/assets/social-card.png">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../assets/site.css?v=5">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__brand" href="../../">Juan Cañete</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul role="list">
+          <li><a href="../../briefings/">Briefings</a></li>
+          <li><a href="../../cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="briefing briefing--edition">
+    <header class="briefing__head">
+      <p class="briefing__eyebrow"><a href="../">All briefings</a> / Daily briefing</p>
+      <h1 class="briefing__title">Friday 27 November 2026</h1>
+      <p class="briefing__meta">31 items · 5 subjects · Coverage window 26 November 2026 11:00:03 UTC → 27 November 2026 11:00:02 UTC (23:59:59)</p>
+      <nav class="edition-toc" aria-label="Subjects in this edition">
+        <ul role="list">
+          <li><a href="#observability">Observability <span class="edition-toc__count">8<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#ai">AI industry &amp; research <span class="edition-toc__count">8<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#agentic-ai">Agentic AI papers <span class="edition-toc__count">8<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#spanish-startups">Spanish startups <span class="lang-badge" aria-hidden="true">ES</span><span class="visually-hidden"> (in Spanish)</span> <span class="edition-toc__count">5<span class="visually-hidden"> items</span></span></a></li>
+          <li><a href="#podcasts">Podcasts <span class="edition-toc__count">2<span class="visually-hidden"> items</span></span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="briefing__subjects">
+      <section class="subject" id="observability" aria-labelledby="observability-title">
+        <h2 class="subject__title" id="observability-title">Observability</h2>
+        <p class="subject__meta">8 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector/pull/16494">OpenTelemetry Collector deprecates the batch processor and warns at startup</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector PR #16494 - merged 26 Nov 2026 12:41 UTC</p>
+            <p class="subject__summary">The batch processor is now marked deprecated for traces, metrics and logs, and a collector logs a startup warning pointing at the project blog post whenever a batch processor instance is configured. The change tracks issue 12022 and updates the processor README; nothing is removed yet, and the deprecation is the signal for the collector&#x27;s batching migration.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector/pull/16511">OpenTelemetry Collector cancels the 21 December 2026 release</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector PR #16511 - merged 26 Nov 2026 16:36 UTC</p>
+            <p class="subject__summary">The 2026-12-21 release is removed from the release list so that no collector release lands during the end-of-year break, following the discussion in the open-telemetry/community issue 3855. The commit also removes past release entries from the repository, and the author notes that an earlier slot can be taken if nobody is available for a given date.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53632">Collector Contrib turns on batching by default for the Sentry exporter</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector-contrib PR #53632 - merged 26 Nov 2026 17:24 UTC</p>
+            <p class="subject__summary">The Sentry exporter now batches with the component&#x27;s default settings, as part of a staged rollout that will eventually enable exporter-level batching across all collector components. The change is tracked under issue 53588 and references the collector batching migration published by the project.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53572">Collector Contrib MongoDB receiver extracts W3C trace context from query comments</a></h3>
+            <p class="subject__source">open-telemetry/opentelemetry-collector-contrib PR #53572 - merged 26 Nov 2026 18:23 UTC</p>
+            <p class="subject__summary">The receiver reads document-valued MongoDB query comments, extracts a W3C traceparent when one is present and attaches it to the db.server.query_sample log records it emits; operations without a valid traceparent are logged without trace context. The change follows the context-propagation section of the OpenTelemetry semantic conventions for MongoDB and adds tests for valid, invalid and missing trace context.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/prometheus/prometheus/pull/19991">Prometheus search API honors cancellation and reports deadline timeouts</a></h3>
+            <p class="subject__source">prometheus/prometheus PR #19991 - merged 27 Nov 2026 08:50 UTC</p>
+            <p class="subject__summary">The request context is now passed into storage.ApplySearchHints so indexed search filtering stops when a query is canceled, and search deadlines are classified consistently: HTTP 503 before streaming starts, or a terminal timeout record once streaming is under way. The Go API of ApplySearchHints changes to take a context and return an error, so downstream callers must be updated.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/prometheus/alertmanager/pull/5534">Alertmanager SNS notifier upgrades sigv4 and adds session name and tag support</a></h3>
+            <p class="subject__source">prometheus/alertmanager PR #5534 - merged 27 Nov 2026 10:06 UTC</p>
+            <p class="subject__summary">The SNS notifier moves from prometheus/sigv4 v0.4.1 to v0.5.0 and supports the session_name and tags fields of the sigv4 configuration, so STS AssumeRole calls can carry per-caller identity and AWS cost-allocation session tags. The release note describes it as an enhancement.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/grafana/loki/pull/26591">Loki restores support for GLACIER_IR and INTELLIGENT_TIERING S3 storage classes</a></h3>
+            <p class="subject__source">grafana/loki PR #26591 - merged 26 Nov 2026 19:14 UTC</p>
+            <p class="subject__summary">Loki&#x27;s storage layer accepts the GLACIER_IR and INTELLIGENT_TIERING S3 storage classes again; GLACIER_IR keeps the availability and performance guarantees of STANDARD and STANDARD_IA, while INTELLIGENT_TIERING moves objects automatically between STANDARD, STANDARD_IA and GLACIER_IR. The pull request frames the change as a billing and retention decision for infrequently accessed logs rather than a performance change, and fixes issue 26495.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://github.com/grafana/beyla/pull/3308">Grafana Beyla reloads sampling configuration without a restart</a></h3>
+            <p class="subject__source">grafana/beyla PR #3308 - merged 27 Nov 2026 07:45 UTC</p>
+            <p class="subject__summary">Beyla can apply a changed sampling configuration through the reload path it already had for service selection criteria; the same support was ported from OpenTelemetry&#x27;s OBI, together with the dynamic-PID change that lets the sampler be modified. Most of the 92 changed files are the vendored OBI sources.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="subject" id="ai" aria-labelledby="ai-title">
+        <h2 class="subject__title" id="ai-title">AI industry &amp; research</h2>
+        <p class="subject__meta">8 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/">Nvidia tells manufacturing partners to pause server shipments to Southeast Asia</a></h3>
+            <p class="subject__source">TechCrunch - 26 Nov 2026 20:03 UTC</p>
+            <p class="subject__summary">Nvidia has asked manufacturing partners, including Dell and Super Micro, to pause server shipments to Malaysia, Singapore, Thailand and Indonesia for an unspecified period while it assesses whether regional partners meet U.S. export requirements, according to a Wall Street Journal report. The countries are those where Chinese firms have rented remote access to Nvidia chips from local data centres, a route the Commerce Department closed earlier in November; the Institute for Progress estimates such remote capacity supplies roughly 24% of China&#x27;s AI compute.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html">SAP weighs at least 10,000 job cuts as it reshapes its software business around AI</a></h3>
+            <p class="subject__source">CNBC - 27 Nov 2026 06:36 UTC</p>
+            <p class="subject__summary">Bloomberg reports that SAP is preparing a plan to eliminate at least 10,000 positions while reshaping its software business for the AI era. SAP said the business environment is changing rapidly through AI and that roles and functions will change over time, but that no decisions have been made on further measures. Bloomberg adds that SAP negotiated an employment guarantee with its German works council running through 2028, with product, engineering and sales units expected to take the largest cuts.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html">Chip sellers tell neoclouds to rule out Chinese renters of Nvidia capacity</a></h3>
+            <p class="subject__source">CNBC - 26 Nov 2026 15:34 UTC</p>
+            <p class="subject__summary">Neocloud buyers have been told they cannot purchase Nvidia chips if any of the capacity will be rented by Chinese companies, according to two people familiar with the situation. Chip sellers passed the message on after the Bureau of Industry and Security announced an interim final rule on 16 November restricting remote access to AI semiconductors, which took effect on 19 November; Nvidia had previously said it would not sell to customers renting more than 50% of their GPUs to Chinese companies.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://siliconangle.com/2026/11/26/report-sheds-light-on-china-ties-of-some-us-based-nvidia-partners/">C4ADS investigation details China links of US-based Nvidia partners</a></h3>
+            <p class="subject__source">SiliconANGLE - 26 Nov 2026 21:13 UTC</p>
+            <p class="subject__summary">C4ADS, a Washington, D.C.-based nonprofit, carried out an investigation at the request of CBS News into links between companies in Nvidia&#x27;s supply chain and entities based in China or accused of breaching export controls. The reporting names partners including RiCloud AI and Topmost among the firms examined.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench">Hugging Face publishes a llama.cpp benchmark dashboard for AMD Ryzen and Radeon</a></h3>
+            <p class="subject__source">Hugging Face - 26 Nov 2026 11:37 UTC</p>
+            <p class="subject__summary">The ggml organization published a dashboard that tracks prompt processing and text generation throughput across llama.cpp builds, models and quantizations on AMD Ryzen and Radeon hardware, so that local-inference performance can be compared over time rather than in a single run. The current hardware entries are the Radeon 8060S and the Radeon AI Pro R9700S, and the benchmark workflow and underlying results are public.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://huggingface.co/blog/video-trainium3">Running the LTX-2.5 video model on AWS Trainium3</a></h3>
+            <p class="subject__source">Hugging Face - 27 Nov 2026 00:00 UTC</p>
+            <p class="subject__summary">With a month of access to a Trainium3 machine (trn3.48xlarge, 64 NeuronCores) through its AWS partnership, Hugging Face documents what it took to generate video with diffusers on the accelerator, using Lightricks&#x27; LTX-2.5 model, which produces video and sound together. Once the models were loaded, a 10-second clip with sound took 22 to 23 seconds to generate on half of the machine.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://tech.eu/2026/11/27/papa-johns-pizza-order-first-uk-cardless-payment-by-ai-agent/">AI agent completes a cardless Papa John&#x27;s payment in a UK regulatory trial</a></h3>
+            <p class="subject__source">Tech.eu - 27 Nov 2026 11:00 UTC</p>
+            <p class="subject__summary">TrueLayer says an AI agent paid for Papa John&#x27;s pizzas directly from a customer&#x27;s bank account in a trial it calls the first time an AI agent has paid a UK retailer this way; the agent helped with the order and then paid from the account linked to the customer&#x27;s Papa John&#x27;s account through open banking. The pilot ran inside the Financial Conduct Authority&#x27;s AI regulatory sandbox, within the limits the customer agreed, and marked the first use of Lloyd&#x27;s variable recurring payment APIs for agent payments.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://tech.eu/2026/11/27/lampsy-health-raises-eur11m-to-shine-a-light-on-undetected-night-time-seizures/">Portuguese startup Lampsy Health raises €1.1M for a seizure-detecting bedside lamp</a></h3>
+            <p class="subject__source">Tech.eu - 27 Nov 2026 08:56 UTC</p>
+            <p class="subject__summary">Lampsy Health closed a €1.1 million round led by Fundação Ageas and Portugal Ventures, with Angels Way, Phira Ventures and business angels, to fund the commercial launch and distribution in Europe and the UK of a bedside lamp that monitors for epileptic seizures during sleep. The lamp embeds a small camera and a proprietary AI algorithm, detects movements that may indicate a seizure with over 97% accuracy and alerts emergency contacts automatically, without wearable sensors; part of the round comes from the European Innovation Council.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="subject" id="agentic-ai" aria-labelledby="agentic-ai-title">
+        <h2 class="subject__title" id="agentic-ai-title">Agentic AI papers</h2>
+        <p class="subject__meta">8 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33893">When Are Parallel Subagents Effective for Coding? An Empirical Study on Repository Construction</a></h3>
+            <p class="subject__source">arXiv:2611.33893 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Comparing a single coding agent with a main agent that delegates to parallel subagents on repository-construction tasks from NL2Repo and ProgramBench, the study finds parallel subagents raise hidden-test pass rates by only about 1 to 5 percentage points while costing up to 3.8 times as much as a single agent, with larger gains on harder tasks. Three mechanisms are identified: self-checking against the reference program recovers most of the gain at a fraction of the cost, restarting a single agent with a fresh context makes it progress faster in extended runs, and the advantage of delegation shrinks as single agents check their own work more often.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34777">When Every Rollout Fails: Splicing Learner-Conditioned Options into Long-Horizon Agent RL</a></h3>
+            <p class="subject__source">arXiv:2611.34777 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Group-based reinforcement learning with verifiable rewards often yields all-fail groups on long-horizon agent tasks, leaving group-relative methods without a reward-based gradient. SPLICE builds local training targets online from failed current-policy trajectories: a proposal model picks a splice point and generates bounded options, their value is estimated with repeated current-policy continuations and positive estimates are turned into a return-weighted target. Across two policy families on SWE-bench Verified and BrowseComp-Plus it outperforms GRPO and full-trajectory guidance by 2.8 to 9.8 percentage points and raises GRPO&#x27;s graduation rate on initially failed SWE tasks by 10.8 points, while using less proposal-model computation.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34215">PROVE: Mitigating Long-Horizon LLM Collusion with Reinforcement Learning from Verified Evidence</a></h3>
+            <p class="subject__source">arXiv:2611.34215 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Agents that verify each other&#x27;s work over long interactions drift into collusion, accepting work without the evidence the verification protocol requires; the authors trace this to accurate feedback accumulating in memory, which makes rule-breaking the reward-maximizing choice. PROVE rewards verdicts by the evidence behind them rather than by their outcome, and on Qwen3.6-27B a LoRA adapter trained on six-episode interactions cuts the collusion rate on held-out sequences at the original ten-episode horizon from 65.0% to 1.0% with no detectable change in task success. The trained 27B model colludes less than every model evaluated in the original study, closed-weight frontier models included.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34400">EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams</a></h3>
+            <p class="subject__source">arXiv:2611.34400 - listed 26 Nov 2026</p>
+            <p class="subject__summary">EvoLink-Bench evaluates agents that must learn from past interactions to improve on later work, with task streams whose later steps depend on earlier outcomes. It covers daily office work, multi-turn dialogue and AutoResearch-style workflows with persistent workspaces, and separates the acquisition and revision of language-expressible knowledge (L1) from the development of task-level capabilities through execution and feedback (L2), while distinguishing within-task recovery, persistent-state updates and reuse of experience in later tasks. The authors evaluate five agent frameworks across three backbone configurations and three persistence conditions, covering 19,635 scored task slots.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33612">Failure Broadens, Success Sharpens: Continual Adaptation of Tool-Use Agents with Dual-Polarity Memory</a></h3>
+            <p class="subject__source">arXiv:2611.33612 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Using heterogeneous streams of multi-domain tool-use tasks, the paper separates the contribution of procedural memories derived from local successes and from local failures, and proposes DualPM, a retrieval-free workflow that reflects over both polarities within each trajectory and consolidates memory periodically under a fixed capacity to prevent memory explosion. Prequential evaluation with fine-grained metrics shows failure memory broadens coverage while success memory streamlines execution, and that combining both integrates the two effects. Further studies report cross-domain memory generalization, continual adaptation and portability to the EvoMemBench external evaluation.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34624">HoMe: Toward Practical Harness Optimization of Memory Systems for AI Assistants</a></h3>
+            <p class="subject__source">arXiv:2611.34624 - listed 26 Nov 2026</p>
+            <p class="subject__summary">HoMe is an evaluation-driven framework that optimizes the harness of a long-running assistant&#x27;s memory system - the code, prompts and configurations behind memory construction, maintenance, retrieval and answer generation - by editing any part of a previously evaluated harness and gating candidates on early evaluation. It combines session-level memory versioning with execution traces to localize shared failure mechanisms to the responsible sessions and harness components, and reduces evaluation cost with smoke tests, adaptive sampling and reuse of constructed memory. Validated with the open-source ReMe system on LongMemEval-S and BEAM, six formal candidate evaluations per benchmark found harnesses that improve end-task performance while consuming far fewer query-time tokens.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33242">CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems</a></h3>
+            <p class="subject__source">arXiv:2611.33242 - listed 26 Nov 2026</p>
+            <p class="subject__summary">CypherMAS is a synthetic benchmark that isolates communication and routing in fixed multi-agent graphs: agents in chain, star, bipartite or ring topologies route cyphered messages to remote peers holding the matching decoder, so the optimal route is known and redundant model calls can be measured. Across eleven open-weight models from 4B to 753B parameters, small models fail at routing and tool use, dense models above 27B degrade as graph diameter grows, and successful runs exceed the minimum number of model calls. The authors position communication reliability as a scaling bottleneck distinct from reasoning ability.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34254">Crucible: Evaluating LLM Agents in Executable Chemistry Research Environments</a></h3>
+            <p class="subject__source">arXiv:2611.34254 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Crucible Bench evaluates agents across the four stages of the design-make-test-analyze cycle in chemistry with 1,078 tasks in 12 families drawn from 18 published datasets, covering molecular design, synthesis planning, experimental execution, closed-loop optimization, simulation and analytical characterization. Agents reach 75 domain-specific tools through the Model Context Protocol in seven isolated environments, sandboxed graders verify synthesis routes and experimental protocols, and laboratory tasks run on robotic simulators or previously measured data. Fourteen models are evaluated as agents; the best scores 0.545 overall, synthesis planning and closed-loop optimization are the hardest domains, and overall rank does not predict closed-loop optimization performance.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="subject" id="spanish-startups" aria-labelledby="spanish-startups-title">
+        <h2 class="subject__title" id="spanish-startups-title">Spanish startups</h2>
+        <p class="subject__meta">5 items · In Spanish</p>
+        <ul class="subject__items" role="list" lang="es">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://elreferente.es/ecosistema/la-ii-edicion-de-desafia-madrid-pone-en-marcha-ocho-proyectos-piloto-para-fomentar-la-innovacion-en-la-capital/">DesafIA Madrid presenta ocho pilotos de IA con startups y empresas</a></h3>
+            <p class="subject__source">El Referente - 27 nov 2026 09:50 UTC</p>
+            <p class="subject__summary">El Ayuntamiento de Madrid presentó los resultados de ocho pilotos de la segunda edición de DesafIA Madrid, desarrollados por Wise Build, Nommon, MuniDigital, Baobab AI, Brisa, AnnorakIntelligence Group, Komorebi y MyStreetBook. La convocatoria actual se dotó con cerca de 500.000 euros y, sumadas las dos ediciones, el programa ha movilizado casi un millón de euros; los pilotos se probaron ante retos de Grupo EULEN, IBM, L&#x27;Oréal Groupe, Cabify y varias áreas municipales, y el Ayuntamiento confirmó una tercera edición con una dotación similar.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://elreferente.es/ecosistema/las-scaleups-reclaman-acelerar-la-reforma-de-la-ley-de-startups-para-liderar-la-agenda-tecnologica-europea/">Las scaleups piden acelerar una normativa específica tras la Ley de Startups</a></h3>
+            <p class="subject__source">El Referente - 27 nov 2026 08:58 UTC</p>
+            <p class="subject__summary">Adigital y su plataforma de scaleups EsTech reclamaron un marco normativo específico para empresas tecnológicas que superan los límites de antigüedad de la Ley de Startups, de cinco años o siete en ciertos sectores. Durante Scalability Day presentaron un mapa del ecosistema y reiteraron su propuesta de certificación para extender los incentivos a compañías en fase de crecimiento.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://elreferente.es/inversiones/cofides-invierte-11-millones-de-euros-en-anaconda-biomed-para-impulsar-una-tecnologia-contra-el-ictus/">COFIDES aporta 11 millones de euros a la serie E de Anaconda Biomed</a></h3>
+            <p class="subject__source">El Referente - 26 nov 2026 13:26 UTC</p>
+            <p class="subject__summary">COFIDES invirtió 11 millones de euros mediante el Fondo de Coinversión en una ronda serie E de 49 millones de Anaconda Biomed, liderada por Omega Funds y con participación de Asabys Partners, Ysios Capital y CDTI Innvierte. La empresa de tecnología médica destinará los recursos a ensayos clínicos, autorizaciones regulatorias, producción y desarrollo de dispositivos para tratar el ictus.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.webcapitalriesgo.com/deudafix-participada-por-alantra-adquiere-evalua-mis-finanzas/">Deudafix adquiere Evalúa Mis Finanzas tras la entrada de Alantra en su capital</a></h3>
+            <p class="subject__source">Webcapitalriesgo - 27 nov 2026 09:18 UTC</p>
+            <p class="subject__summary">La fintech madrileña Deudafix adquirió Evalúa Mis Finanzas, especializada en asesoramiento financiero y jurídico a particulares con deudas; no se comunicó el precio. Es la primera compra de Deudafix desde que Alantra Private Equity tomó una participación mayoritaria en julio de 2026, y la firma comprada seguirá operando como segunda marca del grupo.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://www.webcapitalriesgo.com/eatable-adventures-invierte-500000-euros-cinco-startups-raices/">Eatable Adventures invierte 500.000 euros en cinco startups de Raíces</a></h3>
+            <p class="subject__source">Webcapitalriesgo - 27 nov 2026 08:46 UTC</p>
+            <p class="subject__summary">Eatable Adventures invertirá 100.000 euros iniciales en cada una de las cinco startups elegidas para la segunda edición de Raíces: ComexSoft, Bio Natural Solutions, NexEnzymes, Metcover y Macanudo. La aceleradora madrileña contempla financiación adicional de hasta un millón de euros por compañía; ComexSoft tiene sede en San Sebastián y las otras cuatro proceden de Perú, Chile y Colombia.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="subject" id="podcasts" aria-labelledby="podcasts-title">
+        <h2 class="subject__title" id="podcasts-title">Podcasts</h2>
+        <p class="subject__meta">2 items</p>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://lspace.beehiiv.com/podcast/s/latent_space_the_ai_engineer_podcast/how_clay_builds_gtm_agents_jeff_barg_head_of_ai">How Clay Builds GTM Agents - Jeff Barg, Head of AI at Clay</a></h3>
+            <p class="subject__source">Latent Space - 26 Nov 2026 22:44 UTC</p>
+            <p class="subject__summary">Jeff Barg, head of AI at Clay, describes building go-to-market infrastructure that any agent can use: usage at Clay is split roughly 50/50 between its own agent and external harnesses such as Claude Code. He covers the eval-driven approach behind the company&#x27;s coding agent Sculptor, the decision to keep running agents on a queue system built with BullMQ rather than Temporal or LangGraph, and why the team sees more value in frontier models for orchestration and deep research than in choosing a model for customers. Clay raised $115 million at a $7.1 billion valuation in September and the company has grown to around 600 people.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://artificialintelligencepod.com/can-ai-really-speed-up-drug-discovery-with-evan-stoll/">Can AI Really Speed Up Drug Discovery? - Evan Stoll, Cresset</a></h3>
+            <p class="subject__source">The Artificial Intelligence Podcast - 26 Nov 2026 14:00 UTC</p>
+            <p class="subject__summary">Evan Stoll of Cresset explains the move of laboratory work out of spreadsheets and paper notebooks, where an untested tweak can decide whether a programme succeeds, and why a scientist stays in the loop to validate what the models propose, with experimental checks such as binding assays. He says Cresset&#x27;s Flare V13 ships an agent that works with the model a scientist already uses, such as Claude or GitHub Copilot, and that work which previously took five or six hours now takes 15 to 20 minutes with the newer models, which lets small teams move faster. He expects note-taking to head towards automatic capture of conversations linked to laboratory databases, though the tools are not there yet.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="subject subject--method" aria-labelledby="method-title">
+        <h2 class="subject__title" id="method-title">Method and sources</h2>
+        <dl class="method-notes">
+          <dt>Observability</dt>
+          <dd>Window: 26 Nov 2026 11:00:03 UTC to 27 Nov 2026 11:00:02 UTC (23:59:59). Sources: the merged pull request feeds of twenty observability repositories - OpenTelemetry Collector and Collector Contrib, Prometheus and Alertmanager, Grafana (Loki, Beyla, Mimir, Pyroscope, Tempo, Alloy and the MCP server), Jaeger, Cilium, SigNoz, OpenObserve, Vector, OpenTelemetry Go and OpenTelemetry .NET - with each pull request body read through the GitHub API. No repository published a release inside the window, so the digest is built from merged pull requests that change user-visible behaviour; 209 pull requests merged in the window were screened and the eight with material effects were kept, with CI, dependency, documentation, test and refactor churn excluded. Each entry is dated by the merge timestamp published by GitHub.</dd>
+          <dt>AI industry &amp; research</dt>
+          <dd>Window: 26 Nov 2026 11:00:03 UTC to 27 Nov 2026 11:00:02 UTC (23:59:59). Sources: the TechCrunch, CNBC, SiliconANGLE, Tech.eu and Hugging Face feeds, with every article read and its publication timestamp verified; the TechCrunch and Tech.eu items fall at or inside the closing timestamp of the window. The digest covers model and hardware developments, financing, export-control enforcement and product launches; agent research papers are covered in the agentic digest. The SAP restructuring is reported by CNBC and by SiliconANGLE from the same Bloomberg story and is counted once. Four further candidates from The New Stack - Cloudflare agentic search, AI-generated test data, 50 concurrent agents and Cognition engineers using Devin - could not be verified: the host returned HTTP 403 to every article request, so they are excluded.</dd>
+          <dt>Agentic AI papers</dt>
+          <dd>Window: 26 Nov 2026 11:00:03 UTC to 27 Nov 2026 11:00:02 UTC (23:59:59). Sources: the arXiv daily listings for cs.AI, cs.CL, cs.LG and cs.MA, with each abstract read from the arXiv record. Eligibility follows the announcement date shown in the daily listing rather than the original submission date, which keeps papers submitted on 25 November but listed on 26 November in this edition. The 26 November listing was the newest one available when the window closed and no 27 November listing had been published, so no later announcement was available to cover; the eight papers already carried in the 26 November edition are not repeated. Replacement submissions are excluded and only new or cross-listed papers are kept.</dd>
+          <dt>Spanish startups</dt>
+          <dd lang="es">Ventana: del 26 nov 2026 11:00:03 UTC al 27 nov 2026 11:00:02 UTC (23:59:59). Se revisaron los canales RSS de El Referente, Webcapitalriesgo, Forbes España, EU-Startups y El Español; también se probaron los canales o secciones de inversiones de El Referente, funding y ecosistema de Webcapitalriesgo, Emprendedores, elEconomista, Expansión, Cinco Días y Startups Europe. Los hosts de Emprendedores y elEconomista devolvieron HTTP 403; la primera URL RSS de Expansión y varios feeds por sección de Webcapitalriesgo devolvieron HTTP 404; ABC, El País, Cinco Días, El Español y Startups Europe fueron rechazados por el proxy. Forbes España y EU-Startups respondieron, pero no aportaron ninguna noticia española seleccionada. La sección de inversiones de El Referente y la URL RSS alternativa de Expansión no entregaron elementos RSS interpretables. Se excluyeron el anuncio del foro Palma Tech, el estudio SpainNAB/IE sobre capital ya comprometido y la operación Newborn Town/Softonic, repetida de la edición anterior. También se descartaron repeticiones de Permut, Undara Bio, Holidu, Fermat, Aerisio, Henko Capital y Reversa.</dd>
+          <dt>Podcasts</dt>
+          <dd>Window: 26 Nov 2026 11:00:03 UTC to 27 Nov 2026 11:00:02 UTC (23:59:59). Sources: the episode feeds for Latent Space, The Artificial Intelligence Podcast, Changelog, Dwarkesh, Every and Practical AI, plus the episode page of each included item. Each included episode has an in-window feed timestamp, a canonical URL and identifiable human speakers; announcements, trailers and show notes without the episode are excluded, and the five episodes carried in the 26 November edition are not repeated. A follow-up sweep found no further qualifying episode: Changelog&#x27;s latest entry is dated 24 November, Dwarkesh&#x27;s dated post falls after the close of the window, Every published no entries, the Practical AI feed returned HTTP 404, and several other podcast hosts were refused by the network proxy.</dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <h2 class="visually-hidden">Contact</h2>
+      <ul role="list">
+        <li><a href="../../">Home</a></li>
+        <li><a href="mailto:juacker@komlog.org">juacker@komlog.org</a></li>
+        <li><a href="https://github.com/juacker">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/juacker">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

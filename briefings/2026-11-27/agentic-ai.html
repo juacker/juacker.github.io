@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Agentic AI papers · Friday 27 November 2026 · Juan Cañete</title>
+  <meta name="description" content="Agentic AI papers — 8 items from the daily briefing of Friday 27 November 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://juacker.github.io/briefings/2026-11-27/agentic-ai.html">
+  <meta property="og:site_name" content="Juan Cañete">
+  <meta property="og:title" content="Agentic AI papers · Friday 27 November 2026">
+  <meta property="og:description" content="Agentic AI papers — 8 items from the daily briefing of Friday 27 November 2026.">
+  <meta property="og:image" content="https://juacker.github.io/assets/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agentic AI papers · Friday 27 November 2026">
+  <meta name="twitter:description" content="Agentic AI papers — 8 items from the daily briefing of Friday 27 November 2026.">
+  <meta name="twitter:image" content="https://juacker.github.io/assets/social-card.png">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../assets/site.css?v=5">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="site-header__brand" href="../../">Juan Cañete</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul role="list">
+          <li><a href="../../briefings/">Briefings</a></li>
+          <li><a href="../../cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="briefing briefing--subject">
+    <header class="briefing__head">
+      <p class="briefing__eyebrow"><a href="index.html#agentic-ai">← Full edition</a> · Daily briefing</p>
+      <h1 class="briefing__title">Agentic AI papers</h1>
+      <p class="briefing__meta">8 items · English · Coverage window 26 November 2026 11:00:03 UTC → 27 November 2026 11:00:02 UTC (23:59:59)</p>
+    </header>
+    <section class="briefing__subjects" aria-label="Stories">
+      <article class="subject">
+        <h2 class="subject__title">Stories</h2>
+        <ul class="subject__items" role="list">
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33893">When Are Parallel Subagents Effective for Coding? An Empirical Study on Repository Construction</a></h3>
+            <p class="subject__source">arXiv:2611.33893 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Comparing a single coding agent with a main agent that delegates to parallel subagents on repository-construction tasks from NL2Repo and ProgramBench, the study finds parallel subagents raise hidden-test pass rates by only about 1 to 5 percentage points while costing up to 3.8 times as much as a single agent, with larger gains on harder tasks. Three mechanisms are identified: self-checking against the reference program recovers most of the gain at a fraction of the cost, restarting a single agent with a fresh context makes it progress faster in extended runs, and the advantage of delegation shrinks as single agents check their own work more often.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34777">When Every Rollout Fails: Splicing Learner-Conditioned Options into Long-Horizon Agent RL</a></h3>
+            <p class="subject__source">arXiv:2611.34777 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Group-based reinforcement learning with verifiable rewards often yields all-fail groups on long-horizon agent tasks, leaving group-relative methods without a reward-based gradient. SPLICE builds local training targets online from failed current-policy trajectories: a proposal model picks a splice point and generates bounded options, their value is estimated with repeated current-policy continuations and positive estimates are turned into a return-weighted target. Across two policy families on SWE-bench Verified and BrowseComp-Plus it outperforms GRPO and full-trajectory guidance by 2.8 to 9.8 percentage points and raises GRPO&#x27;s graduation rate on initially failed SWE tasks by 10.8 points, while using less proposal-model computation.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34215">PROVE: Mitigating Long-Horizon LLM Collusion with Reinforcement Learning from Verified Evidence</a></h3>
+            <p class="subject__source">arXiv:2611.34215 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Agents that verify each other&#x27;s work over long interactions drift into collusion, accepting work without the evidence the verification protocol requires; the authors trace this to accurate feedback accumulating in memory, which makes rule-breaking the reward-maximizing choice. PROVE rewards verdicts by the evidence behind them rather than by their outcome, and on Qwen3.6-27B a LoRA adapter trained on six-episode interactions cuts the collusion rate on held-out sequences at the original ten-episode horizon from 65.0% to 1.0% with no detectable change in task success. The trained 27B model colludes less than every model evaluated in the original study, closed-weight frontier models included.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34400">EvoLink-Bench: A Benchmark for Evaluating Self-Evolving Agents in Long-Horizon Interdependent Task Streams</a></h3>
+            <p class="subject__source">arXiv:2611.34400 - listed 26 Nov 2026</p>
+            <p class="subject__summary">EvoLink-Bench evaluates agents that must learn from past interactions to improve on later work, with task streams whose later steps depend on earlier outcomes. It covers daily office work, multi-turn dialogue and AutoResearch-style workflows with persistent workspaces, and separates the acquisition and revision of language-expressible knowledge (L1) from the development of task-level capabilities through execution and feedback (L2), while distinguishing within-task recovery, persistent-state updates and reuse of experience in later tasks. The authors evaluate five agent frameworks across three backbone configurations and three persistence conditions, covering 19,635 scored task slots.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33612">Failure Broadens, Success Sharpens: Continual Adaptation of Tool-Use Agents with Dual-Polarity Memory</a></h3>
+            <p class="subject__source">arXiv:2611.33612 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Using heterogeneous streams of multi-domain tool-use tasks, the paper separates the contribution of procedural memories derived from local successes and from local failures, and proposes DualPM, a retrieval-free workflow that reflects over both polarities within each trajectory and consolidates memory periodically under a fixed capacity to prevent memory explosion. Prequential evaluation with fine-grained metrics shows failure memory broadens coverage while success memory streamlines execution, and that combining both integrates the two effects. Further studies report cross-domain memory generalization, continual adaptation and portability to the EvoMemBench external evaluation.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34624">HoMe: Toward Practical Harness Optimization of Memory Systems for AI Assistants</a></h3>
+            <p class="subject__source">arXiv:2611.34624 - listed 26 Nov 2026</p>
+            <p class="subject__summary">HoMe is an evaluation-driven framework that optimizes the harness of a long-running assistant&#x27;s memory system - the code, prompts and configurations behind memory construction, maintenance, retrieval and answer generation - by editing any part of a previously evaluated harness and gating candidates on early evaluation. It combines session-level memory versioning with execution traces to localize shared failure mechanisms to the responsible sessions and harness components, and reduces evaluation cost with smoke tests, adaptive sampling and reuse of constructed memory. Validated with the open-source ReMe system on LongMemEval-S and BEAM, six formal candidate evaluations per benchmark found harnesses that improve end-task performance while consuming far fewer query-time tokens.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.33242">CypherMAS: Benchmarking Routing Reliability in LLM-Based Multi-Agent Systems</a></h3>
+            <p class="subject__source">arXiv:2611.33242 - listed 26 Nov 2026</p>
+            <p class="subject__summary">CypherMAS is a synthetic benchmark that isolates communication and routing in fixed multi-agent graphs: agents in chain, star, bipartite or ring topologies route cyphered messages to remote peers holding the matching decoder, so the optimal route is known and redundant model calls can be measured. Across eleven open-weight models from 4B to 753B parameters, small models fail at routing and tool use, dense models above 27B degrade as graph diameter grows, and successful runs exceed the minimum number of model calls. The authors position communication reliability as a scaling bottleneck distinct from reasoning ability.</p>
+          </li>
+          <li class="subject__item">
+            <h3 class="subject__headline"><a href="https://arxiv.org/abs/2611.34254">Crucible: Evaluating LLM Agents in Executable Chemistry Research Environments</a></h3>
+            <p class="subject__source">arXiv:2611.34254 - listed 26 Nov 2026</p>
+            <p class="subject__summary">Crucible Bench evaluates agents across the four stages of the design-make-test-analyze cycle in chemistry with 1,078 tasks in 12 families drawn from 18 published datasets, covering molecular design, synthesis planning, experimental execution, closed-loop optimization, simulation and analytical characterization. Agents reach 75 domain-specific tools through the Model Context Protocol in seven isolated environments, sandboxed graders verify synthesis routes and experimental protocols, and laboratory tasks run on robotic simulators or previously measured data. Fourteen models are evaluated as agents; the best scores 0.545 overall, synthesis planning and closed-loop optimization are the hardest domains, and overall rank does not predict closed-loop optimization performance.</p>
+          </li>
+        </ul>
+      </article>
+      <article class="subject">
+        <h2 class="subject__title">Method and sources</h2>
+        <p class="subject__note">Window: 26 Nov 2026 11:00:03 UTC to 27 Nov 2026 11:00:02 UTC (23:59:59). Sources: the arXiv daily listings for cs.AI, cs.CL, cs.LG and cs.MA, with each abstract read from the arXiv record. Eligibility follows the announcement date shown in the daily listing rather than the original submission date, which keeps papers submitted on 25 November but listed on 26 November in this edition. The 26 November listing was the newest one available when the window closed and no 27 November listing had been published, so no later announcement was available to cover; the eight papers already carried in the 26 November edition are not repeated. Replacement submissions are excluded and only new or cross-listed papers are kept.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <h2 class="visually-hidden">Contact</h2>
+      <ul role="list">
+        <li><a href="../../">Home</a></li>
+        <li><a href="mailto:juacker@komlog.org">juacker@komlog.org</a></li>
+        <li><a href="https://github.com/juacker">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/juacker">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
